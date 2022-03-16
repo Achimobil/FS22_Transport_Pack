@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-
 <!-- Revisions
     06.03.2019	first conversion
 -->
-
 <wheel>
     <default>
         <physics radius="0.55" width="0.5" mass="0.128" tireType="mud" frictionScale="2" maxLongStiffness="9" maxLatStiffness="110" maxLatStiffnessLoad="2"/>
-        <tire filename="$data/shared/wheels/tires/trelleborg/TM800/R24_TM800.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.057" sideDeformOffset="0.954" isCareWheel="false" tireTrackAtlasIndex="0" />
-		<outerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 24"/>
+        <tire filename="$data/shared/wheels/tires/trelleborg/TM800/R24_TM800.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.057" sideDeformOffset="0.954" isCareWheel="false" tireTrackAtlasIndex="0"/>
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="13 23.5"/>
     </default>
     <configurations>
         <configuration id="MarksnoHub">
-			<innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 20.5" />
+            <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 20.5"/>
         </configuration>
         <configuration id="NoMarksnoHub">
-			<innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 20.5" />
+            <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 20.5"/>
         </configuration>
         <configuration id="MarksFront">
-			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="4|0" nodeRight="4|1" offset="0.13" widthAndDiam="15 23.5" />
+            <innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="4|0" nodeRight="4|1" offset="0.13" widthAndDiam="15 23.5"/>
         </configuration>
         <configuration id="MarksBack">
-			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="5|0" nodeRight="5|1" offset="0.02" widthAndDiam="18.9 18.9" />
+            <innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="5|0" nodeRight="5|1" offset="0.02" widthAndDiam="18.9 18.9"/>
         </configuration>
         <configuration id="NoMarksFront">
-			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="4|0" nodeRight="4|1" offset="0.13" widthAndDiam="15 23.5" />
+            <innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="4|0" nodeRight="4|1" offset="0.13" widthAndDiam="15 23.5"/>
         </configuration>
         <configuration id="NoMarksBack">
-			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="5|0" nodeRight="5|1" offset="0.02" widthAndDiam="18.9 18.9" />
+            <innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="5|0" nodeRight="5|1" offset="0.02" widthAndDiam="18.9 18.9"/>
         </configuration>
     </configurations>
 </wheel>

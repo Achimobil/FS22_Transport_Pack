@@ -137,23 +137,6 @@
                 </wheels>
                 <objectChange node="0>0|1|3|0|4" visibilityActive="true" visibilityInactive="false"/>
             </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_traktorWheelsMarks" price="1600" brand="TRELLEBORG">
-                <wheels>
-                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
-                    </wheel>
-                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
-                    </wheel>
-                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
-                    </wheel>
-                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
-                    </wheel>
-                </wheels>
-                <objectChange node="0>0|1|3|0|5" visibilityActive="true" visibilityInactive="false"/>
-            </wheelConfiguration>
         </wheelConfigurations>
         <hubs>
             <color0>0.0161 0.0134 0.0120 1</color0>
@@ -163,7 +146,6 @@
             <dynamicallyLoadedWheel linkNode="0>0|1|3|0|2" filename="dynaloadparts/wheels/tgsagrarwheels.xml" isLeft="true" configId="noHub"/>
             <dynamicallyLoadedWheel linkNode="0>0|1|3|0|3" filename="dynaloadparts/wheels/tgsoffroadWheels.xml" isLeft="true" configId="noHub"/>
             <dynamicallyLoadedWheel linkNode="0>0|1|3|0|4" filename="dynaloadparts/wheels/tgstraktorWheels.xml" isLeft="true" configId="NoMarksnoHub"/>
-            <dynamicallyLoadedWheel linkNode="0>0|1|3|0|5" filename="dynaloadparts/wheels/tgstraktorWheels.xml" isLeft="true" configId="MarksnoHub"/>
         </dynamicallyLoadedWheels>
     </wheels>
 
