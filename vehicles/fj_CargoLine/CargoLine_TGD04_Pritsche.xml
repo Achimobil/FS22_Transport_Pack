@@ -36,18 +36,14 @@
         <configurationSet isDefault="true" name="$l10n_configuration_valueDefault">
             <configuration index="1" name="vehicleType"/>
         </configurationSet>
-        <configurationSet name="$l10n_category_autoLoadLight">
-            <configuration index="2" name="vehicleType"/>
-        </configurationSet>
         <configurationSet name="$l10n_category_autoLoad">
-            <configuration index="3" name="vehicleType"/>
+            <configuration index="2" name="vehicleType"/>
         </configurationSet>
     </configurationSets>
 
     <vehicleTypeConfigurations>
-        <vehicleTypeConfiguration name="$l10n_configuration_valueDefault" price="0"/>
-        <vehicleTypeConfiguration name="$l10n_category_autoLoadLight" price="5000"/>
-        <vehicleTypeConfiguration name="$l10n_category_autoLoad" price="10000"/>
+        <vehicleTypeConfiguration name="$l10n_configuration_valueDefault" price="0" vehicleType="transportTrailer"/>
+        <vehicleTypeConfiguration name="$l10n_category_autoLoad" price="10000" vehicleType="fjPritscheTrailer"/>
     </vehicleTypeConfigurations>
 
     <wheels>
@@ -55,16 +51,16 @@
             <wheelConfiguration name="$l10n_configuration_trailerStreetWheelsSingle" price="0" brand="LIZARD">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|1" visibilityActive="true" visibilityInactive="false"/>
@@ -72,18 +68,18 @@
             <wheelConfiguration name="$l10n_configuration_trailerStreetWheelsDual" price="1000" brand="LIZARD">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="true" configId="truckFront" offset="-0.36" hasTireTracks="true"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="false" configId="truckFront" offset="-0.36" hasTireTracks="true"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|1|0|0" translationActive="1.086 0 0"/>
@@ -93,16 +89,16 @@
             <wheelConfiguration name="$l10n_configuration_agrarWheels" price="1500" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|2" visibilityActive="true" visibilityInactive="false"/>
@@ -110,16 +106,16 @@
             <wheelConfiguration name="$l10n_configuration_offroadWheels" price="1300" brand="NOKIAN">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|3" visibilityActive="true" visibilityInactive="false"/>
@@ -127,36 +123,19 @@
             <wheelConfiguration name="$l10n_configuration_traktorWheelsNoMarks" price="1500" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
+                        <physics rotSpeed="0" restLoad="0.52" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
+                        <physics rotSpeed="0" restLoad="0.52" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|4" visibilityActive="true" visibilityInactive="false"/>
-            </wheelConfiguration>
-            <wheelConfiguration name="$l10n_configuration_traktorWheelsMarks" price="1600" brand="TRELLEBORG">
-                <wheels>
-                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
-                    </wheel>
-                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
-                    </wheel>
-                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="1>1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
-                    </wheel>
-                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="1>1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
-                    </wheel>
-                </wheels>
-                <objectChange node="0>0|1|3|0|5" visibilityActive="true" visibilityInactive="false"/>
             </wheelConfiguration>
         </wheelConfigurations>
         <hubs>
@@ -167,7 +146,6 @@
             <dynamicallyLoadedWheel linkNode="0>0|1|3|0|2" filename="dynaloadparts/wheels/tgsagrarwheels.xml" isLeft="true" configId="noHub"/>
             <dynamicallyLoadedWheel linkNode="0>0|1|3|0|3" filename="dynaloadparts/wheels/tgsoffroadWheels.xml" isLeft="true" configId="noHub"/>
             <dynamicallyLoadedWheel linkNode="0>0|1|3|0|4" filename="dynaloadparts/wheels/tgstraktorWheels.xml" isLeft="true" configId="NoMarksnoHub"/>
-            <dynamicallyLoadedWheel linkNode="0>0|1|3|0|5" filename="dynaloadparts/wheels/tgstraktorWheels.xml" isLeft="true" configId="MarksnoHub"/>
         </dynamicallyLoadedWheels>
     </wheels>
 
@@ -178,23 +156,15 @@
     </rimColorConfigurations>
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|0" filename="dynaloadparts/TrailerChassis_All/DLP_TGD_Cargo_Piping.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|1" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_800x440x500_800.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|2" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_500x440x500_800.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|3" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_800x440x500_800.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|4" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_800x440x500_800.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|5" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_500x440x500_800.i3d"/>
-        <dynamicallyLoadedPart node="0" linkNode="0>0|1|4|0" filename="dynaloadparts/VehicleFunctions/DLP_VF_TrailerAttacherRearWithDH.i3d"/>
-        <dynamicallyLoadedPart node="0" linkNode="1>1|4|0" filename="dynaloadparts/TrailerChassis_All/DLP_TGD_DH_attached.i3d"/>
-        <dynamicallyLoadedPart node="0" linkNode="0>0|1|5|0" filename="dynaloadparts/VehicleFunctions/UVF001_DLP_UFS_rear.i3d"/>
-        <dynamicallyLoadedPart node="0" linkNode="0>0|1|1|0|2" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_Achse.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|1|1|0|3" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_FenderFullNoLights.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|1|1|0|4" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_RearFenderDecals_FJ.i3d"/>
-        <dynamicallyLoadedPart node="0" linkNode="1>1|1|0|2" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_Achse.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="1>1|1|0|3" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_FenderHalfRearNoLights.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="1>1|1|0|4" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_RearFenderDecals_FJ.i3d"/>
-        <dynamicallyLoadedPart node="0" linkNode="0>1|1|1|0|0" filename="dynaloadparts/VehicleFunctions/DLP_VF_TGS_Twin_WorklightBack.i3d"/>
-        <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|0" filename="dynaloadparts/CargoLine/DLP_CargoLine_App_Pritsche.i3d"/>
     </dynamicallyLoadedParts>
 
     <attachable>
@@ -203,6 +173,7 @@
             <inputAttacherJoint node="2>1|4|0" jointType="trailer" rootNode="2>"/>
         </inputAttacherJoints>
         <support animationName="moveSupport"/>
+        <brakeForce force="0.65" maxForce="1.3" maxForceMass="2000"/>
     </attachable>
 
     <attacherJoints>
@@ -265,8 +236,8 @@
                 <reverseLight node="0>0|1|5|0|0|1|0|0|1|3"/>
             </high>
         </realLights>
-        <sharedLight linkNode="0>0|1|5|0|0|1|0|0|1|0" filename="$data/shared/assets/lights/lizard/rearMultipointLight_05_left.xml"/>
-        <sharedLight linkNode="0>0|1|5|0|0|1|0|0|0|0" filename="$data/shared/assets/lights/lizard/rearMultipointLight_05_right.xml"/>
+        <sharedLight linkNode="0>0|1|5|0|0|1|0|0|1|0" filename="$data/shared/assets/lights/lizard/rearLight55_right.xml"/>
+        <sharedLight linkNode="0>0|1|5|0|0|1|0|0|0|0" filename="$data/shared/assets/lights/lizard/rearLight55_left.xml"/>
         <sharedLight linkNode="0>1|1|1|0|0|0|0|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml">
             <rotationNode name="rotationNode1" rotation="180 0 180"/>
         </sharedLight>
@@ -283,28 +254,28 @@
             <part endTime="0.1" node="0>0|1|2|0|2" startTime="0.05" visibility="true"/>
         </animation>
         <animation name="folding">
-            <part endRot="-170 0 0" endTime="0.5" endTrans="0.340 0 0" node="0>1|0|1|0|2|0|0|0|0|0|1" startTime="0" startTrans="0.300 0 0"/>
-            <part endRot="-26.5 0 0" endTime="1" endTrans="-0.340 0 0" node="0>1|0|1|0|2|0|0|0|0|0|2" startTime="0.5" startTrans="-0.300 0 0"/>
-            <part endRot="-26.5 0 0" endTime="2" node="0>1|0|1|0|2|0|0|0|0|0|0" startRot="0 0 0" startTime="1"/>
-            <part endTime="3" endTrans="0.300 0 0" node="0>1|0|1|0|2|0|0|0|0|0|1" startTime="2.5" startTrans="0.340 0 0"/>
-            <part endTime="4" endTrans="-0.300 0 0" node="0>1|0|1|0|2|0|0|0|0|0|2" startTime="3.5" startTrans="-0.340 0 0"/>
-            <part endTime="4" endTrans="0 -0.07 -0.085" node="0>1|0|1|0|2|0|0|0|0|0|3" startTime="2" startTrans="0 -0.07 3.265"/>
-            <part endTime="5" node="0>1|0|1|0|2|0|0|0|0|0|3" startRot="0 0 0" startTime="4"/>
-            <part endTime="5.5" endTrans="1.10 0 0" node="0>1|0|1|0|2|0|0|0|0|0|3|0" startTime="5" startTrans="1.00 0 0"/>
-            <part endTime="5.5" endTrans="-1.10 0 0" node="0>1|0|1|0|2|0|0|0|0|0|3|1" startTime="5" startTrans="-1.00 0 0"/>
-            <part endTime="2" endTrans="0 -0.60 -0.05" node="0>1|1|0|0|1|0" startTime="0" startTrans="0 0.60 -0.05"/>
-            <part endTime="4" endTrans="0 0 0" node="0>1|1|0|0|0|0" startTime="2" startTrans="0 0 3.35"/>
-            <part endTime="5" node="0>1|1|0|0|0|0" startRot="0 0 0" startTime="4"/>
-        </animation>
-        <animation name="moveTrigger">
-            <part endTime="0.001" endTrans="0 0 0" node="ealTriggersIndex" startTime="0" startTrans="0 -10 0"/>
+            <part startTime="0.0" endTime="0.5" node="0>1|0|1|0|2|0|0|0|0|0|1"      startTrans="0.300 0 0"      endTrans="0.340 0 0"    endRot="-170 0 0"/>
+            <part startTime="0.5" endTime="1.0" node="0>1|0|1|0|2|0|0|0|0|0|2"      startTrans="-0.300 0 0"     endTrans="-0.340 0 0"   endRot="-26.5 0 0"/>
+            <part startTime="1.0" endTime="2.0" node="0>1|0|1|0|2|0|0|0|0|0|0"      startRot="0 0 0"            endRot="-170 0 0"/>
+            <part startTime="2.5" endTime="3.0" node="0>1|0|1|0|2|0|0|0|0|0|1"      startTrans="0.340 0 0"      endTrans="0.300 0 0" />
+            <part startTime="3.5" endTime="4.0" node="0>1|0|1|0|2|0|0|0|0|0|2"      startTrans="-0.340 0 0"     endTrans="-0.300 0 0" />
+            <!-- Rampen visuell -->
+            <part startTime="2.0" endTime="4.0" node="0>1|0|1|0|2|0|0|0|0|0|3"      startTrans="0 -0.07 3.265"  endTrans="0 -0.07 -0.085"/>
+            <part startTime="4.0" endTime="5.0" node="0>1|0|1|0|2|0|0|0|0|0|3"      startRot="0 0 0"            endRot="-25 0 0"/>
+            <part startTime="5.0" endTime="5.5" node="0>1|0|1|0|2|0|0|0|0|0|3|0"    startTrans="1.00 0 0"       endTrans="1.10 0 0"/>
+            <part startTime="5.0" endTime="5.5" node="0>1|0|1|0|2|0|0|0|0|0|3|1"    startTrans="-1.00 0 0"      endTrans="-1.10 0 0"/>
+            <!-- Rückbügel collision -->
+            <part startTime="0.0" endTime="2.0" node="0>1|1|0|0|1|0"                startTrans="0 0.60 -0.05"   endTrans="0 -0.60 -0.05" />
+            <!-- Rampen collision -->
+            <part startTime="2.0" endTime="4.0" node="0>1|1|0|0|0|0"                startTrans="0 0 3.35"       endTrans="0 0 0"/>
+            <part startTime="4.0" endTime="5.0" node="0>1|1|0|0|0|0"                startRot="0 0 0"            endRot="-25 0 0"/>
         </animation>
     </animations>
 
     <foldable>
         <foldingConfigurations>
             <foldingConfiguration>
-                <foldingParts posDirectionText="fj_moveRampOut" negDirectionText="fj_moveRampIn" startMoveDirection="0" turnOnFoldDirection="0">
+                <foldingParts posDirectionText="fj_moveRampOut" negDirectionText="fj_moveRampIn" startMoveDirection="0" turnOnFoldDirection="1">
                     <foldingPart animationName="folding" speedScale="1"/>
                 </foldingParts>
             </foldingConfiguration>
@@ -320,19 +291,19 @@
         </sounds>
     </cylindered>
 
-    <dynamicMountAttacher triggerNode="0>1|1|4|0" rootNode="0>" jointNode="0>" forceAcceleration="30"/>
+    <dynamicMountAttacher triggerNode="0>1|1|3|0" rootNode="0>" jointNode="0>" forceAcceleration="30"/>
     <tensionBelts>
         <tensionBeltsConfigurations>
             <tensionBeltsConfiguration>
                 <tensionBelts linkNode="0>1|1|2" jointNode="0>" width="0.075" maxEdgeLength="0.2" geometryBias="0.01" ratchetPosition="0.35">
-                    <tensionBelt startNode="0>1|1|2|1|0" endNode="0>1|1|2|1|1"/>
-                    <tensionBelt startNode="0>1|1|2|1|2" endNode="0>1|1|2|1|3"/>
-                    <tensionBelt startNode="0>1|1|2|2|0" endNode="0>1|1|2|2|1"/>
-                    <tensionBelt startNode="0>1|1|2|2|2" endNode="0>1|1|2|2|3"/>
-                    <tensionBelt startNode="0>1|1|2|3|0" endNode="0>1|1|2|3|1"/>
-                    <tensionBelt startNode="0>1|1|2|3|2" endNode="0>1|1|2|3|3"/>
-                    <tensionBelt startNode="0>1|1|2|4|0" endNode="0>1|1|2|4|1"/>
-                    <tensionBelt startNode="0>1|1|2|4|2" endNode="0>1|1|2|4|3"/>
+                    <tensionBelt startNode="0>1|1|2|1|0" endNode="0>1|1|2|1|0|0"/>
+                    <tensionBelt startNode="0>1|1|2|1|1" endNode="0>1|1|2|1|1|0"/>
+                    <tensionBelt startNode="0>1|1|2|2|0" endNode="0>1|1|2|2|0|0"/>
+                    <tensionBelt startNode="0>1|1|2|2|1" endNode="0>1|1|2|2|1|0"/>
+                    <tensionBelt startNode="0>1|1|2|3|0" endNode="0>1|1|2|3|0|0"/>
+                    <tensionBelt startNode="0>1|1|2|3|1" endNode="0>1|1|2|3|1|0"/>
+                    <tensionBelt startNode="0>1|1|2|4|0" endNode="0>1|1|2|4|0|0"/>
+                    <tensionBelt startNode="0>1|1|2|4|1" endNode="0>1|1|2|4|1|0"/>
                 </tensionBelts>
             </tensionBeltsConfiguration>
         </tensionBeltsConfigurations>
@@ -356,16 +327,12 @@
     </designConfigurations>
 
     <washable dirtDuration="90" washDuration="1" workMultiplier="4"/>
-    <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true">
-        <colorNode node="0>1|0|0|0|0"/>
-        <colorNode node="0>1|0|1|0|2|0|0|1"/>
-    </baseColorConfigurations>
+    <!-- <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true"> -->
+        <!-- <colorNode node="0>1|0|0|0|0"/> -->
+        <!-- <colorNode node="0>1|0|1|0|2|0|0|1"/> -->
+    <!-- </baseColorConfigurations> -->
 
     <i3dMappings>
-        <i3dMapping id="ealObjectsIndex" node="0>1|1|3|1"/>
-        <i3dMapping id="ealTriggersIndex" node="0>1|1|3|3"/>
-        <i3dMapping id="ealMarkerPositionsIndex" node="0>1|1|3|2"/>
-        <i3dMapping id="ealMarkerIndex" node="0>1|1|3|0"/>
         <i3dMapping id="hydraulicInBack" node="0>0|1|4|0|0|4|0"/>
         <i3dMapping id="hydraulicOutBack" node="0>0|1|4|0|0|5|0"/>
         <i3dMapping id="airDoubleRedBack" node="0>0|1|4|0|0|2|1"/>
@@ -380,30 +347,4 @@
         <i3dMapping id="ElectricVis" node="2>1|4|1|1|0"/>
         <i3dMapping id="electric" node="2>1|4|1|0|0"/>
     </i3dMappings>
-    <!--Non converted elements, might require manual conversion or are obsolete:
-
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<vehicle>
-    <vehicleTypeConfigurations>
-        <vehicleTypeConfiguration vehicleType="transportTrailer"/>
-        <vehicleTypeConfiguration vehicleType="fjPritscheTrailer">
-            <objectChange node="0>1|1|3|3|0" scaleActive="0.05 0.4 0.28" translationActive="0 0.5 -3.2"/>
-            <objectChange node="0>1|1|3|3|1" scaleActive="0.01 0.01 0.01"/>
-        </vehicleTypeConfiguration>
-        <vehicleTypeConfiguration vehicleType="fjPritscheTrailer"/>
-    </vehicleTypeConfigurations>
-
-    <attachable>
-        <brakeForce>0.5</brakeForce>
-    </attachable>
-
-    <easyAutoLoad objectsIndex="ealObjectsIndex" triggersIndex="ealTriggersIndex" markerPositionsIndex="ealMarkerPositionsIndex" markerIndex="ealMarkerIndex" triggerAnimation="moveTrigger" centerMarkerIndex="1" unloadHeightOffset="-0.7">
-        <levelBarOptions coloredIcons="true" iconColor="0.6307 0.6307 0.6307 1" fillLevelColor="0.991 0.3865 0.01 1"/>
-        <palletIcon colorIcon="textures/pallet.png" overlayIcon="textures/palletIconOverlay.png"/>
-        <roundBaleIcon colorIcon="textures/roundBale.png" overlayIcon="textures/roundBaleIconOverlay.png"/>
-        <squareBaleIcon colorIcon="textures/squareBale.png" overlayIcon="textures/squareBaleIconOverlay.png"/>
-        <moveableMarkerOptions minX="0 4 -25 -25" maxX="0 25 25 -4" minY="0 -0.7 -0.7 -0.7" maxY="0 15 15 15" minZ="0 -20 -30 -20" maxZ="0 20 -16 20" markerMoveSpeed="0.05"/>
-    </easyAutoLoad>
-</vehicle>
--->
 </vehicle>

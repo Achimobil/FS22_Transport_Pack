@@ -45,7 +45,7 @@
         <vehicleTypeConfiguration name="$l10n_configuration_valueDefault" price="0" vehicleType="transportTrailer"/>
         <vehicleTypeConfiguration name="$l10n_category_autoLoad" price="10000" vehicleType="fjPritscheTrailer"/>
     </vehicleTypeConfigurations>
-    
+
     <wheels>
         <wheelConfigurations>
             <wheelConfiguration name="$l10n_configuration_trailerStreetWheelsSingle" price="0" brand="LIZARD">
@@ -156,20 +156,12 @@
     </rimColorConfigurations>
 
     <dynamicallyLoadedParts>
-        <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|0" filename="dynaloadparts/TrailerChassis_All/DLP_TGD_Cargo_Piping.i3d"/> -->
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|1" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_500x440x500_800.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|2" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_500x440x500_800.i3d"/>
-        <!-- <dynamicallyLoadedPart node="0" linkNode="DLP_TrailerAttacherRear" filename="dynaloadparts/VehicleFunctions/DLP_VF_TrailerAttacherRearWithDH.i3d"/> -->
-        <!-- <dynamicallyLoadedPart node="0" linkNode="1>1|4|0" filename="dynaloadparts/TrailerChassis_All/DLP_TGD_DH_attached.i3d"/> -->
-        <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|1|5|0" filename="dynaloadparts/VehicleFunctions/UVF001_DLP_UFS_rear.i3d"/> -->
-        <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|1|1|0|2" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_Achse.i3d"/> -->
         <dynamicallyLoadedPart node="0" linkNode="0>0|1|1|0|3" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_FenderFullNoLights.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|1|1|0|4" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_RearFenderDecals_FJ.i3d"/>
-        <!-- <dynamicallyLoadedPart node="0" linkNode="1>1|1|0|2" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_Achse.i3d"/> -->
         <dynamicallyLoadedPart node="0" linkNode="1>1|1|0|3" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_FenderHalfRearNoLights.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="1>1|1|0|4" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_RearFenderDecals_FJ.i3d"/>
-        <!-- <dynamicallyLoadedPart node="0" linkNode="0>1|1|1|0|0" filename="dynaloadparts/VehicleFunctions/DLP_VF_TGS_Twin_WorklightBack.i3d"/> -->
-        <!-- <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|0" filename="dynaloadparts/CargoLine/DLP_CargoLine_App_Pritsche.i3d"/> -->
     </dynamicallyLoadedParts>
 
     <attachable>
@@ -331,11 +323,11 @@
     </designConfigurations>
 
     <washable dirtDuration="90" washDuration="1" workMultiplier="4"/>
-    
     <!-- <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true"> -->
-        <!-- <colorNode node="0>1|0|0|0|0" recursive="true"/> -->
-        <!-- <colorNode node="0>1|0|1|0|2|0|0|1" recursive="true"/> -->
-    <!-- </baseColorConfigurations>     -->
+        <!-- <colorNode node="0>1|0|0|0|0"/> -->
+        <!-- <colorNode node="0>1|0|1|0|2|0|0|1"/> -->
+    <!-- </baseColorConfigurations> -->
+
     <i3dMappings>
         <i3dMapping id="hydraulicInBack" node="0>0|1|4|0|0|4|0"/>
         <i3dMapping id="hydraulicOutBack" node="0>0|1|4|0|0|5|0"/>

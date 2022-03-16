@@ -56,25 +56,25 @@
             <wheelConfiguration name="$l10n_configuration_streetWheels" price="0" brand="LIZARD">
                 <wheels autoRotateBackSpeed="1.7">
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="true" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="false" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="true" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="false" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
                     </wheel>
                 </wheels>
@@ -93,16 +93,16 @@
                         <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|0|6|3|2" visibilityActive="true" visibilityInactive="false"/>
@@ -116,16 +116,16 @@
                         <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|0|6|3|3" visibilityActive="true" visibilityInactive="false"/>
@@ -324,8 +324,8 @@
             <beaconLight node="0>0|0|0|0|2|0|0" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
             <beaconLight node="0>0|0|0|0|2|0|1" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
         </beaconLights>
-        <sharedLight linkNode="0>0|0|6|1|0|1|0|0|1|0" filename="$data/shared/assets/lights/lizard/rearMultipointLight_05_left.xml"/>
-        <sharedLight linkNode="0>0|0|6|1|0|1|0|0|0|0" filename="$data/shared/assets/lights/lizard/rearMultipointLight_05_right.xml"/>
+        <sharedLight linkNode="0>0|0|6|1|0|1|0|0|1|0" filename="$data/shared/assets/lights/lizard/rearLight55_right.xml"/>
+        <sharedLight linkNode="0>0|0|6|1|0|1|0|0|0|0" filename="$data/shared/assets/lights/lizard/rearLight55_left.xml"/>
         <sharedLight linkNode="0>1|1|1|0|0|0|0|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml">
             <rotationNode name="rotationNode1" rotation="180 0 180"/>
         </sharedLight>

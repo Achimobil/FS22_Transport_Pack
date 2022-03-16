@@ -51,10 +51,10 @@
             <wheelConfiguration name="$l10n_configuration_trailerStreetWheelsSingle" price="0" brand="LIZARD">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|1" visibilityActive="true" visibilityInactive="false"/>
@@ -63,11 +63,11 @@
             <wheelConfiguration name="$l10n_configuration_trailerStreetWheelsDual" price="500" brand="LIZARD">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="true" configId="truckFront" offset="-0.36" hasTireTracks="true"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="false" configId="truckFront" offset="-0.36" hasTireTracks="true"/>
                     </wheel>
                 </wheels>
@@ -79,10 +79,10 @@
             <wheelConfiguration name="$l10n_configuration_agrarWheels" price="1200" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|2" visibilityActive="true" visibilityInactive="false"/>
@@ -91,10 +91,10 @@
             <wheelConfiguration name="$l10n_configuration_offroadWheels" price="1300" brand="NOKIAN">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|3" visibilityActive="true" visibilityInactive="false"/>
@@ -103,10 +103,10 @@
             <wheelConfiguration name="$l10n_configuration_traktorWheelsNoMarks" price="1500" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|4" visibilityActive="true" visibilityInactive="false"/>
@@ -115,10 +115,10 @@
             <wheelConfiguration name="$l10n_configuration_traktorWheelsMarks" price="1600" brand="TRELLEBORG">
                 <wheels>
                     <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50"/>
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|1|1|0|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="45" damper="50" yOffset="0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|1|3|0|5" visibilityActive="true" visibilityInactive="false"/>
@@ -211,8 +211,8 @@
                 <reverseLight node="0>0|1|5|0|0|1|0|0|1|3"/>
             </high>
         </realLights>
-        <sharedLight linkNode="0>0|1|5|0|0|1|0|0|1|0" filename="$data/shared/assets/lights/lizard/rearMultipointLight_05_left.xml"/>
-        <sharedLight linkNode="0>0|1|5|0|0|1|0|0|0|0" filename="$data/shared/assets/lights/lizard/rearMultipointLight_05_right.xml"/>
+        <sharedLight linkNode="0>0|1|5|0|0|1|0|0|1|0" filename="$data/shared/assets/lights/lizard/rearLight55_right.xml"/>
+        <sharedLight linkNode="0>0|1|5|0|0|1|0|0|0|0" filename="$data/shared/assets/lights/lizard/rearLight55_left.xml"/>
         <sharedLight linkNode="0>1|1|1|0|0|0|0|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml">
             <rotationNode name="rotationNode1" rotation="180 0 180"/>
         </sharedLight>
