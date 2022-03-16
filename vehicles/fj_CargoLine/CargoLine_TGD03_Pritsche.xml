@@ -332,10 +332,10 @@
 
     <washable dirtDuration="90" washDuration="1" workMultiplier="4"/>
     
-    <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true">
-        <colorNode node="0>1|0|0|0|0" recursive="true"/>
-        <colorNode node="0>1|0|1|0|2|0|0|1" recursive="true"/>
-    </baseColorConfigurations>    
+    <!-- <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true"> -->
+        <!-- <colorNode node="0>1|0|0|0|0" recursive="true"/> -->
+        <!-- <colorNode node="0>1|0|1|0|2|0|0|1" recursive="true"/> -->
+    <!-- </baseColorConfigurations>     -->
     <i3dMappings>
         <i3dMapping id="hydraulicInBack" node="0>0|1|4|0|0|4|0"/>
         <i3dMapping id="hydraulicOutBack" node="0>0|1|4|0|0|5|0"/>
