@@ -6,19 +6,17 @@
   </Asset>
 
   <Files>
-    <File fileId="2" filename="../../FS19/data/shared/wheels/nokian/TRI2/TRI2_normal.png"/>
-    <File fileId="3" filename="../../FS19/data/shared/wheels/nokian/TRI2/TRI2_specular.png"/>
-    <File fileId="1" filename="../../textures/Bibliothek/Raeder/TRI2_diffuse.png"/>
     <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/wheels/tires/nokian/TRI2/TRI2_normal.dds"/>
+    <File fileId="3" filename="$data/shared/wheels/tires/nokian/TRI2/TRI2_vmask.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="TRI2_mat" materialId="4" customShaderId="4" customShaderVariation="tirePressureDeformation">
-      <Texture fileId="1"/>
+    <Material name="TRI2_mat" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="tirePressureDeformation">
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
-      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
       <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
@@ -29,6 +27,22 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
       <CustomParameter name="morphPosition" value="-0.308 -0.513 0.5 0.05"/>
+      <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
+    </Material>
+    <Material name="TRI2_mat2" materialId="5" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="morphPosition" value="-0.309 -0.546 0.5 0.05"/>
       <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
     </Material>
   </Materials>
@@ -42,11 +56,11 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="_360_70R20_" clipDistance="1000" nodeId="7">
-        <Shape shapeId="1" name="shapebig" scale="1.45 1.15 1.15" clipDistance="1000" nodeId="8" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="_360_70R20_" clipDistance="1000" nodeId="9">
+        <Shape shapeId="1" name="shape" scale="1.45 1.15 1.15" clipDistance="1000" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true"/>
       </TransformGroup>
-      <TransformGroup name="_360_80R20_" clipDistance="1000" nodeId="9">
-        <Shape shapeId="1" name="shapebig" scale="1.5 1.15 1.15" clipDistance="1000" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="_360_80R20_" clipDistance="1000" nodeId="11">
+        <Shape shapeId="2" name="shape" scale="1.45 1.15 1.15" clipDistance="1000" nodeId="12" materialIds="5" castsShadows="true" receiveShadows="true"/>
       </TransformGroup>
   </Scene>
 

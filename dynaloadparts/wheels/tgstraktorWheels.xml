@@ -6,7 +6,7 @@
 
 <wheel>
     <default>
-        <physics radius="0.6" width="0.5" mass="0.128" tireType="mud" frictionScale="2" maxLongStiffness="9" maxLatStiffness="110" maxLatStiffnessLoad="2" />
+        <physics radius="0.55" width="0.5" mass="0.128" tireType="mud" frictionScale="2" maxLongStiffness="9" maxLatStiffness="110" maxLatStiffnessLoad="2"/>
 		<outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="15 20.5" />
     </default>
     <configurations>
