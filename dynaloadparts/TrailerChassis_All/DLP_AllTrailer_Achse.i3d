@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="DLP_AllTrailer_AllAxle_Partspool-V01.0032" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="../../textures/Bibliothek/Piping/piping_diffuse.dds"/>
+    <File fileId="9" filename="../../textures/Bibliothek/Piping/piping_normal.dds"/>
+    <File fileId="10" filename="../../textures/Bibliothek/Piping/piping_specular.dds"/>
+    <File fileId="14" filename="../../textures/Bibliothek/Standardteile/HydrCylinder_diffuse.dds"/>
+    <File fileId="15" filename="../../textures/Bibliothek/Standardteile/HydrCylinder_normal.dds"/>
+    <File fileId="16" filename="../../textures/Bibliothek/Standardteile/HydrCylinder_specular.dds"/>
+    <File fileId="11" filename="../../textures/Bibliothek/VehicleFunctions/hydraulicHoses_diffuse.dds"/>
+    <File fileId="12" filename="../../textures/Bibliothek/VehicleFunctions/hydraulicHoses_normal.dds"/>
+    <File fileId="13" filename="../../textures/Bibliothek/VehicleFunctions/hydraulicHoses_specular.dds"/>
+    <File fileId="1" filename="../../textures/Landfahrzeuge/Trailer_Chassis/AllTrailer_Achse_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/Landfahrzeuge/Trailer_Chassis/AllTrailer_Achse_normal.dds"/>
+    <File fileId="3" filename="../../textures/Landfahrzeuge/Trailer_Chassis/AllTrailer_Achse_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="AML_AllTrailerAchse" materialId="7" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="AML_HydrCylinder" materialId="6" customShaderId="4">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="AML_piping" materialId="5" customShaderId="4">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="dynamicHoses_mat" materialId="4" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="DLP_AllTrailer_Achse.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="DLP_AllTrailer_Achse" clipDistance="300" nodeId="18">
+        <TransformGroup name="visuals" clipDistance="300" nodeId="19">
+          <Shape shapeId="1" name="all_axle_parts" clipDistance="300" nodeId="20" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="non_steering_axle_parts" clipDistance="300" nodeId="21" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="steering_axle_parts" clipDistance="300" nodeId="22" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="piping_all_axle" clipDistance="300" nodeId="23">
+            <Shape shapeId="4" name="piping_all" clipDistance="300" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="hoses_all" clipDistance="300" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="piping_steering_axle" clipDistance="300" nodeId="26">
+            <Shape shapeId="6" name="piping_steering" translation="0 -7.10543e-17 0" clipDistance="300" nodeId="27" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="hoses_steering" clipDistance="300" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="functions" clipDistance="300" nodeId="29">
+          <TransformGroup name="HyrdCyl_010x030" translation="0.0609808 0.153 0.16234" rotation="175 60 180" clipDistance="300" nodeId="30">
+            <Shape shapeId="8" name="zylinder" clipDistance="300" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="9" name="stempel" translation="0 0 0.68" clipDistance="300" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

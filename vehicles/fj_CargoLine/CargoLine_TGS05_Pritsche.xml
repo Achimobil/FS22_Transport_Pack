@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="woodTruck" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) Friesenjung, Alfredix, GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>CargoLine TGS05 Pritsche</name>
+        <specs>
+            <power>420</power>
+            <maxSpeed>80</maxSpeed>
+        </specs>
+        <functions>
+            <function>
+				This truck can hold:28 round bales 1.10m, 22 round bales 1.30m, 18 round bales 1.55m, 14 round bales 1.80m, 18 square bales, 20 straw harvest square bales 20 pallets, 1 cotton module, 5 round cotton bales, 4 board pallets and 500 Egg Boxes
+				Dieser LKW fasst: 28 Rundballen 1.10m, 22 Rundballen 1.30m, 18 Rundballen 1.55m, 14 Rundballen 1.80m, 18 Quaderballen, 20 Strohbergung Quaderballen, 20 Paletten, 1 Baumwollballen, 5 Runde Baumwollballen, 4 Bretterpaletten und 500 Eierkartons
+			</function>
+        </functions>
+        <image>store/store_CargoLine_TGS05_Pritsche.dds</image>
+        <price>210000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>MAN</brand>
+        <category>trucks</category>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_truck</typeDesc>
+        <filename>vehicles/fj_CargoLine/CargoLine_TGS05_Pritsche.i3d</filename>
+        <size width="4" length="9.5"/>
+        <components>
+            <component centerOfMass="0 0.25 -1.25" solverIterationCount="10" mass="9314"/>
+        </components>
+        <schemaOverlay name="VEHICLE" attacherJointPosition="0 0"/>
+        <sounds filename="sounds/fj_sounds.xml"/>
+    </base>
+
+    <configurationSets>
+        <configurationSet isDefault="true" name="$l10n_configuration_valueDefault">
+            <configuration index="1" name="vehicleType"/>
+        </configurationSet>
+        <configurationSet name="$l10n_category_autoLoadLight">
+            <configuration index="2" name="vehicleType"/>
+        </configurationSet>
+        <configurationSet name="$l10n_category_autoLoad">
+            <configuration index="3" name="vehicleType"/>
+        </configurationSet>
+    </configurationSets>
+
+    <vehicleTypeConfigurations>
+        <vehicleTypeConfiguration name="$l10n_configuration_valueDefault" price="0"/>
+        <vehicleTypeConfiguration name="$l10n_category_autoLoadLight" price="5000"/>
+        <vehicleTypeConfiguration name="$l10n_category_autoLoad" price="10000"/>
+    </vehicleTypeConfigurations>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_streetWheels" price="0" brand="LIZARD">
+                <wheels autoRotateBackSpeed="1.7">
+                    <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|3|0|0" driveNode="0>0|2|0|3|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|3|1|0" driveNode="0>0|2|0|3|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="true" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="false" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="true" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350"/>
+                        <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="false" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="0>0|2|0|1|0" translationActive="1.086 0 0"/>
+                <objectChange node="0>0|2|0|1|1" translationActive="-1.086 0 0"/>
+                <objectChange node="0>0|2|0|2|0" translationActive="1.086 0 0"/>
+                <objectChange node="0>0|2|0|2|1" translationActive="-1.086 0 0"/>
+                <objectChange node="0>0|0|6|3|1" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_agrarWheels" price="1500" brand="TRELLEBORG">
+                <wheels autoRotateBackSpeed="1.7">
+                    <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|3|0|0" driveNode="0>0|2|0|3|0|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|3|1|0" driveNode="0>0|2|0|3|1|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="0>0|0|6|3|2" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_offroadWheels" price="1300" brand="NOKIAN">
+                <wheels autoRotateBackSpeed="1.7">
+                    <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|3|0|0" driveNode="0>0|2|0|3|0|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|3|1|0" driveNode="0>0|2|0|3|1|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="0>0|0|6|3|3" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_traktorWheelsNoMarks" price="1500" brand="TRELLEBORG">
+                <wheels autoRotateBackSpeed="1.7">
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.52" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.52" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.52" repr="0>0|2|0|3|0|0" driveNode="0>0|2|0|3|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.52" repr="0>0|2|0|3|1|0" driveNode="0>0|2|0|3|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="NoMarksBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="0>0|0|6|3|4" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_traktorWheelsMarks" price="1600" brand="TRELLEBORG">
+                <wheels autoRotateBackSpeed="1.7">
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.52" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.52" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.52" repr="0>0|2|0|3|0|0" driveNode="0>0|2|0|3|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="0.52" repr="0>0|2|0|3|1|0" driveNode="0>0|2|0|3|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksBack" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|2|0|2|0" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                    <wheel filename="dynaloadparts/wheels/tgstraktorWheels.xml" configId="MarksBack" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="0.52" repr="0>0|2|0|2|1" forcePointRatio="0.3" initialCompression="30" suspTravel="0.22" spring="82" damper="50"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="0>0|0|6|3|5" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="55" rotMax="47" rotCenterWheel1="5" rotCenterWheel2="6"/>
+        </ackermannSteeringConfigurations>
+        <dynamicallyLoadedWheels>
+            <dynamicallyLoadedWheel linkNode="0>0|0|6|3|1" filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="true" configId="noHub"/>
+            <dynamicallyLoadedWheel linkNode="0>0|0|6|3|2" filename="dynaloadparts/wheels/tgsagrarwheels.xml" isLeft="true" configId="noHub"/>
+            <dynamicallyLoadedWheel linkNode="0>0|0|6|3|3" filename="dynaloadparts/wheels/tgsoffroadWheels.xml" isLeft="true" configId="noHub"/>
+            <dynamicallyLoadedWheel linkNode="0>0|0|6|3|4" filename="dynaloadparts/wheels/tgstraktorWheels.xml" isLeft="true" configId="NoMarksnoHub"/>
+            <dynamicallyLoadedWheel linkNode="0>0|0|6|3|5" filename="dynaloadparts/wheels/tgstraktorWheels.xml" isLeft="true" configId="MarksnoHub"/>
+        </dynamicallyLoadedWheels>
+    </wheels>
+
+    <rimColorConfigurations useDefaultColors="true" price="200" defaultColorIndex="3">
+        <colorNode node="0>0"/>
+    </rimColorConfigurations>
+
+    <speedRotatingParts>
+        <speedRotatingPart node="0>0|2|1|0|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|1|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|11|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|12|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|13|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|2" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|3|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|4|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|5" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|6|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|7" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|8|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|9|0" wheelIndex="1" wheelScale="2"/>
+        <speedRotatingPart node="0>0|2|1|10|0" wheelIndex="1" wheelScale="2"/>
+    </speedRotatingParts>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|6|1" filename="dynaloadparts/VehicleFunctions/UVF001_DLP_UFS_rear.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|6|2" filename="dynaloadparts/VehicleFunctions/DLP_VF_TrailerAttacherRearWithDH.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|3" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Typenschilder_41t.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|0" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_TopGlassDecal_fj.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|1" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_NFM_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|2" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Birkenfeld_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|3" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Hopfach_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|4" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Kandelin_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|5" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Schwatzingen_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|6" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Suedhemmern_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|7" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Thueringen_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|8" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Voralpen_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|9" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Flusstal_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|10" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Buechsenschuetz_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|11" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Ahner_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|12" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Duebel_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|13" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Hirschfeld_TGS_Cabtuer.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|8|1" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_RearFenderDecals_FJ.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|0" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Cabin_M.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|1" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Exhaust_2VA_low_all.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>1|1|1|0|0" filename="dynaloadparts/VehicleFunctions/DLP_VF_TGS_Twin_WorklightBack.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|0" filename="dynaloadparts/CargoLine/DLP_CargoLine_App_Pritsche.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|1" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_800x440x500_800L.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|2" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_500x440x500_800.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|3" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_640x440x500_800.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|4" filename="dynaloadparts/Zubehoer/DLP_Feuerloescher.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <attacherJoints>
+        <attacherJoint allowsJointLimitMovement="false" jointType="trailer" lowerRotLimit="10 65 65" node="0>0|0|0|0|1|8|0" upperRotationOffset="0">
+            <schema invertX="true" position="0 0" rotation="0"/>
+        </attacherJoint>
+        <attacherJoint allowsJointLimitMovement="false" jointType="trailer" lowerRotLimit="10 65 65" node="0>0|0|6|2|0|0|0" upperRotationOffset="0">
+            <schema invertX="false" position="1 0" rotation="0"/>
+        </attacherJoint>
+        <attacherJoint allowsJointLimitMovement="false" canTurnOnImplement="false" jointType="trailerLow" lowerRotLimit="10 65 65" node="0>0|0|6|1|0|0|2|0" upperRotationOffset="0">
+            <schema invertX="false" position="1 0" rotation="0"/>
+        </attacherJoint>
+        <sounds>
+            <attach file="$data/sounds/vehicles/shared/truck_attach_01.ogg">
+                <volume indoor="0.30" outdoor="1.50"/>
+                <lowpassGain indoor="0.90"/>
+                <pitch outdoor="1.00"/>
+            </attach>
+        </sounds>
+    </attacherJoints>
+
+    <connectionHoses>
+        <target attacherJointIndices="2" node="electricBack" socket="electric" type="electric"/>
+        <target attacherJointIndices="2" node="hydraulicInBack" socket="hydraulic04" type="hydraulicIn"/>
+        <target attacherJointIndices="2" node="hydraulicOutBack" socket="hydraulic04" type="hydraulicOut"/>
+        <target attacherJointIndices="2" node="airDoubleRedBack" socket="air_red" type="airDoubleRed"/>
+        <target attacherJointIndices="2" node="airDoubleYellowBack" socket="air_yellow" type="airDoubleYellow"/>
+    </connectionHoses>
+
+    <lights>
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 1"/>
+            <state lightTypes="0 1 2"/>
+        </states>
+        <realLights>
+            <low>
+                <light node="0>0|0|0|0|1|9|0|0|0" lightTypes="0" excludedLightTypes="3"/>
+                <light node="0>0|0|0|0|1|9|0|0|1" lightTypes="3"/>
+                <light node="0>0|0|6|1|0|1|0|0|0|1" lightTypes="0 3"/>
+                <light node="0>0|0|6|1|0|1|0|0|1|1" lightTypes="0 3"/>
+                <light node="0>1|1|1|0|0|0|0|0" lightTypes="0 3"/>
+                <light node="0>1|1|1|0|0|0|1|0" lightTypes="0 3"/>
+            </low>
+            <high>
+                <light node="0>0|2|0|0|0|0|2" lightTypes="0 3"/>
+                <light node="0>0|2|0|0|1|0|2" lightTypes="0 3"/>
+                <light node="0>0|0|0|0|1|9|0|0|2" lightTypes="3" excludedLightTypes="2"/>
+                <light node="0>0|0|0|0|1|9|0|2|0" lightTypes="2"/>
+                <light node="0>1|1|1|0|0|0|0|0" lightTypes="1"/>
+                <light node="0>1|1|1|0|0|0|1|0" lightTypes="1"/>
+                <light node="0>0|0|6|1|0|1|0|0|0|1" lightTypes="0 3"/>
+                <light node="0>0|0|6|1|0|1|0|0|1|1" lightTypes="0 3"/>
+                <turnLightLeft node="0>0|0|0|0|1|9|0|1|0"/>
+                <turnLightLeft node="0>0|0|6|1|0|1|0|0|0|4"/>
+                <turnLightRight node="0>0|0|0|0|1|9|0|1|1"/>
+                <turnLightRight node="0>0|0|6|1|0|1|0|0|1|4"/>
+                <brakeLight node="0>0|0|6|1|0|1|0|0|0|2"/>
+                <brakeLight node="0>0|0|6|1|0|1|0|0|1|2"/>
+                <reverseLight node="0>0|0|6|1|0|1|0|0|0|3"/>
+                <reverseLight node="0>0|0|6|1|0|1|0|0|1|3"/>
+            </high>
+        </realLights>
+        <defaultLights>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|0" lightTypes="0 3"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|0" lightTypes="0 3"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|3" lightTypes="0"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|3" lightTypes="0"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|5" lightTypes="0"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|5" lightTypes="0"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|2" lightTypes="3"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|2" lightTypes="3"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|4" lightTypes="2"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|4" lightTypes="2"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|8" lightTypes="2"/>
+            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|8" lightTypes="2"/>
+        </defaultLights>
+        <turnLights>
+            <turnLightLeft shaderNode="0>0|0|0|0|1|9|1|0|1"/>
+            <turnLightLeft shaderNode="0>0|0|0|0|1|9|1|0|6"/>
+            <turnLightLeft shaderNode="0>0|0|0|0|1|9|1|0|7"/>
+            <turnLightRight shaderNode="0>0|0|0|0|1|9|1|1|1"/>
+            <turnLightRight shaderNode="0>0|0|0|0|1|9|1|1|6"/>
+            <turnLightRight shaderNode="0>0|0|0|0|1|9|1|1|7"/>
+        </turnLights>
+        <beaconLights>
+            <beaconLight node="0>0|0|0|0|2|0|0" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+            <beaconLight node="0>0|0|0|0|2|0|1" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+        </beaconLights>
+        <sharedLight linkNode="0>0|0|6|1|0|1|0|0|1|0" filename="$data/shared/assets/lights/lizard/rearMultipointLight_05_left.xml"/>
+        <sharedLight linkNode="0>0|0|6|1|0|1|0|0|0|0" filename="$data/shared/assets/lights/lizard/rearMultipointLight_05_right.xml"/>
+        <sharedLight linkNode="0>1|1|1|0|0|0|0|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml">
+            <rotationNode name="rotationNode1" rotation="180 0 180"/>
+        </sharedLight>
+        <sharedLight linkNode="0>1|1|1|0|0|0|1|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml">
+            <rotationNode name="rotationNode1" rotation="180 0 180"/>
+        </sharedLight>
+        <sounds>
+            <toggleLights linkNode="0>" template="SWITCH_01"/>
+            <turnLight linkNode="0>" template="SWITCH_TURNLIGHT"/>
+        </sounds>
+    </lights>
+
+    <enterable>
+        <exitPoint node="0>0|1|2"/>
+        <enterReferenceNode node="0>"/>
+        <characterNode node="0>0|0|0|0|1|1|0" cameraMinDistance="1.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="0>0|0|0|0|1|1|1"/>
+            <target ikChain="leftFoot" targetNode="0>0|0|0|0|1|1|2"/>
+            <target ikChain="rightArm" targetNode="0>0|0|0|0|1|2|0|0"/>
+            <target ikChain="leftArm" targetNode="0>0|0|0|0|1|2|0|1"/>
+        </characterNode>
+        <cameras>
+            <camera node="0>0|1|0|1|0" rotatable="true" rotateNode="0>0|1|0|1" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="4.5" transMax="35">
+                <raycastNode node="0>0|1|0|2"/>
+                <raycastNode node="0>0|1|0|3"/>
+                <raycastNode node="0>0|1|0|4"/>
+            </camera>
+            <camera node="0>0|0|0|0|1|4|1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true"/>
+        </cameras>
+        <mirrors>
+            <mirror node="0>0|0|0|0|1|0|0" prio="1"/>
+            <mirror node="0>0|0|0|0|1|0|1" prio="1"/>
+            <mirror node="0>0|0|0|0|1|0|2" prio="3"/>
+            <mirror node="0>0|0|0|0|1|0|3" prio="2"/>
+        </mirrors>
+    </enterable>
+
+    <motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="192" fillType="diesel"/>
+                <consumer fillUnitIndex="2" usage="300" fillType="air" permanentConsumption="false" refillLitersPerSecond="350" refillCapacityPercentage="0.5"/>
+            </consumerConfiguration>
+        </consumerConfigurations>
+        <motorConfigurations>
+            <motorConfiguration name="D2676LF53" hp="420" price="0">
+                <motor torqueScale="1.778" minRpm="1000" maxRpm="2200" maxForwardSpeed="83" maxBackwardSpeed="18" brakeForce="11" lowBrakeForceScale="0.2" lowBrakeForceSpeedLimit="1" rotInertia="0.0015">
+                    <torque normRpm="0.42" torque="0.5"/>
+                    <torque normRpm="0.5" torque="0.6"/>
+                    <torque normRpm="0.59" torque="0.7"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.7"/>
+                </motor>
+                <transmission minForwardGearRatio="8.4" maxForwardGearRatio="150" minBackwardGearRatio="40" maxBackwardGearRatio="150"/>
+            </motorConfiguration>
+            <motorConfiguration name="D2676LF52" hp="460" price="5000">
+                <motor torqueScale="1.948" minRpm="1000" maxRpm="2200" maxForwardSpeed="83" maxBackwardSpeed="18" brakeForce="11" lowBrakeForceScale="0.2" lowBrakeForceSpeedLimit="1" rotInertia="0.0015">
+                    <torque normRpm="0.42" torque="0.5"/>
+                    <torque normRpm="0.5" torque="0.6"/>
+                    <torque normRpm="0.59" torque="0.7"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.7"/>
+                </motor>
+                <transmission minForwardGearRatio="8.4" maxForwardGearRatio="150" minBackwardGearRatio="40" maxBackwardGearRatio="150"/>
+            </motorConfiguration>
+            <motorConfiguration name="D2676LF51" hp="500" price="10000">
+                <motor torqueScale="2.117" minRpm="1000" maxRpm="2200" maxForwardSpeed="85" maxBackwardSpeed="18" brakeForce="11" lowBrakeForceScale="0.2" lowBrakeForceSpeedLimit="1" rotInertia="0.0015">
+                    <torque normRpm="0.42" torque="0.5"/>
+                    <torque normRpm="0.5" torque="0.6"/>
+                    <torque normRpm="0.59" torque="0.7"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.7"/>
+                </motor>
+                <transmission minForwardGearRatio="8.4" maxForwardGearRatio="150" minBackwardGearRatio="40" maxBackwardGearRatio="150"/>
+            </motorConfiguration>
+            <motorConfiguration name="D3876LF07" hp="580" price="20000">
+                <motor torqueScale="3.015" minRpm="1000" maxRpm="2200" maxForwardSpeed="87" maxBackwardSpeed="18" brakeForce="11" lowBrakeForceScale="0.2" lowBrakeForceSpeedLimit="1" rotInertia="0.0015">
+                    <torque normRpm="0.42" torque="0.5"/>
+                    <torque normRpm="0.5" torque="0.6"/>
+                    <torque normRpm="0.59" torque="0.7"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.7"/>
+                </motor>
+                <transmission minForwardGearRatio="8.4" maxForwardGearRatio="150" minBackwardGearRatio="40" maxBackwardGearRatio="150"/>
+            </motorConfiguration>
+            <motorConfiguration name="D3876LF09" hp="640" price="25000">
+                <motor torqueScale="3.315" minRpm="1000" maxRpm="2200" maxForwardSpeed="90" maxBackwardSpeed="18" brakeForce="11" lowBrakeForceScale="0.2" lowBrakeForceSpeedLimit="1" rotInertia="0.0015">
+                    <torque normRpm="0.42" torque="0.5"/>
+                    <torque normRpm="0.5" torque="0.6"/>
+                    <torque normRpm="0.59" torque="0.7"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.7"/>
+                </motor>
+                <transmission minForwardGearRatio="8.4" maxForwardGearRatio="150" minBackwardGearRatio="40" maxBackwardGearRatio="150"/>
+            </motorConfiguration>
+        </motorConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.35" wheelIndex1="1" wheelIndex2="2"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.35" wheelIndex1="3" wheelIndex2="4"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.45" wheelIndex1="5" wheelIndex2="6"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.45" wheelIndex1="7" wheelIndex2="8"/>
+                    <differential torqueRatio="0.45" maxSpeedRatio="1.0" differentialIndex1="1" differentialIndex2="2"/>
+                    <differential torqueRatio="0.55" maxSpeedRatio="1.0" differentialIndex1="3" differentialIndex2="4"/>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.0" differentialIndex1="5" differentialIndex2="6"/>
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <exhaustEffects>
+            <exhaustEffect node="0>0|0|1|0|1|0" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.05" maxRpmScale="0.5"/>
+            <exhaustEffect node="0>0|0|1|0|1|1" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.05" maxRpmScale="0.5"/>
+        </exhaustEffects>
+        <motorStartDuration>2500</motorStartDuration>
+        <dashboards>
+            <dashboard valueType="speed" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="speedDisplay" minValueAnim="0" maxValueAnim="125">
+                <default>
+                    <dashboard displayType="EMITTER" groups="MOTOR_ACTIVE" idleValue="-1" intensity="0.3" node="0>0|0|0|0|1|10|1|1"/>
+                </default>
+            </dashboard>
+            <dashboard valueType="motorTemperature" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="tempDisplay" minValueAnim="0" maxValueAnim="120"/>
+            <dashboard valueType="rpm" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="rpmDisplay" minValueAnim="500" maxValueAnim="3000"/>
+        </dashboards>
+    </motorized>
+
+    <drivable>
+        <sounds>
+            <waterSplash linkNode="0>" template="WATER_SPLASH_01"/>
+        </sounds>
+        <steeringWheel indoorRotation="360" node="0>0|0|0|0|1|2|0" outdoorRotation="37"/>
+    </drivable>
+
+    <animations>
+        <animation name="speedDisplay">
+            <part endRot="-200 0 0" endTime="1" node="0>0|0|0|0|1|3|0" startRot="0 0 0" startTime="0"/>
+        </animation>
+        <animation name="rpmDisplay">
+            <part endRot="-218 0 0" endTime="1" node="0>0|0|0|0|1|3|1" startRot="0 0 0" startTime="0"/>
+        </animation>
+        <animation name="fuelDisplay">
+            <part endRot="-60 0 0" endTime="1" node="0>0|0|0|0|1|3|2" startRot="0 0 0" startTime="0"/>
+        </animation>
+        <animation name="autoWipers">
+            <part endRot="0 -6 -100" endTime="2" node="0>0|0|0|0|1|10|0|0" startRot="0 0 0" startTime="0"/>
+            <part endRot="0 0 0" endTime="4" node="0>0|0|0|0|1|10|0|0" startRot="0 -6 -100" startTime="2"/>
+            <part endRot="0 -11.5 -85" endTime="2" node="0>0|0|0|0|1|10|0|1" startRot="0 0 0" startTime="0"/>
+            <part endRot="0 0 0" endTime="4" node="0>0|0|0|0|1|10|0|1" startRot="0 -11.5 -85" startTime="2"/>
+        </animation>
+        <animation name="airDisplay">
+            <part endRot="-55 0 0" endTime="0.6" node="0>0|0|0|0|1|3|4" startRot="0 0 0" startTime="0"/>
+            <part endRot="-48 0 0" endTime="1" node="0>0|0|0|0|1|3|5" startRot="0 0 0" startTime="0.4"/>
+        </animation>
+        <animation name="tempDisplay">
+            <part endRot="-38 0 0" endTime="60" node="0>0|0|0|0|1|3|3" startRot="0 0 0" startTime="0"/>
+        </animation>
+        <animation name="indoorTemp">
+            <part endRot="-45 0 0" endTime="60" node="0>0|0|0|0|1|3|3" startRot="0 0 0" startTime="0"/>
+        </animation>
+        <animation name="fakeGauge">
+            <part endRot="-50 0 0" endTime="1" node="0>0|0|0|0|1|3|4" startRot="0 0 0" startTime="0"/>
+        </animation>
+        <animation name="brakeComp">
+            <part endRot="-60 0 0" endTime="1" node="0>0|0|0|0|1|3|5" startRot="0 0 0" startTime="0"/>
+        </animation>
+        <animation name="folding">
+            <part endRot="-170 0 0" endTime="0.5" endTrans="0.340 0 0" node="0>1|0|1|0|2|0|0|0|0|0|1" startTime="0" startTrans="0.300 0 0"/>
+            <part endRot="-26.5 0 0" endTime="1" endTrans="-0.340 0 0" node="0>1|0|1|0|2|0|0|0|0|0|2" startTime="0.5" startTrans="-0.300 0 0"/>
+            <part endRot="-26.5 0 0" endTime="2" node="0>1|0|1|0|2|0|0|0|0|0|0" startRot="0 0 0" startTime="1"/>
+            <part endTime="3" endTrans="0.300 0 0" node="0>1|0|1|0|2|0|0|0|0|0|1" startTime="2.5" startTrans="0.340 0 0"/>
+            <part endTime="4" endTrans="-0.300 0 0" node="0>1|0|1|0|2|0|0|0|0|0|2" startTime="3.5" startTrans="-0.340 0 0"/>
+            <part endTime="4" endTrans="0 -0.07 -0.085" node="0>1|0|1|0|2|0|0|0|0|0|3" startTime="2" startTrans="0 -0.07 3.265"/>
+            <part endTime="5" node="0>1|0|1|0|2|0|0|0|0|0|3" startRot="0 0 0" startTime="4"/>
+            <part endTime="5.5" endTrans="1.10 0 0" node="0>1|0|1|0|2|0|0|0|0|0|3|0" startTime="5" startTrans="1.00 0 0"/>
+            <part endTime="5.5" endTrans="-1.10 0 0" node="0>1|0|1|0|2|0|0|0|0|0|3|1" startTime="5" startTrans="-1.00 0 0"/>
+            <part endTime="2" endTrans="0 -0.60 -0.05" node="0>1|1|0|0|1|0" startTime="0" startTrans="0 0.60 -0.05"/>
+            <part endTime="4" endTrans="0 0 0" node="0>1|1|0|0|0|0" startTime="2" startTrans="0 0 3.35"/>
+            <part endTime="5" node="0>1|1|0|0|0|0" startRot="0 0 0" startTime="4"/>
+        </animation>
+        <animation name="moveTrigger">
+            <part endTime="0.001" endTrans="0 0 0" node="ealTriggersIndex" startTime="0" startTrans="0 -10 0"/>
+        </animation>
+    </animations>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts posDirectionText="fj_moveRampOut" negDirectionText="fj_moveRampIn" startMoveDirection="0" turnOnFoldDirection="0">
+                    <foldingPart animationName="folding" speedScale="1"/>
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <cylindered>
+        <movingParts>
+            <movingPart isActiveDirty="true" node="0>0|2|0|0|1|0|1" referenceFrame="0>" referencePoint="0>0|2|0|0|0|0|1" scaleZ="true"/>
+            <movingPart isActiveDirty="true" node="0>0|2|0|3|1|0|1" referenceFrame="0>" referencePoint="0>0|2|0|3|0|0|1" scaleZ="true"/>
+        </movingParts>
+        <sounds>
+            <hydraulic file="$data/sounds/vehicles/hydraulic/hydraulic_loop_01.wav">
+                <volume indoor="0.45" outdoor="2.0"/>
+                <pitch outdoor="0.8"/>
+            </hydraulic>
+        </sounds>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="700" fillTypes="DIESEL" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard valueType="fillLevel" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="fuelDisplay"/>
+                    </fillUnit>
+                    <fillUnit capacity="10000" fillTypes="AIR" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard valueType="fillLevel" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="airDisplay"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dynamicMountAttacher triggerNode="0>1|1|4|0" rootNode="0>" jointNode="0>" forceAcceleration="30"/>
+    <tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="0>1|1|2" jointNode="0>" width="0.075" maxEdgeLength="0.2" geometryBias="0.01" ratchetPosition="0.35">
+                    <tensionBelt startNode="0>1|1|2|1|0" endNode="0>1|1|2|1|1"/>
+                    <tensionBelt startNode="0>1|1|2|1|2" endNode="0>1|1|2|1|3"/>
+                    <tensionBelt startNode="0>1|1|2|2|0" endNode="0>1|1|2|2|1"/>
+                    <tensionBelt startNode="0>1|1|2|2|2" endNode="0>1|1|2|2|3"/>
+                    <tensionBelt startNode="0>1|1|2|3|0" endNode="0>1|1|2|3|1"/>
+                    <tensionBelt startNode="0>1|1|2|3|2" endNode="0>1|1|2|3|3"/>
+                    <tensionBelt startNode="0>1|1|2|4|0" endNode="0>1|1|2|4|1"/>
+                    <tensionBelt startNode="0>1|1|2|4|2" endNode="0>1|1|2|4|3"/>
+                    <tensionBelt startNode="0>1|1|2|5|0" endNode="0>1|1|2|5|1"/>
+                    <tensionBelt startNode="0>1|1|2|5|2" endNode="0>1|1|2|5|3"/>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+
+    <foliageBending>
+        <bendingNode minX="-1.35" maxX="1.35" minZ="-4.4" maxZ="3.3" yOffset="0.4"/>
+    </foliageBending>
+
+    <designConfigurations>
+        <designConfiguration name="Ohne Logo" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Mario Ahner" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="LU Buechsenschuetz" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Bauunternehmung Duebel" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Hirschfeld Logistics" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="true"/>
+        </designConfiguration>
+        <designConfiguration name="Nordfriesische Marsch" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Birkenfeld" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Hopfach" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Kandelin" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Schwatzingen" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Suedhemmern" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Thueringen" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Voralpen" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Flusstal" price="0">
+            <objectChange node="0>0|0|6|1|0|1|1|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|6|1|0|1|1|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|0|0|2|0" visibilityActive="true"/>
+            <objectChange node="0>0|0|0|0|1|5" visibilityActive="false"/>
+            <objectChange node="0>1|0|1|0|2|0|0|0|0|0" translationActive="0 0 -8"/>
+            <objectChange node="0>0|0|4|1" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|2" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|3" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|4" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|5" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|6" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|7" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|8" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|9" visibilityActive="true"/>
+            <objectChange node="0>0|0|4|10" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|11" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|12" visibilityActive="false"/>
+            <objectChange node="0>0|0|4|13" visibilityActive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4"/>
+    <honk>
+        <sound linkNode="0>" template="HONK_TRUCK"/>
+    </honk>
+
+    <ai>
+        <collisionTrigger node="aiCollisionTrigger"/>
+    </ai>
+
+    <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true">
+        <colorNode node="0>0|0|0|0|0|0"/>
+        <colorNode node="0>0|0|0|0|0|1"/>
+        <colorNode node="0>0|0|0|0|0|2"/>
+        <colorNode node="0>0|0|0|0|0|3"/>
+        <colorNode node="0>1|0|0|0|0"/>
+        <colorNode node="0>1|0|1|0|2|0|0|1"/>
+    </baseColorConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="aiCollisionTrigger" node="0>0|1|1|0"/>
+        <i3dMapping id="ealObjectsIndex" node="0>1|1|3|1"/>
+        <i3dMapping id="ealTriggersIndex" node="0>1|1|3|3"/>
+        <i3dMapping id="ealMarkerPositionsIndex" node="0>1|1|3|2"/>
+        <i3dMapping id="ealMarkerIndex" node="0>1|1|3|0"/>
+        <i3dMapping id="hydraulicInBack" node="0>0|0|6|2|0|4|0"/>
+        <i3dMapping id="hydraulicOutBack" node="0>0|0|6|2|0|5|0"/>
+        <i3dMapping id="airDoubleRedBack" node="0>0|0|6|2|0|2|1"/>
+        <i3dMapping id="airDoubleYellowBack" node="0>0|0|6|2|0|3|1"/>
+        <i3dMapping id="electricBack" node="0>0|0|6|2|0|1|0"/>
+    </i3dMappings>
+    <!--Non converted elements, might require manual conversion or are obsolete:
+
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle>
+    <vehicleTypeConfigurations>
+        <vehicleTypeConfiguration vehicleType="woodTruck"/>
+        <vehicleTypeConfiguration vehicleType="fjPritscheTruck">
+            <objectChange node="0>1|1|3|3|0" scaleActive="0.05 0.4 0.38" translationActive="0 0.5 -4.1"/>
+            <objectChange node="0>1|1|3|3|1" scaleActive="0.01 0.01 0.01"/>
+        </vehicleTypeConfiguration>
+        <vehicleTypeConfiguration vehicleType="fjPritscheTruck"/>
+    </vehicleTypeConfigurations>
+
+    <motorized>
+        <motorConfigurations>
+            <motorConfiguration>
+                <objectChange node="0>0|0|3|0|0" visibilityActive="true" visibilityInactive="false"/>
+            </motorConfiguration>
+            <motorConfiguration>
+                <objectChange node="0>0|0|3|0|1" visibilityActive="true" visibilityInactive="false"/>
+            </motorConfiguration>
+            <motorConfiguration>
+                <objectChange node="0>0|0|3|0|2" visibilityActive="true" visibilityInactive="false"/>
+            </motorConfiguration>
+            <motorConfiguration>
+                <objectChange node="0>0|0|3|0|3" visibilityActive="true" visibilityInactive="false"/>
+            </motorConfiguration>
+            <motorConfiguration>
+                <objectChange node="0>0|0|3|0|4" visibilityActive="true" visibilityInactive="false"/>
+            </motorConfiguration>
+        </motorConfigurations>
+    </motorized>
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+        <default>
+            <dashboard displayType="EMITTER" node="0>0|0|0|0|1|10|1|1" idleValue="-1" intensity="0.3" groups="MOTOR_ACTIVE"/>
+        </default>
+    </dashboard>
+
+    <easyAutoLoad objectsIndex="ealObjectsIndex" triggersIndex="ealTriggersIndex" markerPositionsIndex="ealMarkerPositionsIndex" markerIndex="ealMarkerIndex" triggerAnimation="moveTrigger" centerMarkerIndex="1" unloadHeightOffset="-0.7">
+        <levelBarOptions coloredIcons="true" iconColor="0.6307 0.6307 0.6307 1" fillLevelColor="0.991 0.3865 0.01 1"/>
+        <palletIcon colorIcon="textures/pallet.png" overlayIcon="textures/palletIconOverlay.png"/>
+        <roundBaleIcon colorIcon="textures/roundBale.png" overlayIcon="textures/roundBaleIconOverlay.png"/>
+        <squareBaleIcon colorIcon="textures/squareBale.png" overlayIcon="textures/squareBaleIconOverlay.png"/>
+        <moveableMarkerOptions minX="0 4 -25 -25" maxX="0 25 25 -4" minY="0 -0.7 -0.7 -0.7" maxY="0 15 15 15" minZ="0 -20 -30 -20" maxZ="0 20 -16 20" markerMoveSpeed="0.05"/>
+    </easyAutoLoad>
+</vehicle>
+-->
+</vehicle>

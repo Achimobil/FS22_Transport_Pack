@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="DLP_VF_TrailerAttacherRearWithDH-V01.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="../../textures/Bibliothek/VehicleFunctions/DynHoseTruckConn_diffuse.dds"/>
+    <File fileId="1" filename="../../textures/Bibliothek/VehicleFunctions/attacherTruckGeneric_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/Bibliothek/VehicleFunctions/attacherTruckGeneric_normal.dds"/>
+    <File fileId="3" filename="../../textures/Bibliothek/VehicleFunctions/attacherTruckGeneric_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="AML_DynamicHoses_Ref" materialId="4" customShaderId="4">
+      <Texture fileId="8"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="TrailerAttacher_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.3"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="DLP_VF_TrailerAttacherRearWithDH.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="TrailerAttacherWithDH" clipDistance="300" nodeId="14">
+        <Shape shapeId="1" name="TrailerAttacher" clipDistance="300" nodeId="15" materialIds="5" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="trailerAttacherBack" translation="0 0 -0.115" rotation="0 90 0" clipDistance="300" nodeId="16"/>
+        </Shape>
+        <Shape shapeId="2" name="DynHoseTruckConn_Electric" translation="-0.24823 -0.05 0" clipDistance="300" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="Elektric" translation="0.00270287 0 0.003" clipDistance="300" nodeId="18"/>
+        </Shape>
+        <Shape shapeId="3" name="DynHoseTruckConn_Air1" translation="0.260359 0.0518 0" clipDistance="300" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="4" name="DynHoseTruckConn_Air1_Cap" clipDistance="300" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="Air_1" translation="-0.0168411 0.0012 -0.048" rotation="-20 0 0" clipDistance="300" nodeId="21"/>
+        </Shape>
+        <Shape shapeId="5" name="DynHoseTruckConn_Air2" translation="-0.244348 0.0496123 0.00329101" rotation="0 0 180" clipDistance="300" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="DynHoseTruckConn_Air2_Cap" clipDistance="300" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="Air_2" translation="0.00947707 -0.00338769 -0.051291" rotation="-20 0 -180" clipDistance="300" nodeId="24"/>
+        </Shape>
+        <Shape shapeId="7" name="DynHoseTruckConn_Hydr1" translation="-0.32 0.0601425 0" clipDistance="300" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="Hyd_1" clipDistance="300" nodeId="26"/>
+        </Shape>
+        <Shape shapeId="7" name="DynHoseTruckConn_Hydr2" translation="-0.32 -0.05 0" clipDistance="300" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="Hyd_2" clipDistance="300" nodeId="28"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="15">
+      <Attribute name="MaxHandle" type="integer" value="51"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="17">
+      <Attribute name="MaxHandle" type="integer" value="58"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="19">
+      <Attribute name="MaxHandle" type="integer" value="53"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20">
+      <Attribute name="MaxHandle" type="integer" value="54"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="22">
+      <Attribute name="MaxHandle" type="integer" value="50"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="23">
+      <Attribute name="MaxHandle" type="integer" value="59"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="25">
+      <Attribute name="MaxHandle" type="integer" value="57"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="27">
+      <Attribute name="MaxHandle" type="integer" value="57"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

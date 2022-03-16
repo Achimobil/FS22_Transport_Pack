@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="61">
+    <author>Friesenjung</author>
+
+    <version>2.2.0.0</version>
+
+    <title>
+        <en>Friesenjung Transport Pack</en>
+        <de>Friesenjung Transport Pack</de>
+    </title>
+
+    <description>
+        <en><![CDATA[Vehicles modified by Friesenjung]]></en>
+        <de><![CDATA[Von Friesenjung modifizierte Fahrzeuge]]></de>
+    </description>
+
+    <iconFilename>store/store_fj_AllVehicle_Pack.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TGS03_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TGS04_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TGS05_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TGD03_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TGD04_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TGD05_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TSDH03_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TSDH04_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TSDH05_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TST06_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TST07_Pritsche.xml"/>
+        <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TST08_Pritsche.xml"/>
+    </storeItems>
+
+    <brands>
+        <brand name="MAN" title="MAN" image="store/brand_man.dds"/>
+    </brands>
+    <dependencies>
+        <dependency>FS22_aPalletAutoLoader</dependency>
+    </dependencies>
+
+    <vehicleTypes>
+        <type name="fjPritscheTruck" parent="woodTruck" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <!-- <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/> -->
+        </type>
+        <type name="fjPritscheTrailer" parent="transportTrailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <!-- <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/> -->
+        </type>
+    </vehicleTypes>
+    
+    <l10n filenamePrefix="l10n"/>
+</modDesc>

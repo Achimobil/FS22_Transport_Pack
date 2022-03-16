@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="R22_5_DS" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="../../shaders/vehicleShader.xml"/>
+        <File fileId="1" filename="../../textures/Bibliothek/Raeder/R22_5_DS_diffuse.png"/>
+        <File fileId="2" filename="../../textures/Bibliothek/Raeder/R22_5_DS_normal.png"/>
+        <File fileId="3" filename="../../textures/Bibliothek/Raeder/R22_5_DS_specular.png"/>
+    </Files>
+    <Materials>
+        <Material name="_315_80R22_5_diffuse" materialId="4" customShaderId="4">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="R22_5_DS.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="_315_80R22_5_" nodeId="7">
+            <Shape shapeId="1" name="center" translation="0 1.52588e-07 1.52588e-07" clipDistance="1000" nodeId="8" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="DLP_SemiTrailer_ConnectorUnit_SemiAgro-V03.0004" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Files>
+        <File fileId="1" filename="../../textures/Equipment/Semitractors/SemiTrailer_ConnectorUnit_diffuse.dds" relativePath="true"/>
+        <File fileId="4" filename="../../textures/Equipment/Semitractors/SemiTrailer_ConnectorUnit_specular.dds" relativePath="true"/>
+        <File fileId="2" filename="../../textures/Equipment/Semitractors/SemiTrailer_ConnectorUnit_normal.dds" relativePath="true"/>
+        <File fileId="3" filename="../../textures/_shared_/rough_cube.dds" relativePath="true"/>
+        <File fileId="10" filename="../../textures/Bibliothek/VehicleFunctions/hydraulicHoses_specular.dds" relativePath="true"/>
+        <File fileId="7" filename="../../textures/Bibliothek/VehicleFunctions/hydraulicHoses_diffuse.dds" relativePath="true"/>
+        <File fileId="8" filename="../../textures/Bibliothek/VehicleFunctions/hydraulicHoses_normal.dds" relativePath="true"/>
+        <File fileId="11" filename="../../textures/Bibliothek/VehicleFunctions/DynHoseTruckConn_diffuse.dds" relativePath="true"/>
+        <File fileId="12" filename="../../textures/Equipment/Semitractors/KringelHosen_diffuse.dds" relativePath="true"/>
+        <File fileId="15" filename="../../textures/Equipment/Semitractors/KringelHosen_specular.dds" relativePath="true"/>
+        <File fileId="14" filename="../../textures/_shared_/rough_cube.dds" relativePath="true"/>
+        <File fileId="13" filename="../../textures/Equipment/Semitractors/KringelHosen_normal.dds" relativePath="true"/>
+        <File fileId="9" filename="../../textures/_shared_/rough_cube.dds" relativePath="true"/>
+        <File fileId="5" filename="../../shaders/vehicleShader.xml" relativePath="true"/>
+        <File fileId="6" filename="../../textures/_shared_/dirt_normal.dds" relativePath="true"/>
+    </Files>
+    <Materials>
+        <Material name="lambert1" materialId="3" diffuseColor="0.5 0.5 0.5 1" specularColor="0 0 0" ambientColor="1 1 1"/>
+        <Material name="AML_SemiTrailer_ConnectorUnit" materialId="1" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="5" customShaderVariation="colorMask">
+            <Custommap name="DirtNmap" fileId="6"/>
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Reflectionmap fileId="3" type="cube" wrap="false" refractiveIndex="1" bumpScale="0.1"/>
+            <Glossmap fileId="4"/>
+        </Material>
+        <Material name="AML_dynamicHoses" materialId="4" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="5">
+            <Custommap name="DirtNmap" fileId="6"/>
+            <Texture fileId="7"/>
+            <Normalmap fileId="8"/>
+            <Reflectionmap fileId="9" type="cube" wrap="false" refractiveIndex="1" bumpScale="0.1"/>
+            <Glossmap fileId="10"/>
+        </Material>
+        <Material name="AML_dynamicHoses_Ref" materialId="2" cosPower="2" specularColor="0 0 0" ambientColor="0.588 0.588 0.588" customShaderId="5">
+            <Custommap name="DirtNmap" fileId="6"/>
+            <Texture fileId="11"/>
+        </Material>
+        <Material name="AML_KringelHosen" materialId="5" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="5">
+            <Custommap name="DirtNmap" fileId="6"/>
+            <Texture fileId="12"/>
+            <Normalmap fileId="13"/>
+            <Reflectionmap fileId="14" type="cube" wrap="false" refractiveIndex="1" bumpScale="0.1"/>
+            <Glossmap fileId="15"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="DLP_SemiTrailer_ConnectorUnit_SemiAgro.i3d.shapes"/>
+    <Scene>
+        <TransformGroup name="DLP_SemiTrailer_ConnectorUnit_SemiAgro" collision="false" clipDistance="300" nodeId="1">
+            <TransformGroup name="visuals" collision="false" clipDistance="300" nodeId="2">
+                <Shape name="SemiHD_TrailerConnectorUnit3" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="3"/>
+                <Shape name="DynHoseTruckConn_Air1_red" translation="0.02 0 0" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="4"/>
+                <Shape name="DynHoseTruckConn_Air2_yel" translation="-0.02 0 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="5"/>
+                <Shape name="DynHoseTruckConn_Electric" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="6"/>
+                <Shape name="DynHoseTruckConn_Hydr1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="7"/>
+                <Shape name="DynHoseTruckConn_Hydr2" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="8"/>
+            </TransformGroup>
+            <TransformGroup name="functions" collision="false" clipDistance="300" nodeId="9">
+                <TransformGroup name="joints" collision="false" clipDistance="300" nodeId="10">
+                    <TransformGroup name="joint15_Air_1_Red" translation="0.106361 0.0526518 0.250053" rotation="0 -1.31715 0" nodeId="11">
+                        <TransformGroup name="joint16_Air_1_Red" translation="0.017 0.0634523 0.676049" rotation="0 1.31715 0" nodeId="12"/>
+                    </TransformGroup>
+                    <TransformGroup name="joint17_Air_2_yel" translation="-0.0856859 0.0528242 0.249599" rotation="-5.33528 -1.54272 -1.24285e-17" nodeId="13">
+                        <TransformGroup name="joint18_Air_2_yel" translation="-1.43168e-05 -0.000262968 0.679956" rotation="5.3372 1.53603 0.143482" nodeId="14"/>
+                    </TransformGroup>
+                    <TransformGroup name="joint5_electric" translation="-0.187368 0.0604644 0.230343" rotation="-3.70901 0.707314 3.10625e-18" nodeId="15">
+                        <TransformGroup name="joint6_electric" translation="-0.000212695 -0.001102 0.678639" rotation="3.70929 -0.705832 -0.0457579" nodeId="16"/>
+                    </TransformGroup>
+                    <TransformGroup name="joint1_hyd_1" translation="-0.274841 0.050952 0.257915" rotation="-5.12879 -0.253549 -1.55302e-18" nodeId="17">
+                        <TransformGroup name="joint2_hyd_1" translation="-1.17295e-15 8.9706e-16 0.639769" rotation="5.12884 0.252534 0.0226661" nodeId="18"/>
+                    </TransformGroup>
+                    <TransformGroup name="joint3_hyd_2" translation="0.275159 0.0509769 0.257806" rotation="-5.19123 0.683899 -6.21246e-18" nodeId="19">
+                        <TransformGroup name="joint4_hyd_2" translation="-0.000283349 -0.000393751 0.641329" rotation="5.1916 -0.681093 -0.0618822" nodeId="20"/>
+                    </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="detached" collision="false" clipDistance="300" nodeId="21">
+                    <Shape name="dummy_air1_red" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="22"/>
+                    <Shape name="dummy_air2_yel" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="23"/>
+                    <Shape name="dummy_elec" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="24"/>
+                    <Shape name="dummy_hyd1" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="25"/>
+                    <Shape name="dummy_hyd2" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="26"/>
+                </TransformGroup>
+                <TransformGroup name="attached" collision="false" clipDistance="300" nodeId="27">
+                    <TransformGroup name="Air_1_brakeRed" collision="false" clipDistance="300" nodeId="28">
+                        <Shape name="Air_1_brakeRedOpen" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="29"/>
+                        <Shape name="kringel_Air_1_Red" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="5" skinBindNodeIds="11 12" clipDistance="300" nodeId="30"/>
+                    </TransformGroup>
+                    <TransformGroup name="Air_2_brakeYellow" collision="false" clipDistance="300" nodeId="31">
+                        <Shape name="Air_2_brakeYellowOpen" shapeId="14" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="32"/>
+                        <Shape name="kringel_Air_2_Yel" shapeId="15" castsShadows="true" receiveShadows="true" materialIds="5" skinBindNodeIds="13 14" clipDistance="300" nodeId="33"/>
+                    </TransformGroup>
+                    <TransformGroup name="electric1" collision="false" clipDistance="300" nodeId="34">
+                        <Shape name="electric" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="35"/>
+                        <Shape name="face_electric" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="4" skinBindNodeIds="15 16" clipDistance="300" nodeId="36"/>
+                    </TransformGroup>
+                    <TransformGroup name="hyd_1_hydRed" collision="false" clipDistance="300" nodeId="37">
+                        <Shape name="hyd_1_hydRedOpen" shapeId="18" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="38"/>
+                        <Shape name="face_hyd_1" shapeId="19" castsShadows="true" receiveShadows="true" materialIds="4" skinBindNodeIds="17 18" clipDistance="300" nodeId="39"/>
+                    </TransformGroup>
+                    <TransformGroup name="hyd_2_hydRed" collision="false" clipDistance="300" nodeId="40">
+                        <Shape name="hyd_2_hydRedOpen" shapeId="20" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="41"/>
+                        <Shape name="kringel_Air_1_Yel" shapeId="21" castsShadows="true" receiveShadows="true" materialIds="4" skinBindNodeIds="19 20" clipDistance="300" nodeId="42"/>
+                    </TransformGroup>
+                </TransformGroup>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes>
+        <UserAttribute nodeId="6">
+            <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+            <Attribute name="MaxHandle" type="integer" value="58"/>
+        </UserAttribute>
+        <UserAttribute nodeId="7">
+            <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+            <Attribute name="MaxHandle" type="integer" value="57"/>
+        </UserAttribute>
+        <UserAttribute nodeId="8">
+            <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+            <Attribute name="MaxHandle" type="integer" value="57"/>
+        </UserAttribute>
+        <UserAttribute nodeId="11">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="12">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="13">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="14">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="15">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="16">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="17">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="18">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="19">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="20">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="32">
+            <Attribute name="currentUVSet" type="string" value="map1"/>
+        </UserAttribute>
+        <UserAttribute nodeId="35">
+            <Attribute name="currentUVSet" type="string" value="map1"/>
+        </UserAttribute>
+        <UserAttribute nodeId="38">
+            <Attribute name="currentUVSet" type="string" value="map1"/>
+        </UserAttribute>
+        <UserAttribute nodeId="39">
+            <Attribute name="currentUVSet" type="string" value="map1"/>
+        </UserAttribute>
+        <UserAttribute nodeId="41">
+            <Attribute name="currentUVSet" type="string" value="map1"/>
+        </UserAttribute>
+        <UserAttribute nodeId="42">
+            <Attribute name="currentUVSet" type="string" value="map1"/>
+        </UserAttribute>
+        <UserAttribute nodeId="3">
+            <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+            <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+            <Attribute name="MaxHandle" type="integer" value="3354"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>

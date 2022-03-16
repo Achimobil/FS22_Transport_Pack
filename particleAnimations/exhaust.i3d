@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="exhaust" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="$data/shaders/exhaustShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="exhaust_mat" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1" alphaBlending="true" customShaderId="2">
+            <Refractionmap coeff="1" bumpScale="0.1"/>
+            <CustomParameter name="param" value="0 0 0 1"/>
+            <CustomParameter name="exhaustColor" value="0 0 0 8"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="exhaust.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="exhaust" clipDistance="100" objectMask="16711807" nodeId="7" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </Scene>
+</i3D>

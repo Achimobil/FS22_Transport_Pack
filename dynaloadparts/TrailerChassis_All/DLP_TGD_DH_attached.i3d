@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="DLP_TGD_DH_attached-V02.0033" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../../textures/Bibliothek/VehicleFunctions/hydraulicHoses_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/Bibliothek/VehicleFunctions/hydraulicHoses_specular.dds"/>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="AML_dynamicHoses" materialId="4" customShaderId="3">
+      <Texture fileId="1"/>
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="DLP_TGD_DH_attached.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="DLP_TGD_DH_attached" nodeId="11">
+        <TransformGroup name="attached" nodeId="12">
+          <TransformGroup name="joints" nodeId="13">
+            <TransformGroup name="joint1" translation="-2.03288e-22 1.005 0" nodeId="14">
+              <TransformGroup name="joint_Elektric1" translation="-0.245527 -0.055 2.033" nodeId="15"/>
+              <TransformGroup name="joint_Air_red" translation="0.243518 0.048 1.982" nodeId="16"/>
+              <TransformGroup name="joint_Air_yellow" translation="-0.253825 0.048 1.982" nodeId="17"/>
+              <TransformGroup name="joint_Hydraulic_1" translation="-0.32 0.0530539 2.00029" nodeId="18"/>
+              <TransformGroup name="joint_Hydraulic_2" translation="-0.32 -0.0570886 2.00029" nodeId="19"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="1" name="hose_Elektric1" visibility="false" clipDistance="300" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true" skinBindNodeIds="14 15 16 17 18 19"/>
+          <Shape shapeId="2" name="hose_Air_red" visibility="false" clipDistance="300" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true" skinBindNodeIds="14 15 16 17 18 19"/>
+          <Shape shapeId="3" name="hose_Air_yellow" visibility="false" clipDistance="300" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true" skinBindNodeIds="14 15 16 17 18 19"/>
+          <Shape shapeId="4" name="hose_Hydraulic_1" visibility="false" clipDistance="300" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true" skinBindNodeIds="14 15 16 17 18 19"/>
+          <Shape shapeId="5" name="hose_Hydraulic_2" visibility="false" clipDistance="300" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true" skinBindNodeIds="14 15 16 17 18 19"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="14">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="15">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="16">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="17">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="18">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="19">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

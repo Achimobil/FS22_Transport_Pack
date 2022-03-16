@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="DLP_Staukiste_kpl_640x440x500_800-V01.0004" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="1" filename="../../textures/Bibliothek/Zubehoer/staukaesten_diffuse.dds"/>
+        <File fileId="2" filename="../../textures/Bibliothek/Zubehoer/staukaesten_normal.dds"/>
+        <File fileId="3" filename="../../textures/Bibliothek/Zubehoer/staukaesten_specular.dds"/>
+        <File fileId="5" filename="../../textures/_shared_/dirt_normal.dds"/>
+    </Files>
+    <Materials>
+        <Material name="AML_Staukaesten" materialId="4" customShaderId="4">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2" bumpDepth="0.3"/>
+            <Glossmap fileId="3"/>
+            <Custommap name="DirtNmap" fileId="5"/>
+            <CustomParameter name="RDT" value="1 1 20 20"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="DLP_Staukiste_kpl_640x440x500_800.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="DLP_Staukiste" clipDistance="300" nodeId="7">
+            <Shape shapeId="1" name="Staukiste_kpl_640x440x500_800" clipDistance="300" nodeId="8" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

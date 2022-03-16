@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="TGS_TypenSchilder-V01.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="../../textures/Landfahrzeuge/MAN_Chassis/TGS_TypenSchilder.dds"/>
+    </Files>
+    <Materials>
+        <Material name="AML_TGS_Typenschilder" materialId="4" specularColor="0.498039 1 0.498039">
+            <Texture fileId="1"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="DLP_TGS_Typenschilder_18t.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="DLP_TGS_Typenschilder_18t" nodeId="9">
+            <Shape shapeId="1" name="TS_TGS_18420" clipDistance="300" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="TS_TGS_18460" clipDistance="300" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="TS_TGS_18500" clipDistance="300" nodeId="12" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

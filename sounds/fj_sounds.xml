@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds>
+    <motorStart template="TRUCK_MOTOR_START" file="$data/sounds/vehicles/engine/man_tgx_26640/man_tgx_26640_start.wav" linkNode="0>"/>
+    <motorStop template="TRUCK_MOTOR_STOP" file="$data/sounds/vehicles/engine/man_tgx_26640/man_tgx_26640_stop.wav" linkNode="0>"/>
+
+    <motor template="TRUCK_MOTOR_IDLE" file="$data/sounds/vehicles/engine/man_tgx_26640/man_tgx_26640_idle_loop.wav" linkNode="0>"/>
+    <motor template="TRUCK_MOTOR_OFFLOAD_RUN" file="$data/sounds/vehicles/engine/man_tgx_26640/man_tgx_26640_run_loop.wav" linkNode="0>"/>
+    <motor template="TRUCK_MOTOR_ONLOAD_RUN" file="$data/sounds/vehicles/engine/man_tgx_26640/man_tgx_26640_load_loop.wav" linkNode="0>"/>
+
+    <gearbox template="DEFAULT_GEARBOX" file="$data/sounds/vehicles/transmission/transmission_cvt_xl_loop.wav" linkNode="0>"/>
+    <retarder template="DEFAULT_RETARDER" file="$data/sounds/vehicles/retarder/retarder_loop_02.wav" linkNode="0>"/>
+
+    <airCompressorStart template="TRUCK_BRAKE_COMPRESSOR_START" linkNode="0>"/>
+    <airCompressorStop template="TRUCK_BRAKE_COMPRESSOR_STOP" linkNode="0>"/>
+    <airCompressorRun template="BRAKE_COMPRESSOR_RUN" linkNode="0>"/>
+    <compressedAir template="TRUCK_BRAKE" linkNode="0>"/>
+    <airRelease template="TRUCK_BRAKE_REGULATOR_VALVE" linkNode="0>"/>
+
+    <!-- <reverseDrive template="REVERSE_BEEP_03" linkNode="0>" /> -->
+</sounds>

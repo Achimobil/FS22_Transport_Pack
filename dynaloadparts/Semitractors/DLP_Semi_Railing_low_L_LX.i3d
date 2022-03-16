@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="DLP_Semi_Railing_low_L_LX-V01.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Files>
+        <File fileId="1" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_diffuse.dds" relativePath="true"/>
+        <File fileId="4" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_specular.dds" relativePath="true"/>
+        <File fileId="2" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_normal.dds" relativePath="true"/>
+        <File fileId="3" filename="../../textures/_shared_/rough_cube.dds" relativePath="true"/>
+        <File fileId="5" filename="../../shaders/vehicleShader.xml" relativePath="true"/>
+        <File fileId="6" filename="../../textures/_shared_/dirt_normal.dds" relativePath="true"/>
+    </Files>
+    <Materials>
+        <Material name="AML_TGS_Exterior" materialId="1" cosPower="20" specularColor="1 1 1" ambientColor="1 1 1" customShaderId="5" customShaderVariation="colorMask">
+            <Custommap name="DirtNmap" fileId="6"/>
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Reflectionmap fileId="3" type="cube" wrap="false" refractiveIndex="1" bumpScale="0.1"/>
+            <Glossmap fileId="4"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="DLP_Semi_Railing_low_L_LX.i3d.shapes"/>
+    <Scene>
+        <TransformGroup name="DLP_Semi_Railing_low_L_LX" collision="false" clipDistance="300" nodeId="1">
+            <Shape name="Semi_Railing_1VA_low_L_LX" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="300" nodeId="2"/>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes/>
+</i3D>

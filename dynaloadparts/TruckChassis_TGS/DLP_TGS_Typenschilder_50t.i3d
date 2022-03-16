@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="TGS_TypenSchilder-V01.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="../../textures/Landfahrzeuge/MAN_Chassis/TGS_TypenSchilder.dds" relativePath="true"/>
+    </Files>
+    <Materials>
+        <Material name="AML_TGS_Typenschilder" materialId="6" ambientColor="1 1 1" cosPower="20" specularColor="0.5 0.5 0.5">
+            <Texture fileId="1"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="DLP_TGS_Typenschilder_50t.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="DLP_TGS_Typenschilder_50t" clipDistance="300" nodeId="34">
+            <Shape shapeId="1" name="TS_TGS_50420" clipDistance="300" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="TS_TGS_50460" clipDistance="300" nodeId="57" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="TS_TGS_50500" clipDistance="300" nodeId="58" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="TS_TGS_50580" clipDistance="300" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="TS_TGS_50640" clipDistance="300" nodeId="60" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

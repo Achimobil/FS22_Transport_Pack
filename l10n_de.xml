@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!-- Thank you for the translation, BD-Modding/Pascal -->
+<l10n>
+	<texts>
+		<text name="input_workMode" text="Arbeitsmodus"/>
+		<text name="input_select" text="Ladegut wählen"/>
+		<text name="input_markerPosition" text="Markierung Abladeseite"/>
+		<text name="input_unload" text="Entladen"/>
+		<text name="input_markerUp" text="Markierung: Hoch"/>
+		<text name="input_markerDown" text="Markierung: Runter"/>
+		<text name="input_markerLeft" text="Markierung: Links"/>
+		<text name="input_markerRight" text="Markierung: Rechts"/>
+		<text name="input_markerOriginal" text="Markierung: Startosition"/>
+		<text name="input_markerForward" text="Markierung: Vorwärts"/>
+		<text name="input_markerBackward" text="Markierung: Rückwärts"/>
+		<text name="input_markerRotation" text="Markierung:: Drehen 90°"/>
+		<text name="workModeOn" text="Arbeitsmodus: anschalten"/>
+		<text name="workModeOff" text="Arbeitsmodus: ausschalten"/>
+		<text name="unload" text="Entladen"/>
+		<text name="center" text="Abladeseite [Anhänger]"/>
+		<text name="left" text="Abladeseite [Links]"/>
+		<text name="right" text="Abladeseite [Rechts]"/>
+		<text name="back" text="Abladeseite [Hinten]"/>
+		<text name="squareBales" text="Ladegut wählen: [Quaderballen]"/>
+		<text name="roundBales" text="Ladegut wählen: [1.3m Rundballen]"/>
+		<text name="squareBalesSH" text="Ladegut wählen: [Quaderballen Strohbergung]"/>
+		<text name="roundBalesSH110" text="Ladegut wählen: [1.1m Rundballen]"/>
+		<text name="roundBalesSH155" text="Ladegut wählen: [1.55m Rundballen]"/>
+		<text name="roundBalesSH180" text="Ladegut wählen: [1.8m Rundballen]"/>
+		<text name="pallets" text="Ladegut wählen: [Paletten]"/>
+		<text name="palletsSH" text="Ladegut wählen: [Pelletpaletten Strohbergung]"/>
+		<text name="ultima14" text="Ladegut wählen: [1.4m Rundballen]"/>
+		<text name="ultima15" text="Ladegut wählen: [1.5m Rundballen]"/>
+		<text name="smallSquareBales" text="Ladegut wählen: [HD-Ballen]"/>
+		<text name="jd18bales" text="Ladegut wählen: [1.8m Rundballen]"/>
+		<text name="boardPallets" text="Ladegut wählen: [Holzpaletten Hopfach]"/>
+		<text name="boardPallets2" text="Ladegut wählen: [Holzpaletten Multimap]"/>
+		<text name="eggBoxes" text="Ladegut wählen: [Eierkartons]"/>
+		<text name="cottonModules" text="Ladegut wählen: [Baumwolle]"/>
+		<text name="missionPallets" text="Ladegut wählen: [Missionspaletten]"/>
+		<text name="jdCottonBale" text="Ladegut wählen: [Runde Baumwollballen]"/>
+		<text name="function_easyAutoLoader" text="AutoLoader aktiviert. Ermöglicht das automatische Laden von Ballen und Paletten"/>
+		<text name="configuration_trailerStreetWheelsSingle" text="Strassenreifen (Single)"/>
+		<text name="configuration_trailerStreetWheelsDual" text="Strassenreifen (Dual)"/>
+		<text name="configuration_streetWheels" text="Strassenreifen"/>
+		<text name="configuration_agrarWheels" text="Agrarreifen"/>
+		<text name="configuration_offroadWheels" text="Geländereifen"/>
+		<text name="configuration_traktorWheelsMarks" text="Traktorreifen beschriftet"/>
+		<text name="configuration_traktorWheelsNoMarks" text="Traktorreifen"/>
+		<text name="configuration_moveDLP" text="verschiebe DLP Teile"/>
+		<text name="fj_moveRampOut" text="Rampen ausfahren"/>
+		<text name="fj_moveRampIn" text="Rampen einfahren"/>
+		<text name="input_fj_moveRamp" text="(FJ) Rampen ein- und ausfahren"/>
+		<text name="category_autoLoadLight" text="AutoLoad Light"/>
+		<text name="category_autoLoad" text="AutoLoad"/>
+		<text name="category_autoLoad_Hopfach" text="AutoLoad für die Hopfach Map"/>
+	</texts>
+</l10n>

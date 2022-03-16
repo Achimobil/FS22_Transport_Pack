@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!-- Revisions
+    06.03.2019	first conversion
+-->
+
+<wheel>
+    <default>
+        <physics radius="0.6" width="0.5" mass="0.128" tireType="mud" frictionScale="2" maxLongStiffness="9" maxLatStiffness="110" maxLatStiffnessLoad="2" />
+		<outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="15 20.5" />
+    </default>
+    <configurations>
+        <configuration id="MarksnoHub">
+            <tire filename="dynaloadparts/wheels/R38_TM900_Marks.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.03" isCareWheel="false" tireTrackAtlasIndex="2" />
+			<innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 20.5" />
+        </configuration>
+        <configuration id="NoMarksnoHub">
+            <tire filename="dynaloadparts/wheels/R38_TM900_NoMarks.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.03" isCareWheel="false" tireTrackAtlasIndex="2" />
+			<innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 20.5" />
+        </configuration>
+        <configuration id="MarksFront">
+            <tire filename="dynaloadparts/wheels/R38_TM900_Marks.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.03" isCareWheel="false" tireTrackAtlasIndex="2" />
+			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="4|0" nodeRight="4|1" offset="0.1" widthAndDiam="15 20.5" />
+        </configuration>
+        <configuration id="MarksBack">
+            <tire filename="dynaloadparts/wheels/R38_TM900_Marks.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.03" isCareWheel="false" tireTrackAtlasIndex="2" />
+			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="5|0" nodeRight="5|1" offset="0.02" widthAndDiam="18.9 18.9" />
+        </configuration>
+        <configuration id="NoMarksFront">
+            <tire filename="dynaloadparts/wheels/R38_TM900_NoMarks.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.03" isCareWheel="false" tireTrackAtlasIndex="2" />
+			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="4|0" nodeRight="4|1" offset="0.1" widthAndDiam="15 20.5" />
+        </configuration>
+        <configuration id="NoMarksBack">
+            <tire filename="dynaloadparts/wheels/R38_TM900_NoMarks.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.03" isCareWheel="false" tireTrackAtlasIndex="2" />
+			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="5|0" nodeRight="5|1" offset="0.02" widthAndDiam="18.9 18.9" />
+        </configuration>
+    </configurations>
+</wheel>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!-- Revisions
+    06.03.2019	first conversion
+-->
+
+<wheel>
+    <default>
+        <physics radius="0.57" width="0.315" mass="0.089" tireType="street" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="$data/shared/wheels/tires/lizard/implement/R22_5_DS.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.028" isCareWheel="false" tireTrackAtlasIndex="4" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="10.7 22.3" />
+        <innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="0|0" nodeRight="0|1" offset="0.07" widthAndDiam="10.7 22.3" />
+    </default>
+    <configurations>
+        <configuration id="noHub">
+			<innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 25"/>
+        </configuration>
+        <configuration id="truckFront">
+				<innerRim nodeLeft="4|0" nodeRight="4|1" offset="0.1" widthAndDiam="16 22" />
+	            <!--<innerRim nodeLeft="1|0" nodeRight="1|1" offset="0.15" /> -->
+        </configuration>
+        <configuration id="truckBack">
+            <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="10.7 22.3"/>
+
+            <!--<innerRim nodeLeft="2|0" nodeRight="2|1" offset="0" /> -->
+        </configuration>
+
+		<configuration id="dual" >
+            <innerRim filename="-" nodeLeft="-" nodeRight="-" offset="-" widthAndDiam="-" />
+        </configuration>
+        <configuration id="dualConnector" >
+            <innerRim nodeLeft="5|0" nodeRight="5|1" offset="-0.18" widthAndDiam="21.1 21.1" />
+        </configuration>
+    </configurations>
+</wheel>

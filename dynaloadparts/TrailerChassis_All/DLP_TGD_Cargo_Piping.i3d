@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="DLP_TGD_Piping-V02.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../../textures/Bibliothek/Piping/piping_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/Bibliothek/Piping/piping_specular.dds"/>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="AML_piping" materialId="4" customShaderId="3">
+      <Texture fileId="1"/>
+      <Glossmap fileId="2"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="DLP_TGD_Cargo_Piping.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="DLP_TGD_Cargo_Piping" clipDistance="300" nodeId="9">
+        <Shape shapeId="1" name="piping_front" clipDistance="300" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="piping_axle1" translation="-6.77626e-23 -2.84217e-16 -4.2" clipDistance="300" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="piping_axle2" translation="-6.77626e-23 -2.84217e-16 -5.8" clipDistance="300" nodeId="12" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="piping_rear" translation="0 0 -7.83" clipDistance="300" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

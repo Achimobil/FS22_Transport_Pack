@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="UVF001_DLP_UFS_rear-V02.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../../textures/Bibliothek/VehicleFunctions/Universal_VF001_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/Bibliothek/VehicleFunctions/Universal_VF001_normal.dds"/>
+    <File fileId="3" filename="../../textures/Bibliothek/VehicleFunctions/Universal_VF001_specular.dds"/>
+    <File fileId="8" filename="../../textures/Bibliothek/VehicleFunctions/npHolder_diffuse.dds"/>
+    <File fileId="9" filename="../../textures/Bibliothek/VehicleFunctions/npHolder_normal.dds"/>
+    <File fileId="10" filename="../../textures/Bibliothek/VehicleFunctions/npHolder_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="AML_Universal_VF001" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="npBlech_mat" materialId="5" customShaderId="4">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="UVF001_DLP_UFS_rear.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="UVF001_DLP_UFS_rear" nodeId="11">
+        <TransformGroup name="visuals" clipDistance="300" nodeId="12">
+          <Shape shapeId="1" name="ufs" translation="-1.35525e-22 0 0" clipDistance="300" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="collisions" clipDistance="300" nodeId="14"/>
+          <Shape shapeId="2" name="BackLowAttacher" translation="0 -0.33965 -0.0921447" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="attacherJointLowBack" translation="-6.7741e-08 0.0755046 -0.0979414" rotation="0 90 0" nodeId="16"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="functions" clipDistance="300" nodeId="17">
+          <TransformGroup name="lights" translation="0 -0.02 -0.07" clipDistance="300" nodeId="18">
+            <TransformGroup name="rearLights" translation="-1.35525e-22 0.02 0" nodeId="19">
+              <TransformGroup name="rearLights_li" translation="1.04 0 -0.003" nodeId="20">
+                <TransformGroup name="sharedLights_li" translation="-0.12 0.02 0.085" rotation="-90 0 180" nodeId="21"/>
+                <Light name="backLightsHigh_li" translation="-0.13 0 0" rotation="-15 0 0" clipDistance="75" nodeId="22" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
+                <Light name="brakeLightsHigh_li" translation="0.02 0 0" rotation="-15 0 0" clipDistance="75" nodeId="23" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
+                <Light name="reverseLight_li" translation="-0.04 0 0" rotation="-15 0 0" clipDistance="75" nodeId="24" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="110" dropOff="3"/>
+                <Light name="turnLightLeftBack" translation="0.126 0 0" rotation="-8 -5 -4.9886e-17" clipDistance="75" nodeId="25" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="140" dropOff="3"/>
+              </TransformGroup>
+              <TransformGroup name="rearLights_re" translation="-1.04 0 -0.003" nodeId="26">
+                <TransformGroup name="sharedLights_re" translation="0.12 0.02 0.085" rotation="-90 0 180" nodeId="27"/>
+                <Light name="backLightsHigh_re" translation="0.13 0 0" rotation="-15 0 0" clipDistance="75" nodeId="28" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
+                <Light name="brakeLightsHigh_re" translation="-0.02 0 0" rotation="-15 0 0" clipDistance="75" nodeId="29" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
+                <Light name="reverseLight_re" translation="0.04 0 0" rotation="-15 0 0" clipDistance="75" nodeId="30" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="110" dropOff="3"/>
+                <Light name="turnLightRightBack" translation="-0.126 0 0" rotation="-8 5 4.9886e-17" clipDistance="75" nodeId="31" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="140" dropOff="3"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="numberplates" translation="-0.015 -0.02 -0.085" clipDistance="300" nodeId="32">
+            <TransformGroup name="np_rear1Line" translation="0.93 -0.13 0.1" rotation="0 180 0" clipDistance="300" nodeId="33">
+              <Shape shapeId="3" name="npBlech1line" clipDistance="300" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="np_rear2Lines" translation="0.95 -0.13 0.1" rotation="0 180 0" clipDistance="300" nodeId="35">
+              <Shape shapeId="4" name="npBelch2line" clipDistance="300" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

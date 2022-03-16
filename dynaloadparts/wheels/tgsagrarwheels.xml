@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!-- Revisions
+    06.03.2019	first conversion
+-->
+
+<wheel>
+    <default>
+        <physics radius="0.559" width="0.65" mass="0.147" tireType="mud" frictionScale="2" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
+		<tire filename="$data/shared/wheels/tires/trelleborg/TwinRadial/R22_5_TwinRadial.i3d" nodeLeft="0|0" nodeRight="0|1" maxDeformation="0.06" isCareWheel="false" tireTrackAtlasIndex="2" />
+		<outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="1|0" widthAndDiam="16 22.5"/>
+    </default>
+    <configurations>
+        <configuration id="noHub">
+            <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="16 22.5"/>
+        </configuration>
+        <configuration id="truckFront">
+			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="4|0" nodeRight="4|1" offset="0.1" widthAndDiam="16 22.5" />
+        </configuration>
+        <configuration id="truckBack">
+			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="5|0" nodeRight="5|1" offset="0.02" widthAndDiam="20.9 20.9" />
+        </configuration>
+    </configurations>
+</wheel>

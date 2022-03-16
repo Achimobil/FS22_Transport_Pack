@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!-- Revisions
+    06.03.2019	first conversion
+-->
+
+<wheel>
+    <default>
+        <physics radius="0.55" width="0.5"  mass="0.128" tireType="mud" frictionScale="2" maxLongStiffness="9" maxLatStiffness="110" maxLatStiffnessLoad="2" />
+		<tire filename="dynaloadparts/wheels/R20_TRI2.i3d" nodeLeft="1|0" nodeRight="1|0" maxDeformation="0.03"  isCareWheel="false" tireTrackAtlasIndex="2"/>
+		<outerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 21.5"/>
+    </default>
+    <configurations>
+        <configuration id="noHub">
+            <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 22.5"/>
+        </configuration>
+        <configuration id="truckFront">
+			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="4|0" nodeRight="4|1" offset="0.1" widthAndDiam="15 22.5" />
+        </configuration>
+        <configuration id="truckBack">
+			<innerRim filename="$data/shared/wheels/hubs/hubTrucks.i3d" nodeLeft="5|0" nodeRight="5|1" widthAndDiam="20.9 20.9" />
+        </configuration>
+    </configurations>
+</wheel>

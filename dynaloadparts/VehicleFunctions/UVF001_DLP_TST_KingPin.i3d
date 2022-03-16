@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="UVF001_DLP_TST_KingPin-V02.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="1" filename="../../textures/Bibliothek/VehicleFunctions/Universal_VF001_diffuse.dds"/>
+        <File fileId="2" filename="../../textures/Bibliothek/VehicleFunctions/Universal_VF001_normal.dds"/>
+        <File fileId="3" filename="../../textures/Bibliothek/VehicleFunctions/Universal_VF001_specular.dds"/>
+    </Files>
+    <Materials>
+        <Material name="AML_Universal_VF001" materialId="4" customShaderId="4">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="1 1 20 20"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="UVF001_DLP_TST_KingPin.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="UVF001_DLP_TST_KingPin" clipDistance="300" nodeId="7">
+            <TransformGroup name="Joints" nodeId="8">
+                <TransformGroup name="joint1" translation="0 0 -0.000374123" rotation="88.4518 -0 0" nodeId="9">
+                    <TransformGroup name="joint2" translation="0 -4.16334e-19 0.0202366" rotation="-88.4518 0 0" nodeId="10">
+                        <TransformGroup name="SemiAttacher" translation="0 0.000229176 -0.000172612" rotation="0 90 0" clipDistance="300" nodeId="11"/>
+                    </TransformGroup>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="visuals" clipDistance="300" nodeId="12">
+                <Shape shapeId="1" name="KingPin" clipDistance="300" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes>
+        <UserAttribute nodeId="9">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="10">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>

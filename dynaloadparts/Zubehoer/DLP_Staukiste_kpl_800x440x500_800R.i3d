@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="DLP_Staukiste_kpl_800x440x500_800R-V01.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="5" filename="../../shaders/vehicleShader.xml" relativePath="true"/>
+        <File fileId="1" filename="../../textures/Bibliothek/Zubehoer/staukaesten_diffuse.dds" relativePath="true"/>
+        <File fileId="2" filename="../../textures/Bibliothek/Zubehoer/staukaesten_normal.dds" relativePath="true"/>
+        <File fileId="3" filename="../../textures/Bibliothek/Zubehoer/staukaesten_specular.dds" relativePath="true"/>
+        <File fileId="4" filename="../../textures/_shared_/rough_cube.dds" relativePath="true"/>
+    </Files>
+    <Materials>
+        <Material name="Ref:AML_Staukaesten" materialId="315" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="5">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2" bumpDepth="0.3"/>
+            <Glossmap fileId="3"/>
+            <Reflectionmap fileId="4" wrap="false" lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="cube" scaling="1" refractiveIndex="1" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+            <CustomParameter name="RDT" value="1 1 20 20"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="DLP_Staukiste_kpl_800x440x500_800R.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="DLP_Staukiste" clipDistance="300" nodeId="598">
+            <Shape shapeId="1" name="Staukiste_kpl_800x440x500_800R" clipDistance="300" nodeId="599" materialIds="315" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>
