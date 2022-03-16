@@ -8,7 +8,7 @@
     <default>
         <physics radius="0.55" width="0.5"  mass="0.128" tireType="mud" frictionScale="2" maxLongStiffness="9" maxLatStiffness="110" maxLatStiffnessLoad="2" />
 		<tire filename="dynaloadparts/wheels/R20_TRI2.i3d" nodeLeft="1|0" nodeRight="1|0" maxDeformation="0.03"  isCareWheel="false" tireTrackAtlasIndex="2"/>
-		<outerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 21.5"/>
+		<outerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="3|0" nodeRight="3|1" widthAndDiam="15 26"/>
     </default>
     <configurations>
         <configuration id="noHub">
