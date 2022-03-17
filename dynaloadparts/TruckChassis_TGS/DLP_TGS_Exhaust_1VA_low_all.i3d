@@ -1,69 +1,88 @@
-﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
+
 <i3D name="DLP_TGS_Exhaust_1VA_low_all" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
-    <Asset>
-        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
-    </Asset>
-    <Files>
-        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
-        <File fileId="6" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSDecals_diffuse.dds"/>
-        <File fileId="1" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_diffuse.dds"/>
-        <File fileId="2" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_normal.dds"/>
-        <File fileId="3" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_specular.dds"/>
-        <File fileId="5" filename="../../textures/_shared_/dirt_normal.dds"/>
-    </Files>
-    <Materials>
-        <Material name="AML_TGSExterior" materialId="4" customShaderId="4" customShaderVariation="colorMask">
-            <Texture fileId="1"/>
-            <Normalmap fileId="2"/>
-            <Glossmap fileId="3"/>
-            <Custommap name="DirtNmap" fileId="5"/>
-            <CustomParameter name="RDT" value="1 1 20 20"/>
-            <CustomParameter name="colorScale" value="0.8 0.55 0.055 1"/>
-        </Material>
-        <Material name="AML_TGSDecalsExterior" materialId="5" specularColor="0.447059 1 0.447059">
-            <Texture fileId="6"/>
-        </Material>
-    </Materials>
-    <Shapes externalShapesFile="DLP_TGS_Exhaust_1VA_low_all.i3d.shapes"/>
-    <Dynamics/>
-    <Scene>
-        <TransformGroup name="DLP_TGS_Exhaust_1VA_low_all" clipDistance="300" nodeId="19">
-            <TransformGroup name="Exhausts" clipDistance="300" nodeId="20">
-                <TransformGroup name="VA1_common_all" clipDistance="300" nodeId="21">
-                    <Shape shapeId="1" name="TGS_VA1_Exhaust_framebracket_hi" clipDistance="300" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="2" name="TGS_VA1_Exhaust_framebracket_vo" clipDistance="300" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="3" name="TGS_VA1_Exhaust_frame" clipDistance="300" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="4" name="TGS_VA1_Exhaust_topf" clipDistance="300" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="5" name="TGS_VA1_Exhaust_backCover_rechts" clipDistance="300" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="6" name="TGS_VA1_Exhaust_sideCover_re" clipDistance="300" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="7" name="TGS_VA1_Exhaust_frameMount_reob" clipDistance="300" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="8" name="TGS_VA1_Exhaust_frameMount_reun" clipDistance="300" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="9" name="TGS_VA1_Exhaust_intake_rechts" clipDistance="300" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                </TransformGroup>
-                <TransformGroup name="VA1_common_low" clipDistance="300" nodeId="31">
-                    <Shape shapeId="10" name="TGS_VA1_Exhaust_pipe_rechts" clipDistance="300" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="11" name="TGS_VA1_Exhaust_topcover_low" clipDistance="300" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true"/>
-                </TransformGroup>
-                <TransformGroup name="TGS_Exhaust_decals_1VA_low" clipDistance="300" nodeId="34">
-                    <Shape shapeId="12" name="TGS_VA1_Exhaust_Decal_Schrift" rotation="-90 0 0" clipDistance="300" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
-                </TransformGroup>
-            </TransformGroup>
-            <TransformGroup name="Particles_1VA_low" clipDistance="300" nodeId="36">
-                <TransformGroup name="PipeLow1VA_right" translation="-1.19 0.4 0.13" rotation="-85.5 45.5 1.5" clipDistance="300" nodeId="37"/>
-                <TransformGroup name="PipeLow1VA_left" translation="1.19 0.4 0.13" rotation="-85.5 -45.5 1.5" clipDistance="300" nodeId="38"/>
-            </TransformGroup>
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSDecals_diffuse.dds"/>
+    <File fileId="1" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_normal.dds"/>
+    <File fileId="3" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSExterior_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="AML_TGSDecalsExterior" materialId="5" specularColor="0.447059 1 0.447059">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="AML_TGSExterior" materialId="4" customShaderId="4" customShaderVariation="colorMask">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="DLP_TGS_Exhaust_1VA_low_all.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="DLP_TGS_Exhaust_1VA_low_all" clipDistance="300" nodeId="19">
+        <TransformGroup name="Exhausts" clipDistance="300" nodeId="20">
+          <TransformGroup name="VA1_common_all" clipDistance="300" nodeId="21">
+            <Shape shapeId="1" name="TGS_VA1_Exhaust_framebracket_hi" clipDistance="300" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="TGS_VA1_Exhaust_framebracket_vo" clipDistance="300" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="TGS_VA1_Exhaust_frame" clipDistance="300" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="TGS_VA1_Exhaust_topf" clipDistance="300" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="TGS_VA1_Exhaust_backCover_rechts" clipDistance="300" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="TGS_VA1_Exhaust_sideCover_re" clipDistance="300" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="TGS_VA1_Exhaust_frameMount_reob" clipDistance="300" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="TGS_VA1_Exhaust_frameMount_reun" clipDistance="300" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="9" name="TGS_VA1_Exhaust_intake_rechts" clipDistance="300" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="VA1_common_low" clipDistance="300" nodeId="31">
+            <Shape shapeId="10" name="TGS_VA1_Exhaust_pipe_rechts" clipDistance="300" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="TGS_VA1_Exhaust_topcover_low" clipDistance="300" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="TGS_Exhaust_decals_1VA_low" clipDistance="300" nodeId="34">
+            <Shape shapeId="12" name="TGS_VA1_Exhaust_Decal_Schrift" rotation="-90 0 0" clipDistance="300" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
         </TransformGroup>
-    </Scene>
-    <UserAttributes>
-        <UserAttribute nodeId="35">
-            <Attribute name="MaxHandle" type="integer" value="1305"/>
-            <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
-            <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
-            <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
-            <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
-            <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
-            <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
-            <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
-        </UserAttribute>
-    </UserAttributes>
+        <TransformGroup name="Particles_1VA_low" clipDistance="300" nodeId="36">
+          <TransformGroup name="PipeLow1VA_right" translation="-1.19 0.4 0.13" rotation="-85.5 45.5 1.5" clipDistance="300" nodeId="37"/>
+          <TransformGroup name="PipeLow1VA_left" translation="1.19 0.4 0.13" rotation="-85.5 -45.5 1.5" clipDistance="300" nodeId="38"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="35">
+      <Attribute name="MaxHandle" type="integer" value="1305"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032method" type="integer" value="6"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032parametricFBXASC032subdivisionFBXASC032level" type="integer" value="5"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032smoothingFBXASC032on" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
+      <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
 </i3D>

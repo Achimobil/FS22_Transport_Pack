@@ -5,10 +5,9 @@
     </Asset>
     <Files>
         <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
-        <File fileId="39" filename="$data/fs19support/shaders/dashboardLightsShader.xml"/>
+        <File fileId="39" filename="$data/shaders/dashboardLightsShader.xml"/>
         <File fileId="28" filename="$data/shaders/mirrorShader.xml"/>
-        <File fileId="30" filename="$data/fs19support/shaders/numberShader.xml"/>
-        <File fileId="20" filename="$data/fs19support/shaders/vehicleShader.xml"/>
+        <File fileId="20" filename="$data/shaders/vehicleShader.xml"/>
         <File fileId="34" filename="../../FS19/data/shared/clearGlass_diffuse.dds"/>
         <File fileId="18" filename="../../FS19/data/shared/default_normal.png"/>
         <File fileId="25" filename="../../FS19/data/shared/default_specular.png"/>
