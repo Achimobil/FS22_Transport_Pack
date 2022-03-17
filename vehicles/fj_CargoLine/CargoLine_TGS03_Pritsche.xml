@@ -30,7 +30,7 @@
             <component centerOfMass="0 0.25 -0.50" solverIterationCount="10" mass="9314"/>
         </components>
         <schemaOverlay name="VEHICLE" attacherJointPosition="0 0"/>
-        <sounds filename="sounds/fj_sounds.xml"/>
+		<sounds filename="$data/vehicles/man/tgx26640/sounds/tgx26640.xml"/>
     </base>
 
     <configurationSets>
@@ -43,7 +43,7 @@
     </configurationSets>
 
     <vehicleTypeConfigurations>
-        <vehicleTypeConfiguration name="$l10n_configuration_valueDefault" price="0" vehicleType="transportTrailer"/>
+        <vehicleTypeConfiguration name="$l10n_configuration_valueDefault" price="0" vehicleType="woodTruck"/>
         <vehicleTypeConfiguration name="$l10n_category_autoLoad" price="10000" vehicleType="fjPritscheTruck"/>
     </vehicleTypeConfigurations>
 
@@ -52,17 +52,17 @@
             <wheelConfiguration name="$l10n_configuration_streetWheels" price="0" brand="LIZARD">
                 <wheels autoRotateBackSpeed="1.7">
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|0|0" driveNode="0>0|2|0|0|0|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.00"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckFront" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
+                        <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="30" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.00"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="-0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="true" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="0.05"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="10" suspTravel="0.22" spring="82" damper="50" maxLatStiffness="350" yOffset="-0.05"/>
                         <additionalWheel filename="dynaloadparts/wheels/tgsstreetWheels.xml" isLeft="false" configId="truckBack" offset="-0.38" hasTireTracks="true"/>
                     </wheel>
                 </wheels>
@@ -79,10 +79,10 @@
                         <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="-0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsagrarwheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="-0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|0|6|3|2" visibilityActive="true" visibilityInactive="false"/>
@@ -96,10 +96,10 @@
                         <physics rotSpeed="1" restLoad="3.3" repr="0>0|2|0|0|1|0" driveNode="0>0|2|0|0|1|0|0|0" forcePointRatio="0.2" initialCompression="40" suspTravel="0.4" spring="30" damper="50"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="true" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|0" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="-0.05"/>
                     </wheel>
                     <wheel filename="dynaloadparts/wheels/tgsoffroadWheels.xml" configId="truckBack" isLeft="false" hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="0.05"/>
+                        <physics rotSpeed="0" restLoad="1.6" repr="0>0|2|0|1|1" forcePointRatio="0.3" initialCompression="15" suspTravel="0.3" spring="55" damper="55" yOffset="-0.05"/>
                     </wheel>
                 </wheels>
                 <objectChange node="0>0|0|6|3|3" visibilityActive="true" visibilityInactive="false"/>
@@ -151,7 +151,7 @@
     <dynamicallyLoadedParts>
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|6|1" filename="dynaloadparts/VehicleFunctions/UVF001_DLP_UFS_rear.i3d"/> -->
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|6|2" filename="dynaloadparts/VehicleFunctions/DLP_VF_TrailerAttacherRearWithDH.i3d"/> -->
-        <dynamicallyLoadedPart node="0" linkNode="0>0|0|3" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Typenschilder_18t.i3d"/>
+        <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|3" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Typenschilder_18t.i3d"/> -->
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|0" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_TopGlassDecal_fj.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|1" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_NFM_TGS_Cabtuer.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|2" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Birkenfeld_TGS_Cabtuer.i3d"/>
@@ -168,8 +168,8 @@
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|13" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Hirschfeld_TGS_Cabtuer.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|8|1" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_RearFenderDecals_FJ.i3d"/>
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|0" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Cabin_M.i3d"/> -->
-        <dynamicallyLoadedPart node="0" linkNode="0>0|0|1" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Exhaust_1VA_low_all.i3d"/>
-        <dynamicallyLoadedPart node="0" linkNode="0>1|1|1|0|0" filename="dynaloadparts/VehicleFunctions/DLP_VF_TGS_Twin_WorklightBack.i3d"/>
+        <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|1" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Exhaust_1VA_low_all.i3d"/> -->
+        <!-- <dynamicallyLoadedPart node="0" linkNode="0>1|1|1|0|0" filename="dynaloadparts/VehicleFunctions/DLP_VF_TGS_Twin_WorklightBack.i3d"/> -->
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|0" filename="dynaloadparts/CargoLine/DLP_CargoLine_App_Pritsche.i3d"/> -->
         <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|1" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_800x440x500_800L.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>1|0|1|0|2|2" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_640x440x500_800.i3d"/>
@@ -278,7 +278,7 @@
         </sounds>
     </lights>
 
-    <enterable>
+    <enterable isTabbable="true">
         <exitPoint node="0>0|1|2"/>
         <enterReferenceNode node="0>"/>
         <characterNode node="0>0|0|0|0|1|1|0" cameraMinDistance="1.5" spineRotation="-90 0 90">
@@ -307,7 +307,8 @@
         <consumerConfigurations>
             <consumerConfiguration>
                 <consumer fillUnitIndex="1" usage="192" fillType="diesel"/>
-                <consumer fillUnitIndex="2" usage="300" fillType="air" permanentConsumption="false" refillLitersPerSecond="350" refillCapacityPercentage="0.5"/>
+                <consumer fillUnitIndex="3" usage="300" fillType="air" permanentConsumption="false" refillLitersPerSecond="350" refillCapacityPercentage="0.5"/>
+				<consumer fillUnitIndex="2" usage="20" fillType="def" />
             </consumerConfiguration>
         </consumerConfigurations>
         <motorConfigurations>
@@ -321,6 +322,7 @@
                     <torque normRpm="1" torque="0.7"/>
                 </motor>
                 <transmission minForwardGearRatio="8.4" maxForwardGearRatio="150" minBackwardGearRatio="40" maxBackwardGearRatio="150"/>
+                <objectChange node="0>0|0|3|0|0" visibilityActive="true" visibilityInactive="false"/>
             </motorConfiguration>
             <motorConfiguration name="D2676LF52" hp="460" price="5000">
                 <motor torqueScale="1.948" minRpm="1000" maxRpm="2200" maxForwardSpeed="83" maxBackwardSpeed="18" brakeForce="11" lowBrakeForceScale="0.2" lowBrakeForceSpeedLimit="1" rotInertia="0.0015">
@@ -332,6 +334,7 @@
                     <torque normRpm="1" torque="0.7"/>
                 </motor>
                 <transmission minForwardGearRatio="8.4" maxForwardGearRatio="150" minBackwardGearRatio="40" maxBackwardGearRatio="150"/>
+                <objectChange node="0>0|0|3|0|1" visibilityActive="true" visibilityInactive="false"/>
             </motorConfiguration>
             <motorConfiguration name="D2676LF51" hp="500" price="10000">
                 <motor torqueScale="2.117" minRpm="1000" maxRpm="2200" maxForwardSpeed="83" maxBackwardSpeed="18" brakeForce="11" lowBrakeForceScale="0.2" lowBrakeForceSpeedLimit="1" rotInertia="0.0015">
@@ -343,6 +346,7 @@
                     <torque normRpm="1" torque="0.7"/>
                 </motor>
                 <transmission minForwardGearRatio="8.4" maxForwardGearRatio="150" minBackwardGearRatio="40" maxBackwardGearRatio="150"/>
+                <objectChange node="0>0|0|3|0|2" visibilityActive="true" visibilityInactive="false"/>
             </motorConfiguration>
         </motorConfigurations>
         <differentialConfigurations>
@@ -368,6 +372,16 @@
             <dashboard valueType="rpm" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="rpmDisplay" minValueAnim="500" maxValueAnim="3000"/>
         </dashboards>
     </motorized>
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+        <default>
+            <dashboard displayType="EMITTER" node="0>0|0|0|0|1|10|1|1" idleValue="-1" intensity="0.3" groups="MOTOR_ACTIVE"/>
+        </default>
+    </dashboard>
 
     <drivable>
         <sounds>
@@ -456,11 +470,12 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit capacity="700" fillTypes="DIESEL" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort">
-                        <dashboard valueType="fillLevel" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="fuelDisplay"/>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="800">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
                     </fillUnit>
-                    <fillUnit capacity="10000" fillTypes="AIR" showOnHud="false" showInShop="false" unitTextOverride="$l10n_unit_literShort">
-                        <dashboard valueType="fillLevel" displayType="ANIMATION" groups="MOTOR_ACTIVE" animName="airDisplay"/>
+					<fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" showOnInfoHud="false" fillTypes="def" capacity="120"/>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="air" capacity="4000" >
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="airDisplay" groups="MOTOR_ACTIVE"/>
                     </fillUnit>
                 </fillUnits>
             </fillUnitConfiguration>
@@ -809,37 +824,6 @@
         <vehicleTypeConfiguration vehicleType="fjPritscheTruck"/>
     </vehicleTypeConfigurations>
 
-    <motorized>
-        <motorConfigurations>
-            <motorConfiguration>
-                <objectChange node="0>0|0|3|0|0" visibilityActive="true" visibilityInactive="false"/>
-            </motorConfiguration>
-            <motorConfiguration>
-                <objectChange node="0>0|0|3|0|1" visibilityActive="true" visibilityInactive="false"/>
-            </motorConfiguration>
-            <motorConfiguration>
-                <objectChange node="0>0|0|3|0|2" visibilityActive="true" visibilityInactive="false"/>
-            </motorConfiguration>
-        </motorConfigurations>
-    </motorized>
-
-    <dashboard>
-        <groups>
-            <group name="MOTOR_STARTING" isMotorStarting="true"/>
-            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
-        </groups>
-        <default>
-            <dashboard displayType="EMITTER" node="0>0|0|0|0|1|10|1|1" idleValue="-1" intensity="0.3" groups="MOTOR_ACTIVE"/>
-        </default>
-    </dashboard>
-
-    <easyAutoLoad objectsIndex="ealObjectsIndex" triggersIndex="ealTriggersIndex" markerPositionsIndex="ealMarkerPositionsIndex" markerIndex="ealMarkerIndex" triggerAnimation="moveTrigger" centerMarkerIndex="1" unloadHeightOffset="-0.7">
-        <levelBarOptions coloredIcons="true" iconColor="0.6307 0.6307 0.6307 1" fillLevelColor="0.991 0.3865 0.01 1"/>
-        <palletIcon colorIcon="textures/pallet.png" overlayIcon="textures/palletIconOverlay.png"/>
-        <roundBaleIcon colorIcon="textures/roundBale.png" overlayIcon="textures/roundBaleIconOverlay.png"/>
-        <squareBaleIcon colorIcon="textures/squareBale.png" overlayIcon="textures/squareBaleIconOverlay.png"/>
-        <moveableMarkerOptions minX="0 4 -25 -25" maxX="0 25 25 -4" minY="0 -0.7 -0.7 -0.7" maxY="0 15 15 15" minZ="0 -20 -30 -20" maxZ="0 20 -16 20" markerMoveSpeed="0.05"/>
-    </easyAutoLoad>
 </vehicle>
 -->
 </vehicle>

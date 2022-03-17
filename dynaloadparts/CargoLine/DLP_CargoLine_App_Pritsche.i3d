@@ -1,67 +1,80 @@
-﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
+
 <i3D name="DLP_CargoLine_App_Pritsche-V01.0036" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
-    <Asset>
-        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
-    </Asset>
-    <Files>
-        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
-        <File fileId="3" filename="../../textures/Equipment/CargoLine/CargoLine_App_Pritsche_Specular.dds"/>
-        <File fileId="1" filename="../../textures/Equipment/CargoLine/CargoLine_App_Pritsche_diffuse.dds"/>
-        <File fileId="2" filename="../../textures/Equipment/CargoLine/CargoLine_App_Pritsche_normal.dds"/>
-    </Files>
-    <Materials>
-        <Material name="AML_CargoLine_App_Pritsche" materialId="4" customShaderId="4" customShaderVariation="colorMask">
-            <Texture fileId="1"/>
-            <Normalmap fileId="2" bumpDepth="0.3"/>
-            <Glossmap fileId="3"/>
-            <CustomParameter name="RDT" value="1 1 20 20"/>
-            <CustomParameter name="colorScale" value="0.8 0.55 0.055 1"/>
-        </Material>
-    </Materials>
-    <Shapes externalShapesFile="DLP_CargoLine_App_Pritsche.i3d.shapes"/>
-    <Dynamics/>
-    <Scene>
-        <TransformGroup name="DLP_CargoLine_App_Pritsche" clipDistance="300" nodeId="7">
-            <TransformGroup name="Joints" clipDistance="300" nodeId="8">
-                <TransformGroup name="joint1_origin" nodeId="9">
-                    <TransformGroup name="joint2_rear" translation="0 0 -12.8" nodeId="10">
-                        <TransformGroup name="joint3_ballenGitter" translation="0 0.025 -0.13" nodeId="11"/>
-                        <TransformGroup name="joint5Splint_li" translation="0.3 0 0" nodeId="12"/>
-                        <TransformGroup name="joint6_Splint_re" translation="-0.3 0 2.27374e-15" nodeId="13"/>
-                        <TransformGroup name="joint4_AuffahrRampen" translation="0 -0.07 3.265" nodeId="14">
-                            <TransformGroup name="joint7_platte_li" translation="1 8.88178e-18 2.27374e-15" nodeId="15"/>
-                            <TransformGroup name="joint8_platte_re" translation="-1 8.88178e-18 2.27374e-15" nodeId="16"/>
-                        </TransformGroup>
-                    </TransformGroup>
-                </TransformGroup>
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="../../textures/Equipment/CargoLine/CargoLine_App_Pritsche_Specular.dds"/>
+    <File fileId="1" filename="../../textures/Equipment/CargoLine/CargoLine_App_Pritsche_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/Equipment/CargoLine/CargoLine_App_Pritsche_normal.dds"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="AML_CargoLine_App_Pritsche" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.3"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="DLP_CargoLine_App_Pritsche.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="DLP_CargoLine_App_Pritsche" clipDistance="300" nodeId="7">
+        <TransformGroup name="Joints" clipDistance="300" nodeId="8">
+          <TransformGroup name="joint1_origin" nodeId="9">
+            <TransformGroup name="joint2_rear" translation="0 0 -12.8" nodeId="10">
+              <TransformGroup name="joint3_ballenGitter" translation="0 0.025 -0.13" nodeId="11"/>
+              <TransformGroup name="joint5Splint_li" translation="0.3 0 0" nodeId="12"/>
+              <TransformGroup name="joint6_Splint_re" translation="-0.3 0 2.27374e-15" nodeId="13"/>
+              <TransformGroup name="joint4_AuffahrRampen" translation="0 -0.07 3.265" nodeId="14">
+                <TransformGroup name="joint7_platte_li" translation="1 8.88178e-18 2.27374e-15" nodeId="15"/>
+                <TransformGroup name="joint8_platte_re" translation="-1 8.88178e-18 2.27374e-15" nodeId="16"/>
+              </TransformGroup>
             </TransformGroup>
-            <Shape shapeId="1" name="App_visuals" clipDistance="300" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true" skinBindNodeIds="9 10 11 12 13 14 15 16"/>
+          </TransformGroup>
         </TransformGroup>
-    </Scene>
-    <UserAttributes>
-        <UserAttribute nodeId="9">
-            <Attribute name="liw" type="boolean" value="false"/>
-        </UserAttribute>
-        <UserAttribute nodeId="10">
-            <Attribute name="liw" type="boolean" value="false"/>
-        </UserAttribute>
-        <UserAttribute nodeId="11">
-            <Attribute name="liw" type="boolean" value="false"/>
-        </UserAttribute>
-        <UserAttribute nodeId="12">
-            <Attribute name="liw" type="boolean" value="false"/>
-        </UserAttribute>
-        <UserAttribute nodeId="13">
-            <Attribute name="liw" type="boolean" value="false"/>
-        </UserAttribute>
-        <UserAttribute nodeId="14">
-            <Attribute name="liw" type="boolean" value="false"/>
-        </UserAttribute>
-        <UserAttribute nodeId="15">
-            <Attribute name="liw" type="boolean" value="false"/>
-        </UserAttribute>
-        <UserAttribute nodeId="16">
-            <Attribute name="liw" type="boolean" value="false"/>
-        </UserAttribute>
-    </UserAttributes>
+        <Shape shapeId="1" name="App_visuals" clipDistance="300" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true" skinBindNodeIds="9 10 11 12 13 14 15 16"/>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="9">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="10">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="11">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="12">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="13">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="14">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="15">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="16">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+
 </i3D>
