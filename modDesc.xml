@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="61">
+<modDesc descVersion="64">
     <author>Friesenjung</author>
 
-    <version>2.2.0.0</version>
+    <version>0.1.0.0</version>
 
     <title>
         <en>Friesenjung Transport Pack</en>
-        <de>Friesenjung Transport Pack</de>
+        <de>Friesenjung Transport Packet</de>
     </title>
 
     <description>
@@ -32,9 +32,6 @@
         <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TST08_Pritsche.xml"/>
     </storeItems>
 
-    <brands>
-        <brand name="MAN" title="MAN" image="store/brand_man.dds"/>
-    </brands>
     <dependencies>
         <dependency>FS22_aPalletAutoLoader</dependency>
     </dependencies>

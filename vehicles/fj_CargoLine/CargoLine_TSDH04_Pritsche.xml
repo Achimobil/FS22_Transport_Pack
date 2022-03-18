@@ -341,6 +341,7 @@
     </designConfigurations>
 
     <washable dirtDuration="90" washDuration="1" workMultiplier="4"/>
+    <wearable wearDuration="1800" workMultiplier="2" fieldMultiplier="5"/>
     <!-- <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true"> -->
         <!-- <colorNode node="0>1|0|0|0|0"/> -->
         <!-- <colorNode node="0>1|0|1|0|2|0|0|1"/> -->

@@ -820,6 +820,7 @@
     </designConfigurations>
 
     <washable dirtDuration="90" washDuration="1" workMultiplier="4"/>
+    <wearable wearDuration="1800" workMultiplier="2" fieldMultiplier="5"/>
     <honk>
         <sound linkNode="0>" template="HONK_TRUCK"/>
     </honk>
