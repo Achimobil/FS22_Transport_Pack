@@ -427,26 +427,26 @@
               <TransformGroup name="jointNode" clipDistance="300" nodeId="308"/>
               <TransformGroup name="tensionBelts_modulPack1" clipDistance="300" nodeId="309">
                 <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="310">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" rotation="0 -90 0" clipDistance="300" nodeId="311"/>
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="311"/>
                 </TransformGroup>
                 <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="312">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" rotation="0 -90 0" clipDistance="300" nodeId="313"/>
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="313"/>
                 </TransformGroup>
               </TransformGroup>
               <TransformGroup name="tensionBelts_modulPack2" translation="0 0 -1.6" clipDistance="300" nodeId="314">
                 <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="315">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" rotation="0 -90 0" clipDistance="300" nodeId="316"/>
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="316"/>
                 </TransformGroup>
                 <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="317">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" rotation="0 -90 0" clipDistance="300" nodeId="318"/>
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="318"/>
                 </TransformGroup>
               </TransformGroup>
               <TransformGroup name="tensionBelts_modulPack3" translation="0 0 -3.2" clipDistance="300" nodeId="319">
                 <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="320">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" rotation="0 -90 0" clipDistance="300" nodeId="321"/>
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="321"/>
                 </TransformGroup>
                 <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="322">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" rotation="0 -90 0" clipDistance="300" nodeId="323"/>
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="323"/>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>

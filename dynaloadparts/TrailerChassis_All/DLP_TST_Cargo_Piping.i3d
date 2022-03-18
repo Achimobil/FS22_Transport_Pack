@@ -1,35 +1,46 @@
-﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
+
 <i3D name="DLP_TST_Cargo_Piping-V01.0003" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
-    <Asset>
-        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
-    </Asset>
-    <Files>
-        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
-        <File fileId="1" filename="../../textures/Bibliothek/Piping/piping_diffuse.dds"/>
-        <File fileId="2" filename="../../textures/Bibliothek/Piping/piping_normal.dds"/>
-        <File fileId="3" filename="../../textures/Bibliothek/Piping/piping_specular.dds"/>
-        <File fileId="5" filename="../../textures/_shared_/dirt_normal.dds"/>
-    </Files>
-    <Materials>
-        <Material name="AML_piping" materialId="4" customShaderId="4">
-            <Texture fileId="1"/>
-            <Normalmap fileId="2"/>
-            <Glossmap fileId="3"/>
-            <Custommap name="DirtNmap" fileId="5"/>
-            <CustomParameter name="RDT" value="1 1 20 20"/>
-        </Material>
-    </Materials>
-    <Shapes externalShapesFile="DLP_TST_Cargo_Piping.i3d.shapes"/>
-    <Dynamics/>
-    <Scene>
-        <TransformGroup name="DLP_TST_Cargo_Piping" clipDistance="300" nodeId="13">
-            <Shape shapeId="1" name="piping_front" clipDistance="300" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="piping_bow" clipDistance="300" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="piping_straight" clipDistance="300" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="piping_axle1" clipDistance="300" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="5" name="piping_axle2" clipDistance="300" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="piping_axle3" clipDistance="300" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="7" name="piping_rear" clipDistance="300" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
-        </TransformGroup>
-    </Scene>
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../../textures/Bibliothek/Piping/piping_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/Bibliothek/Piping/piping_normal.dds"/>
+    <File fileId="3" filename="../../textures/Bibliothek/Piping/piping_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="AML_piping" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="DLP_TST_Cargo_Piping.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="DLP_TST_Cargo_Piping" clipDistance="300" nodeId="13">
+        <Shape shapeId="1" name="piping_front" clipDistance="300" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="piping_bow" clipDistance="300" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="piping_straight" clipDistance="300" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="piping_axle1" clipDistance="300" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="piping_axle2" clipDistance="300" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="piping_axle3" clipDistance="300" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="piping_rear" clipDistance="300" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
 </i3D>
