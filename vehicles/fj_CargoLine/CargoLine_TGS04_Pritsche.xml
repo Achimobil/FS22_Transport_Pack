@@ -183,7 +183,7 @@
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|6|1" filename="dynaloadparts/VehicleFunctions/UVF001_DLP_UFS_rear.i3d"/> -->
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|6|2" filename="dynaloadparts/VehicleFunctions/DLP_VF_TrailerAttacherRearWithDH.i3d"/> -->
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|0|3" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_Typenschilder_26t.i3d"/> -->
-        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|0" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_TopGlassDecal_fj.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|0" filename="dynaloadparts/TruckChassis_TGS/DLP_TGS_TopGlassDecal_MAN01.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|1" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_NFM_TGS_Cabtuer.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|2" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Birkenfeld_TGS_Cabtuer.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|4|3" filename="dynaloadparts/TruckChassis_TGS/DLP_FJ_Hopfach_TGS_Cabtuer.i3d"/>
