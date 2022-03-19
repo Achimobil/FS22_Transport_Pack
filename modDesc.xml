@@ -38,10 +38,10 @@
 
     <vehicleTypes>
         <type name="fjPritscheTruck" parent="woodTruck" filename="$dataS/scripts/vehicles/Vehicle.lua">
-            <!-- <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/> -->
+            <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
         </type>
         <type name="fjPritscheTrailer" parent="transportTrailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
-            <!-- <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/> -->
+            <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
         </type>
     </vehicleTypes>
     
