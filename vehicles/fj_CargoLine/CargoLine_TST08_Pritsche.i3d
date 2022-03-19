@@ -52,92 +52,94 @@
 
 
   <Materials>
-    <Material name="AML_AllTrailerAchse" materialId="1388" customShaderId="5">
+    <Material name="AML_AllTrailerAchse" materialId="4" customShaderId="5">
       <Texture fileId="12"/>
       <Normalmap fileId="13"/>
       <Glossmap fileId="14"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="AML_CargoLine_App_Pritsche" materialId="1374" customShaderId="5">
+    <Material name="AML_CargoLine_App_Pritsche" materialId="5" customShaderId="5">
       <Texture fileId="44"/>
       <Normalmap fileId="45" bumpDepth="0.3"/>
       <Glossmap fileId="46"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="AML_DynamicHoses_Ref" materialId="1496" customShaderId="5">
+    <Material name="AML_DynamicHoses_Ref" materialId="6" customShaderId="5">
       <Texture fileId="34"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="AML_HydrCylinder" materialId="1389" customShaderId="5">
+    <Material name="AML_HydrCylinder" materialId="7" customShaderId="5">
       <Texture fileId="21"/>
       <Normalmap fileId="22"/>
       <Glossmap fileId="23"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="AML_piping" materialId="1390" customShaderId="5">
+    <Material name="AML_piping" materialId="8" customShaderId="5">
       <Texture fileId="15"/>
       <Normalmap fileId="16"/>
       <Glossmap fileId="17"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="AML_PlateauV2" materialId="6" customShaderId="5">
+    <Material name="AML_PlateauV2" materialId="9" customShaderId="5">
       <Texture fileId="40"/>
       <Normalmap fileId="41" bumpDepth="0.3"/>
       <Glossmap fileId="42"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="AML_TST_Cargo_Chassis" materialId="7" customShaderId="5">
+    <Material name="AML_TST_Cargo_Chassis" materialId="10" customShaderId="5">
       <Texture fileId="2"/>
       <Normalmap fileId="3"/>
       <Glossmap fileId="4"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="AML_WheelChock1_2" materialId="9" customShaderId="5">
+    <Material name="AML_WheelChock1_2" materialId="11" customShaderId="5">
       <Texture fileId="24"/>
       <Normalmap fileId="25"/>
       <Glossmap fileId="26"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="dynamicHoses_mat" materialId="1391" customShaderId="5">
+    <Material name="dynamicHoses_mat" materialId="12" customShaderId="5">
       <Texture fileId="18"/>
       <Normalmap fileId="19"/>
       <Glossmap fileId="20"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="fj_branding_mat" materialId="5" specularColor="1 1 1">
+    <Material name="fj_branding_mat" materialId="13" specularColor="1 1 1">
       <Texture fileId="9"/>
     </Material>
-    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    <Material name="lambert1" materialId="14" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
-    <Material name="npBlech_mat" materialId="1464" customShaderId="5">
+    <Material name="npBlech_mat" materialId="15" customShaderId="5">
       <Texture fileId="36"/>
       <Normalmap fileId="37"/>
       <Glossmap fileId="38"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="Ref19:AML_Universal_VF001" materialId="10" customShaderId="5">
+    <Material name="Ref19:AML_Universal_VF001" materialId="16" customShaderId="5">
       <Texture fileId="27"/>
       <Normalmap fileId="28"/>
       <Glossmap fileId="29"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="TrailerAttacher_mat" materialId="1497" customShaderId="5">
+    <Material name="TrailerAttacher_mat" materialId="17" customShaderId="5">
       <Texture fileId="31"/>
       <Normalmap fileId="32" bumpDepth="0.3"/>
       <Glossmap fileId="33"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="379" diffuseColor="1 1 1 1">
     </Material>
   </Materials>
 
@@ -150,436 +152,441 @@
   </Dynamics>
 
   <Scene>
-      <Shape shapeId="1" name="CargoLine_TST08_Pritsche" dynamic="true" compound="true" collisionMask="2105346" density="0.25" clipDistance="300" nodeId="36" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
-        <TransformGroup name="Chassis" clipDistance="300" nodeId="37">
-          <TransformGroup name="visuals" clipDistance="300" nodeId="38">
-            <TransformGroup name="TST_Frame" clipDistance="300" nodeId="39">
-              <TransformGroup name="visuals" clipDistance="300" nodeId="40">
-                <Shape shapeId="2" name="TST_Frame_visuals" clipDistance="300" nodeId="41" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="CargoLine_TST08_Pritsche" dynamic="true" compound="true" collisionMask="2105346" density="0.25" clipDistance="300" nodeId="62" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="Chassis" clipDistance="300" nodeId="63">
+          <TransformGroup name="visuals" clipDistance="300" nodeId="64">
+            <TransformGroup name="TST_Frame" clipDistance="300" nodeId="65">
+              <TransformGroup name="visuals" clipDistance="300" nodeId="66">
+                <Shape shapeId="2" name="TST_Frame_visuals" clipDistance="300" nodeId="67" materialIds="10" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
-              <TransformGroup name="DLPs" clipDistance="300" nodeId="42"/>
+              <TransformGroup name="DLPs" clipDistance="300" nodeId="68"/>
             </TransformGroup>
-            <TransformGroup name="TST_Anbauteile" clipDistance="300" nodeId="43">
-              <TransformGroup name="visuals" clipDistance="300" nodeId="44"/>
-              <TransformGroup name="DLPs" clipDistance="300" nodeId="45">
-                <TransformGroup name="DLP_piping" clipDistance="300" nodeId="46"/>
-                <TransformGroup name="DLP_StaukisteL1" translation="0.39 1.07 -4.11" clipDistance="300" nodeId="47"/>
-                <TransformGroup name="DLP_StaukisteL2" translation="0.39 1.07 -4.76" clipDistance="300" nodeId="48"/>
-                <TransformGroup name="DLP_StaukisteL3" translation="0.39 1.07 -10.15" clipDistance="300" nodeId="49"/>
-                <TransformGroup name="DLP_StaukisteL4" translation="0.39 1.07 -10.79" clipDistance="300" nodeId="50"/>
-                <TransformGroup name="DLP_StaukisteR1" translation="-0.39 1.07 -4.11" rotation="0 180 0" clipDistance="300" nodeId="51"/>
-                <TransformGroup name="DLP_StaukisteR2" translation="-0.39 1.07 -4.76" rotation="0 180 0" clipDistance="300" nodeId="52"/>
-                <TransformGroup name="DLP_StaukisteR3" translation="-0.39 1.07 -10.15" rotation="0 180 0" clipDistance="300" nodeId="53"/>
-                <TransformGroup name="DLP_StaukisteR4" translation="-0.39 1.07 -10.79" rotation="0 180 0" clipDistance="300" nodeId="54"/>
+            <TransformGroup name="TST_Anbauteile" clipDistance="300" nodeId="69">
+              <TransformGroup name="visuals" clipDistance="300" nodeId="70"/>
+              <TransformGroup name="DLPs" clipDistance="300" nodeId="71">
+                <TransformGroup name="DLP_piping" clipDistance="300" nodeId="72"/>
+                <TransformGroup name="DLP_StaukisteL1" translation="0.39 1.07 -4.11" clipDistance="300" nodeId="73"/>
+                <TransformGroup name="DLP_StaukisteL2" translation="0.39 1.07 -4.76" clipDistance="300" nodeId="74"/>
+                <TransformGroup name="DLP_StaukisteL3" translation="0.39 1.07 -10.15" clipDistance="300" nodeId="75"/>
+                <TransformGroup name="DLP_StaukisteL4" translation="0.39 1.07 -10.79" clipDistance="300" nodeId="76"/>
+                <TransformGroup name="DLP_StaukisteR1" translation="-0.39 1.07 -4.11" rotation="0 180 0" clipDistance="300" nodeId="77"/>
+                <TransformGroup name="DLP_StaukisteR2" translation="-0.39 1.07 -4.76" rotation="0 180 0" clipDistance="300" nodeId="78"/>
+                <TransformGroup name="DLP_StaukisteR3" translation="-0.39 1.07 -10.15" rotation="0 180 0" clipDistance="300" nodeId="79"/>
+                <TransformGroup name="DLP_StaukisteR4" translation="-0.39 1.07 -10.79" rotation="0 180 0" clipDistance="300" nodeId="80"/>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="TST_Branding" clipDistance="300" nodeId="55">
-              <Shape shapeId="3" name="TST_Branding" clipDistance="300" nodeId="56" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="TST_Branding" clipDistance="300" nodeId="81">
+              <Shape shapeId="3" name="TST_Branding" clipDistance="300" nodeId="82" materialIds="13" castsShadows="true" receiveShadows="true"/>
             </TransformGroup>
-            <TransformGroup name="TST_Common" clipDistance="300" nodeId="57">
-              <TransformGroup name="collis1" clipDistance="300" nodeId="58">
-                <Shape shapeId="4" name="TST_Cargo_FrontColli_3axle" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="59" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-                <Shape shapeId="5" name="UFS_Colli" translation="-6.77626e-23 0.525 -11.265" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="60" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="TST_Common" clipDistance="300" nodeId="83">
+              <TransformGroup name="collis1" clipDistance="300" nodeId="84">
+                <Shape shapeId="4" name="TST_Cargo_FrontColli_3axle" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="85" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <Shape shapeId="5" name="UFS_Colli" translation="-6.77626e-23 0.525 -11.265" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="86" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
               </TransformGroup>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="functions" clipDistance="300" nodeId="61">
-            <TransformGroup name="support" translation="-6.50521e-21 0 0" clipDistance="300" nodeId="62">
-              <TransformGroup name="TST_SupportPoles" translation="6.50521e-21 0 -2.35" clipDistance="300" nodeId="63">
-                <Shape shapeId="6" name="TST_SupportFrame" translation="0 0 2.35" clipDistance="300" nodeId="64" materialIds="7" castsShadows="true" receiveShadows="true"/>
-                <TransformGroup name="TST_SupportArm" clipDistance="300" nodeId="65">
-                  <Shape shapeId="7" name="supportArm_L" translation="0 -0.02 0" clipDistance="300" nodeId="66" materialIds="7" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="8" name="supportArm_R" translation="0 -0.02 0" clipDistance="300" nodeId="67" materialIds="7" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="9" name="SupportArmColli" translation="0 -0.02 0" compoundChild="true" collisionMask="8194" clipDistance="300" nodeId="68" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="functions" clipDistance="300" nodeId="87">
+            <TransformGroup name="support" translation="-6.50521e-21 0 0" clipDistance="300" nodeId="88">
+              <TransformGroup name="TST_SupportPoles" translation="6.50521e-21 0 -2.35" clipDistance="300" nodeId="89">
+                <Shape shapeId="6" name="TST_SupportFrame" translation="0 0 2.35" clipDistance="300" nodeId="90" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="TST_SupportArm" clipDistance="300" nodeId="91">
+                  <Shape shapeId="7" name="supportArm_L" translation="0 -0.02 0" clipDistance="300" nodeId="92" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="8" name="supportArm_R" translation="0 -0.02 0" clipDistance="300" nodeId="93" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="9" name="SupportArmColli" translation="0 -0.02 0" compoundChild="true" collisionMask="8194" clipDistance="300" nodeId="94" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="wheels" clipDistance="300" nodeId="69">
-              <TransformGroup name="axle1" translation="-2.03288e-22 0.547 -5.95" clipDistance="300" nodeId="70">
-                <TransformGroup name="wheel_left" translation="0.936 0 0" clipDistance="300" nodeId="71"/>
-                <TransformGroup name="wheel_right" translation="-0.936 0 0" clipDistance="300" nodeId="72"/>
-                <TransformGroup name="DLP_Axle1" translation="6.01853e-38 -1.42109e-16 2.27374e-15" clipDistance="300" nodeId="73">
-                  <TransformGroup name="DLP_AllTrailer_Achse" referenceId="11" clipDistance="300" nodeId="1432">
-                    <TransformGroup name="visuals" clipDistance="300" nodeId="1433">
-                      <Shape shapeId="10" name="all_axle_parts" clipDistance="300" nodeId="1434" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <Shape shapeId="11" name="non_steering_axle_parts" clipDistance="300" nodeId="1435" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <Shape shapeId="12" name="steering_axle_parts" clipDistance="300" nodeId="1436" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <TransformGroup name="piping_all_axle" clipDistance="300" nodeId="1437">
-                        <Shape shapeId="13" name="piping_all" clipDistance="300" nodeId="1438" materialIds="1390" castsShadows="true" receiveShadows="true"/>
-                        <Shape shapeId="14" name="hoses_all" clipDistance="300" nodeId="1439" materialIds="1391" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="wheels" clipDistance="300" nodeId="95">
+              <TransformGroup name="axle1" translation="-2.03288e-22 0.547 -5.95" clipDistance="300" nodeId="96">
+                <TransformGroup name="wheel_left" translation="0.936 0 0" clipDistance="300" nodeId="97"/>
+                <TransformGroup name="wheel_right" translation="-0.936 0 0" clipDistance="300" nodeId="98"/>
+                <TransformGroup name="DLP_Axle1" translation="6.01853e-38 -1.42109e-16 2.27374e-15" clipDistance="300" nodeId="99">
+                  <TransformGroup name="DLP_AllTrailer_Achse" referenceId="11" clipDistance="300" nodeId="110">
+                    <TransformGroup name="visuals" clipDistance="300" nodeId="111">
+                      <Shape shapeId="10" name="all_axle_parts" clipDistance="300" nodeId="112" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="11" name="non_steering_axle_parts" clipDistance="300" nodeId="113" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="12" name="steering_axle_parts" clipDistance="300" nodeId="114" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <TransformGroup name="piping_all_axle" clipDistance="300" nodeId="115">
+                        <Shape shapeId="13" name="piping_all" clipDistance="300" nodeId="116" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="14" name="hoses_all" clipDistance="300" nodeId="117" materialIds="12" castsShadows="true" receiveShadows="true"/>
                       </TransformGroup>
-                      <TransformGroup name="piping_steering_axle" clipDistance="300" nodeId="1440">
-                        <Shape shapeId="15" name="piping_steering" translation="0 -7.10543e-17 0" clipDistance="300" nodeId="1441" materialIds="1390" castsShadows="true" receiveShadows="true"/>
-                        <Shape shapeId="16" name="hoses_steering" clipDistance="300" nodeId="1442" materialIds="1391" castsShadows="true" receiveShadows="true"/>
+                      <TransformGroup name="piping_steering_axle" clipDistance="300" nodeId="118">
+                        <Shape shapeId="15" name="piping_steering" translation="0 -7.10543e-17 0" clipDistance="300" nodeId="119" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="16" name="hoses_steering" clipDistance="300" nodeId="120" materialIds="12" castsShadows="true" receiveShadows="true"/>
                       </TransformGroup>
                     </TransformGroup>
-                    <TransformGroup name="functions" clipDistance="300" nodeId="1443">
-                      <TransformGroup name="HyrdCyl_010x030" translation="0.0609808 0.153 0.16234" rotation="175 60 180" clipDistance="300" nodeId="1444">
-                        <Shape shapeId="17" name="zylinder" clipDistance="300" nodeId="1445" materialIds="1389" castsShadows="true" receiveShadows="true">
-                          <Shape shapeId="18" name="stempel" translation="0 0 0.68" clipDistance="300" nodeId="1446" materialIds="1389" castsShadows="true" receiveShadows="true"/>
+                    <TransformGroup name="functions" clipDistance="300" nodeId="121">
+                      <TransformGroup name="HyrdCyl_010x030" translation="0.0609808 0.153 0.16234" rotation="175 60 180" clipDistance="300" nodeId="122">
+                        <Shape shapeId="17" name="zylinder" clipDistance="300" nodeId="123" materialIds="7" castsShadows="true" receiveShadows="true">
+                          <Shape shapeId="18" name="stempel" translation="0 0 0.68" clipDistance="300" nodeId="124" materialIds="7" castsShadows="true" receiveShadows="true"/>
                         </Shape>
                       </TransformGroup>
                     </TransformGroup>
                   </TransformGroup>
                 </TransformGroup>
-                <TransformGroup name="DLP_WheelFender1" translation="3.00927e-38 -7.10543e-17 1.13687e-15" clipDistance="300" nodeId="74"/>
-                <TransformGroup name="DLP_TGS_RearFenderDecals_FJ_Axle1" translation="2.03288e-22 -0.547 -0.655" clipDistance="300" nodeId="75"/>
+                <TransformGroup name="DLP_WheelFender1" translation="3.00927e-38 -7.10543e-17 1.13687e-15" clipDistance="300" nodeId="125"/>
+                <TransformGroup name="DLP_TGS_RearFenderDecals_FJ_Axle1" translation="2.03288e-22 -0.547 -0.655" clipDistance="300" nodeId="126"/>
               </TransformGroup>
-              <TransformGroup name="axle2" translation="-2.03288e-22 0.547 -7.55" clipDistance="300" nodeId="76">
-                <TransformGroup name="wheel_left" translation="0.936 0 0" clipDistance="300" nodeId="77"/>
-                <TransformGroup name="wheel_right" translation="-0.936 0 0" clipDistance="300" nodeId="78"/>
-                <TransformGroup name="DLP_Axle2" translation="3.00927e-38 -7.10543e-17 1.13687e-15" clipDistance="300" nodeId="79">
-                  <TransformGroup name="DLP_AllTrailer_Achse" referenceId="11" clipDistance="300" nodeId="1417">
-                    <TransformGroup name="visuals" clipDistance="300" nodeId="1418">
-                      <Shape shapeId="10" name="all_axle_parts" clipDistance="300" nodeId="1419" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <Shape shapeId="11" name="non_steering_axle_parts" clipDistance="300" nodeId="1420" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <Shape shapeId="12" name="steering_axle_parts" clipDistance="300" nodeId="1421" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <TransformGroup name="piping_all_axle" clipDistance="300" nodeId="1422">
-                        <Shape shapeId="13" name="piping_all" clipDistance="300" nodeId="1423" materialIds="1390" castsShadows="true" receiveShadows="true"/>
-                        <Shape shapeId="14" name="hoses_all" clipDistance="300" nodeId="1424" materialIds="1391" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="axle2" translation="-2.03288e-22 0.547 -7.55" clipDistance="300" nodeId="127">
+                <TransformGroup name="wheel_left" translation="0.936 0 0" clipDistance="300" nodeId="128"/>
+                <TransformGroup name="wheel_right" translation="-0.936 0 0" clipDistance="300" nodeId="129"/>
+                <TransformGroup name="DLP_Axle2" translation="3.00927e-38 -7.10543e-17 1.13687e-15" clipDistance="300" nodeId="130">
+                  <TransformGroup name="DLP_AllTrailer_Achse" referenceId="11" clipDistance="300" nodeId="131">
+                    <TransformGroup name="visuals" clipDistance="300" nodeId="132">
+                      <Shape shapeId="10" name="all_axle_parts" clipDistance="300" nodeId="133" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="11" name="non_steering_axle_parts" clipDistance="300" nodeId="134" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="12" name="steering_axle_parts" clipDistance="300" nodeId="135" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <TransformGroup name="piping_all_axle" clipDistance="300" nodeId="136">
+                        <Shape shapeId="13" name="piping_all" clipDistance="300" nodeId="137" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="14" name="hoses_all" clipDistance="300" nodeId="138" materialIds="12" castsShadows="true" receiveShadows="true"/>
                       </TransformGroup>
-                      <TransformGroup name="piping_steering_axle" clipDistance="300" nodeId="1425">
-                        <Shape shapeId="15" name="piping_steering" translation="0 -7.10543e-17 0" clipDistance="300" nodeId="1426" materialIds="1390" castsShadows="true" receiveShadows="true"/>
-                        <Shape shapeId="16" name="hoses_steering" clipDistance="300" nodeId="1427" materialIds="1391" castsShadows="true" receiveShadows="true"/>
+                      <TransformGroup name="piping_steering_axle" clipDistance="300" nodeId="139">
+                        <Shape shapeId="15" name="piping_steering" translation="0 -7.10543e-17 0" clipDistance="300" nodeId="140" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="16" name="hoses_steering" clipDistance="300" nodeId="141" materialIds="12" castsShadows="true" receiveShadows="true"/>
                       </TransformGroup>
                     </TransformGroup>
-                    <TransformGroup name="functions" clipDistance="300" nodeId="1428">
-                      <TransformGroup name="HyrdCyl_010x030" translation="0.0609808 0.153 0.16234" rotation="175 60 180" clipDistance="300" nodeId="1429">
-                        <Shape shapeId="17" name="zylinder" clipDistance="300" nodeId="1430" materialIds="1389" castsShadows="true" receiveShadows="true">
-                          <Shape shapeId="18" name="stempel" translation="0 0 0.68" clipDistance="300" nodeId="1431" materialIds="1389" castsShadows="true" receiveShadows="true"/>
+                    <TransformGroup name="functions" clipDistance="300" nodeId="142">
+                      <TransformGroup name="HyrdCyl_010x030" translation="0.0609808 0.153 0.16234" rotation="175 60 180" clipDistance="300" nodeId="143">
+                        <Shape shapeId="17" name="zylinder" clipDistance="300" nodeId="144" materialIds="7" castsShadows="true" receiveShadows="true">
+                          <Shape shapeId="18" name="stempel" translation="0 0 0.68" clipDistance="300" nodeId="145" materialIds="7" castsShadows="true" receiveShadows="true"/>
                         </Shape>
                       </TransformGroup>
                     </TransformGroup>
                   </TransformGroup>
                 </TransformGroup>
-                <TransformGroup name="DLP_WheelFender2" translation="3.00927e-38 -7.10543e-17 0" clipDistance="300" nodeId="80"/>
-                <TransformGroup name="DLP_TGS_RearFenderDecals_FJ_Axle2" translation="2.03288e-22 -0.547 -0.655" clipDistance="300" nodeId="81"/>
+                <TransformGroup name="DLP_WheelFender2" translation="3.00927e-38 -7.10543e-17 0" clipDistance="300" nodeId="146"/>
+                <TransformGroup name="DLP_TGS_RearFenderDecals_FJ_Axle2" translation="2.03288e-22 -0.547 -0.655" clipDistance="300" nodeId="147"/>
               </TransformGroup>
-              <TransformGroup name="axle3" translation="-2.03288e-22 0.547 -9.15" clipDistance="300" nodeId="82">
-                <TransformGroup name="wheel_left" translation="0.936 0 0" clipDistance="300" nodeId="83"/>
-                <TransformGroup name="wheel_right" translation="-0.936 0 0" clipDistance="300" nodeId="84"/>
-                <TransformGroup name="DLP_Axle3" translation="9.0278e-38 -3.55271e-16 1.13687e-15" clipDistance="300" nodeId="85">
-                  <TransformGroup name="DLP_AllTrailer_Achse" referenceId="11" clipDistance="300" nodeId="1402">
-                    <TransformGroup name="visuals" clipDistance="300" nodeId="1403">
-                      <Shape shapeId="10" name="all_axle_parts" clipDistance="300" nodeId="1404" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <Shape shapeId="11" name="non_steering_axle_parts" clipDistance="300" nodeId="1405" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <Shape shapeId="12" name="steering_axle_parts" clipDistance="300" nodeId="1406" materialIds="1388" castsShadows="true" receiveShadows="true"/>
-                      <TransformGroup name="piping_all_axle" clipDistance="300" nodeId="1407">
-                        <Shape shapeId="13" name="piping_all" clipDistance="300" nodeId="1408" materialIds="1390" castsShadows="true" receiveShadows="true"/>
-                        <Shape shapeId="14" name="hoses_all" clipDistance="300" nodeId="1409" materialIds="1391" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="axle3" translation="-2.03288e-22 0.547 -9.15" clipDistance="300" nodeId="148">
+                <TransformGroup name="wheel_left" translation="0.936 0 0" clipDistance="300" nodeId="149"/>
+                <TransformGroup name="wheel_right" translation="-0.936 0 0" clipDistance="300" nodeId="150"/>
+                <TransformGroup name="DLP_Axle3" translation="9.0278e-38 -3.55271e-16 1.13687e-15" clipDistance="300" nodeId="151">
+                  <TransformGroup name="DLP_AllTrailer_Achse" referenceId="11" clipDistance="300" nodeId="152">
+                    <TransformGroup name="visuals" clipDistance="300" nodeId="153">
+                      <Shape shapeId="10" name="all_axle_parts" clipDistance="300" nodeId="154" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="11" name="non_steering_axle_parts" clipDistance="300" nodeId="155" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <Shape shapeId="12" name="steering_axle_parts" clipDistance="300" nodeId="156" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                      <TransformGroup name="piping_all_axle" clipDistance="300" nodeId="157">
+                        <Shape shapeId="13" name="piping_all" clipDistance="300" nodeId="158" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="14" name="hoses_all" clipDistance="300" nodeId="159" materialIds="12" castsShadows="true" receiveShadows="true"/>
                       </TransformGroup>
-                      <TransformGroup name="piping_steering_axle" clipDistance="300" nodeId="1410">
-                        <Shape shapeId="15" name="piping_steering" translation="0 -7.10543e-17 0" clipDistance="300" nodeId="1411" materialIds="1390" castsShadows="true" receiveShadows="true"/>
-                        <Shape shapeId="16" name="hoses_steering" clipDistance="300" nodeId="1412" materialIds="1391" castsShadows="true" receiveShadows="true"/>
+                      <TransformGroup name="piping_steering_axle" clipDistance="300" nodeId="160">
+                        <Shape shapeId="15" name="piping_steering" translation="0 -7.10543e-17 0" clipDistance="300" nodeId="161" materialIds="8" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="16" name="hoses_steering" clipDistance="300" nodeId="162" materialIds="12" castsShadows="true" receiveShadows="true"/>
                       </TransformGroup>
                     </TransformGroup>
-                    <TransformGroup name="functions" clipDistance="300" nodeId="1413">
-                      <TransformGroup name="HyrdCyl_010x030" translation="0.0609808 0.153 0.16234" rotation="175 60 180" clipDistance="300" nodeId="1414">
-                        <Shape shapeId="17" name="zylinder" clipDistance="300" nodeId="1415" materialIds="1389" castsShadows="true" receiveShadows="true">
-                          <Shape shapeId="18" name="stempel" translation="0 0 0.68" clipDistance="300" nodeId="1416" materialIds="1389" castsShadows="true" receiveShadows="true"/>
+                    <TransformGroup name="functions" clipDistance="300" nodeId="163">
+                      <TransformGroup name="HyrdCyl_010x030" translation="0.0609808 0.153 0.16234" rotation="175 60 180" clipDistance="300" nodeId="164">
+                        <Shape shapeId="17" name="zylinder" clipDistance="300" nodeId="165" materialIds="7" castsShadows="true" receiveShadows="true">
+                          <Shape shapeId="18" name="stempel" translation="0 0 0.68" clipDistance="300" nodeId="166" materialIds="7" castsShadows="true" receiveShadows="true"/>
                         </Shape>
                       </TransformGroup>
                     </TransformGroup>
                   </TransformGroup>
                 </TransformGroup>
-                <TransformGroup name="DLP_WheelFender3" translation="6.01853e-38 -2.13163e-16 0" clipDistance="300" nodeId="86"/>
-                <TransformGroup name="DLP_TGS_RearFenderDecals_FJ_Axle3" translation="2.03288e-22 -0.547 -0.655" clipDistance="300" nodeId="87"/>
+                <TransformGroup name="DLP_WheelFender3" translation="6.01853e-38 -2.13163e-16 0" clipDistance="300" nodeId="167"/>
+                <TransformGroup name="DLP_TGS_RearFenderDecals_FJ_Axle3" translation="2.03288e-22 -0.547 -0.655" clipDistance="300" nodeId="168"/>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="wheelChocks" clipDistance="300" nodeId="88">
-              <TransformGroup name="TST_wheelChocks" translation="0.385 1.05 -3.39" clipDistance="300" nodeId="89">
-                <Shape shapeId="19" name="TST_wheelChockkHolder" clipDistance="300" nodeId="90" materialIds="7" castsShadows="true" receiveShadows="true"/>
-                <TransformGroup name="attached" clipDistance="300" nodeId="91">
-                  <Shape shapeId="20" name="wheelChock07" translation="0.49 0 0.025" rotation="90 0 -90" clipDistance="300" nodeId="92" materialIds="9" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="20" name="wheelChock05" translation="0.49 0 -0.025" rotation="-90 6.36111e-15 90" clipDistance="300" nodeId="93" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="wheelChocks" clipDistance="300" nodeId="169">
+              <TransformGroup name="TST_wheelChocks" translation="0.385 1.05 -3.39" clipDistance="300" nodeId="170">
+                <Shape shapeId="19" name="TST_wheelChockkHolder" clipDistance="300" nodeId="171" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="attached" clipDistance="300" nodeId="172">
+                  <Shape shapeId="20" name="wheelChock07" translation="0.49 0 0.025" rotation="90 0 -90" clipDistance="300" nodeId="173" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="20" name="wheelChock05" translation="0.49 0 -0.025" rotation="-90 6.36111e-15 90" clipDistance="300" nodeId="174" materialIds="11" castsShadows="true" receiveShadows="true"/>
                 </TransformGroup>
-                <TransformGroup name="detached" translation="0.55 -0.503 -2.56" clipDistance="300" nodeId="94">
-                  <Shape shapeId="20" name="wheelChock02" translation="0 -0.547 -0.7" clipDistance="300" nodeId="95" materialIds="9" castsShadows="true" receiveShadows="true"/>
-                  <Shape shapeId="20" name="wheelChock06" translation="0 -0.547 0.7" rotation="0 180 0" clipDistance="300" nodeId="96" materialIds="9" castsShadows="true" receiveShadows="true"/>
-                </TransformGroup>
-              </TransformGroup>
-            </TransformGroup>
-            <TransformGroup name="spareWheels" clipDistance="300" nodeId="97">
-              <TransformGroup name="Ref19:TST_SpareWheelAttacher_hor" translation="0.385 0.9 -3.08" clipDistance="300" nodeId="98">
-                <Shape shapeId="21" name="Ref19:spareWheelAttacher_vis" clipDistance="300" nodeId="99" materialIds="10" castsShadows="true" receiveShadows="true"/>
-                <TransformGroup name="Ref19:streetwheels" translation="0.21 -0.25 0" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="100"/>
-                <TransformGroup name="Ref19:agrarwheels" translation="0.21 -0.32 0" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="101"/>
-                <TransformGroup name="Ref19:offroadwheels" translation="0.21 -0.32 5.68434e-16" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="102"/>
-                <TransformGroup name="Ref19:traktorwheels_noMarks" translation="0.21 -0.32 5.68434e-16" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="103"/>
-                <TransformGroup name="Ref19:traktorwheels_Marks" translation="0.21 -0.32 0" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="104"/>
-              </TransformGroup>
-            </TransformGroup>
-            <TransformGroup name="attacherJoints" clipDistance="300" nodeId="105">
-              <TransformGroup name="DLP_TrailerAttacherRear" translation="0 0.97 -11.1" clipDistance="300" nodeId="106">
-                <TransformGroup name="TrailerAttacherWithDH" referenceId="30" clipDistance="300" nodeId="1506">
-                  <Shape shapeId="22" name="TrailerAttacher" clipDistance="300" nodeId="1507" materialIds="1497" castsShadows="true" receiveShadows="true">
-                    <TransformGroup name="trailerAttacherBack" translation="0 0 -0.115" rotation="0 90 0" clipDistance="300" nodeId="1508"/>
-                  </Shape>
-                  <Shape shapeId="23" name="DynHoseTruckConn_Electric" translation="-0.24823 -0.05 0" clipDistance="300" nodeId="1509" materialIds="1496" castsShadows="true" receiveShadows="true">
-                    <TransformGroup name="Elektric" translation="0.00270287 0 0.003" clipDistance="300" nodeId="1510"/>
-                  </Shape>
-                  <Shape shapeId="24" name="DynHoseTruckConn_Air1" translation="0.260359 0.0518 0" clipDistance="300" nodeId="1511" materialIds="1496" castsShadows="true" receiveShadows="true">
-                    <Shape shapeId="25" name="DynHoseTruckConn_Air1_Cap" clipDistance="300" nodeId="1512" materialIds="1496" castsShadows="true" receiveShadows="true"/>
-                    <TransformGroup name="Air_1" translation="-0.0168411 0.0012 -0.048" rotation="-20 0 0" clipDistance="300" nodeId="1513"/>
-                  </Shape>
-                  <Shape shapeId="26" name="DynHoseTruckConn_Air2" translation="-0.244348 0.0496123 0.00329101" rotation="0 0 180" clipDistance="300" nodeId="1514" materialIds="1496" castsShadows="true" receiveShadows="true">
-                    <Shape shapeId="27" name="DynHoseTruckConn_Air2_Cap" clipDistance="300" nodeId="1515" materialIds="1496" castsShadows="true" receiveShadows="true"/>
-                    <TransformGroup name="Air_2" translation="0.00947707 -0.00338769 -0.051291" rotation="-20 0 -180" clipDistance="300" nodeId="1516"/>
-                  </Shape>
-                  <Shape shapeId="28" name="DynHoseTruckConn_Hydr1" translation="-0.32 0.0601425 0" clipDistance="300" nodeId="1517" materialIds="1496" castsShadows="true" receiveShadows="true">
-                    <TransformGroup name="Hyd_1" clipDistance="300" nodeId="1518"/>
-                  </Shape>
-                  <Shape shapeId="28" name="DynHoseTruckConn_Hydr2" translation="-0.32 -0.05 0" clipDistance="300" nodeId="1519" materialIds="1496" castsShadows="true" receiveShadows="true">
-                    <TransformGroup name="Hyd_2" clipDistance="300" nodeId="1520"/>
-                  </Shape>
+                <TransformGroup name="detached" translation="0.55 -0.503 -2.56" clipDistance="300" nodeId="175">
+                  <Shape shapeId="20" name="wheelChock02" translation="0 -0.547 -0.7" clipDistance="300" nodeId="176" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="20" name="wheelChock06" translation="0 -0.547 0.7" rotation="0 180 0" clipDistance="300" nodeId="177" materialIds="11" castsShadows="true" receiveShadows="true"/>
                 </TransformGroup>
               </TransformGroup>
-              <TransformGroup name="DLP_ARKH" translation="4.76837e-09 1.34 1.444" clipDistance="300" nodeId="107"/>
             </TransformGroup>
-            <TransformGroup name="lights" clipDistance="300" nodeId="108">
-              <TransformGroup name="DLP_UFS" translation="-6.77626e-23 0.855 -11.2" clipDistance="300" nodeId="109">
-                <TransformGroup name="UVF001_DLP_UFS_rear" referenceId="35" nodeId="1470">
-                  <TransformGroup name="visuals" clipDistance="300" nodeId="1471">
-                    <Shape shapeId="29" name="ufs" translation="-1.35525e-22 0 0" clipDistance="300" nodeId="1472" materialIds="10" castsShadows="true" receiveShadows="true"/>
-                    <TransformGroup name="collisions" clipDistance="300" nodeId="1473"/>
-                    <Shape shapeId="30" name="BackLowAttacher" translation="0 -0.33965 -0.0921447" nodeId="1474" materialIds="10" castsShadows="true" receiveShadows="true">
-                      <TransformGroup name="attacherJointLowBack" translation="-6.7741e-08 0.0755046 -0.0979414" rotation="0 90 0" nodeId="1475"/>
+            <TransformGroup name="spareWheels" clipDistance="300" nodeId="178">
+              <TransformGroup name="Ref19:TST_SpareWheelAttacher_hor" translation="0.385 0.9 -3.08" clipDistance="300" nodeId="179">
+                <Shape shapeId="21" name="Ref19:spareWheelAttacher_vis" clipDistance="300" nodeId="180" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="Ref19:streetwheels" translation="0.21 -0.25 0" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="181"/>
+                <TransformGroup name="Ref19:agrarwheels" translation="0.21 -0.32 0" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="182"/>
+                <TransformGroup name="Ref19:offroadwheels" translation="0.21 -0.32 5.68434e-16" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="183"/>
+                <TransformGroup name="Ref19:traktorwheels_noMarks" translation="0.21 -0.32 5.68434e-16" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="184"/>
+                <TransformGroup name="Ref19:traktorwheels_Marks" translation="0.21 -0.32 0" rotation="0 0 -90" visibility="false" clipDistance="300" nodeId="185"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="attacherJoints" clipDistance="300" nodeId="186">
+              <TransformGroup name="DLP_TrailerAttacherRear" translation="0 0.97 -11.1" clipDistance="300" nodeId="187">
+                <TransformGroup name="TrailerAttacherWithDH" referenceId="30" clipDistance="300" nodeId="196">
+                  <Shape shapeId="22" name="TrailerAttacher" clipDistance="300" nodeId="197" materialIds="17" castsShadows="true" receiveShadows="true">
+                    <TransformGroup name="trailerAttacherBack" translation="0 0 -0.115" rotation="0 90 0" clipDistance="300" nodeId="198"/>
+                  </Shape>
+                  <Shape shapeId="23" name="DynHoseTruckConn_Electric" translation="-0.24823 -0.05 0" clipDistance="300" nodeId="199" materialIds="6" castsShadows="true" receiveShadows="true">
+                    <TransformGroup name="Elektric" translation="0.00270287 0 0.003" clipDistance="300" nodeId="200"/>
+                  </Shape>
+                  <Shape shapeId="24" name="DynHoseTruckConn_Air1" translation="0.260359 0.0518 0" clipDistance="300" nodeId="201" materialIds="6" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="25" name="DynHoseTruckConn_Air1_Cap" clipDistance="300" nodeId="202" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                    <TransformGroup name="Air_1" translation="-0.0168411 0.0012 -0.048" rotation="-20 0 0" clipDistance="300" nodeId="203"/>
+                  </Shape>
+                  <Shape shapeId="26" name="DynHoseTruckConn_Air2" translation="-0.244348 0.0496123 0.00329101" rotation="0 0 180" clipDistance="300" nodeId="204" materialIds="6" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="27" name="DynHoseTruckConn_Air2_Cap" clipDistance="300" nodeId="205" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                    <TransformGroup name="Air_2" translation="0.00947707 -0.00338769 -0.051291" rotation="-20 0 -180" clipDistance="300" nodeId="206"/>
+                  </Shape>
+                  <Shape shapeId="28" name="DynHoseTruckConn_Hydr1" translation="-0.32 0.0601425 0" clipDistance="300" nodeId="207" materialIds="6" castsShadows="true" receiveShadows="true">
+                    <TransformGroup name="Hyd_1" clipDistance="300" nodeId="208"/>
+                  </Shape>
+                  <Shape shapeId="28" name="DynHoseTruckConn_Hydr2" translation="-0.32 -0.05 0" clipDistance="300" nodeId="209" materialIds="6" castsShadows="true" receiveShadows="true">
+                    <TransformGroup name="Hyd_2" clipDistance="300" nodeId="210"/>
+                  </Shape>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="DLP_ARKH" translation="4.76837e-09 1.34 1.444" clipDistance="300" nodeId="211"/>
+            </TransformGroup>
+            <TransformGroup name="lights" clipDistance="300" nodeId="212">
+              <TransformGroup name="DLP_UFS" translation="-6.77626e-23 0.855 -11.2" clipDistance="300" nodeId="213">
+                <TransformGroup name="UVF001_DLP_UFS_rear" referenceId="35" nodeId="219">
+                  <TransformGroup name="visuals" clipDistance="300" nodeId="220">
+                    <Shape shapeId="29" name="ufs" translation="-1.35525e-22 0 0" clipDistance="300" nodeId="221" materialIds="16" castsShadows="true" receiveShadows="true"/>
+                    <TransformGroup name="collisions" clipDistance="300" nodeId="222"/>
+                    <Shape shapeId="30" name="BackLowAttacher" translation="0 -0.33965 -0.0921447" nodeId="223" materialIds="16" castsShadows="true" receiveShadows="true">
+                      <TransformGroup name="attacherJointLowBack" translation="-6.7741e-08 0.0755046 -0.0979414" rotation="0 90 0" nodeId="224"/>
                     </Shape>
                   </TransformGroup>
-                  <TransformGroup name="functions" clipDistance="300" nodeId="1476">
-                    <TransformGroup name="lights" translation="0 -0.02 -0.07" clipDistance="300" nodeId="1477">
-                      <TransformGroup name="rearLights" translation="-1.35525e-22 0.02 0" nodeId="1478">
-                        <TransformGroup name="rearLights_li" translation="1.04 0 -0.003" nodeId="1479">
-                          <TransformGroup name="sharedLights_li" translation="-0.12 0.02 0.085" rotation="-90 0 180" nodeId="1480"/>
-                          <Light name="backLightsHigh_li" translation="-0.13 0 0" rotation="-15 0 0" clipDistance="75" nodeId="1481" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
-                          <Light name="brakeLightsHigh_li" translation="0.02 0 0" rotation="-15 0 0" clipDistance="75" nodeId="1482" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
-                          <Light name="reverseLight_li" translation="-0.04 0 0" rotation="-15 0 0" clipDistance="75" nodeId="1483" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="110" dropOff="3"/>
-                          <Light name="turnLightLeftBack" translation="0.126 0 0" rotation="-8 -5 -4.9886e-17" clipDistance="75" nodeId="1484" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="140" dropOff="3"/>
+                  <TransformGroup name="functions" clipDistance="300" nodeId="225">
+                    <TransformGroup name="lights" translation="0 -0.02 -0.07" clipDistance="300" nodeId="226">
+                      <TransformGroup name="rearLights" translation="-1.35525e-22 0.02 0" nodeId="227">
+                        <TransformGroup name="rearLights_li" translation="1.04 0 -0.003" nodeId="228">
+                          <TransformGroup name="sharedLights_li" translation="-0.12 0.02 0.085" rotation="-90 0 180" nodeId="229"/>
+                          <Light name="backLightsHigh_li" translation="-0.13 0 0" rotation="-15 0 0" clipDistance="75" nodeId="230" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
+                          <Light name="brakeLightsHigh_li" translation="0.02 0 0" rotation="-15 0 0" clipDistance="75" nodeId="231" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
+                          <Light name="reverseLight_li" translation="-0.04 0 0" rotation="-15 0 0" clipDistance="75" nodeId="232" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="110" dropOff="3"/>
+                          <Light name="turnLightLeftBack" translation="0.126 0 0" rotation="-8 -5 -4.9886e-17" clipDistance="75" nodeId="233" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="140" dropOff="3"/>
                         </TransformGroup>
-                        <TransformGroup name="rearLights_re" translation="-1.04 0 -0.003" nodeId="1485">
-                          <TransformGroup name="sharedLights_re" translation="0.12 0.02 0.085" rotation="-90 0 180" nodeId="1486"/>
-                          <Light name="backLightsHigh_re" translation="0.13 0 0" rotation="-15 0 0" clipDistance="75" nodeId="1487" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
-                          <Light name="brakeLightsHigh_re" translation="-0.02 0 0" rotation="-15 0 0" clipDistance="75" nodeId="1488" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
-                          <Light name="reverseLight_re" translation="0.04 0 0" rotation="-15 0 0" clipDistance="75" nodeId="1489" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="110" dropOff="3"/>
-                          <Light name="turnLightRightBack" translation="-0.126 0 0" rotation="-8 5 4.9886e-17" clipDistance="75" nodeId="1490" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="140" dropOff="3"/>
+                        <TransformGroup name="rearLights_re" translation="-1.04 0 -0.003" nodeId="234">
+                          <TransformGroup name="sharedLights_re" translation="0.12 0.02 0.085" rotation="-90 0 180" nodeId="235"/>
+                          <Light name="backLightsHigh_re" translation="0.13 0 0" rotation="-15 0 0" clipDistance="75" nodeId="236" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
+                          <Light name="brakeLightsHigh_re" translation="-0.02 0 0" rotation="-15 0 0" clipDistance="75" nodeId="237" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="110" dropOff="2"/>
+                          <Light name="reverseLight_re" translation="0.04 0 0" rotation="-15 0 0" clipDistance="75" nodeId="238" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="110" dropOff="3"/>
+                          <Light name="turnLightRightBack" translation="-0.126 0 0" rotation="-8 5 4.9886e-17" clipDistance="75" nodeId="239" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="140" dropOff="3"/>
                         </TransformGroup>
                       </TransformGroup>
                     </TransformGroup>
-                    <TransformGroup name="numberplates" translation="-0.015 -0.02 -0.085" clipDistance="300" nodeId="1491">
-                      <TransformGroup name="np_rear1Line" translation="0.93 -0.13 0.1" rotation="0 180 0" clipDistance="300" nodeId="1492">
-                        <Shape shapeId="31" name="npBlech1line" clipDistance="300" nodeId="1493" materialIds="1464" castsShadows="true" receiveShadows="true"/>
+                    <TransformGroup name="numberplates" translation="-0.015 -0.02 -0.085" clipDistance="300" nodeId="240">
+                      <TransformGroup name="np_rear1Line" translation="0.93 -0.13 0.1" rotation="0 180 0" clipDistance="300" nodeId="241">
+                        <Shape shapeId="31" name="npBlech1line" clipDistance="300" nodeId="242" materialIds="15" castsShadows="true" receiveShadows="true"/>
                       </TransformGroup>
-                      <TransformGroup name="np_rear2Lines" translation="0.95 -0.13 0.1" rotation="0 180 0" clipDistance="300" nodeId="1494">
-                        <Shape shapeId="32" name="npBelch2line" clipDistance="300" nodeId="1495" materialIds="1464" castsShadows="true" receiveShadows="true"/>
+                      <TransformGroup name="np_rear2Lines" translation="0.95 -0.13 0.1" rotation="0 180 0" clipDistance="300" nodeId="243">
+                        <Shape shapeId="32" name="npBelch2line" clipDistance="300" nodeId="244" materialIds="15" castsShadows="true" receiveShadows="true"/>
                       </TransformGroup>
                     </TransformGroup>
                   </TransformGroup>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="movingTools" clipDistance="300" nodeId="110">
-              <TransformGroup name="TST_Cargo_KingPin" translation="0 1.367 0" clipDistance="300" nodeId="111">
-                <Shape shapeId="33" name="TST_Cargo_KingPinFrame" translation="0 -1.367 0" clipDistance="300" nodeId="112" materialIds="7" castsShadows="true" receiveShadows="true"/>
-                <TransformGroup name="DLP_TST_KingPin" clipDistance="300" nodeId="113">
-                  <TransformGroup name="UVF001_DLP_TST_KingPin" referenceId="39" clipDistance="300" nodeId="1449">
-                    <TransformGroup name="Joints" nodeId="1450">
-                      <TransformGroup name="joint1" translation="0 0 -0.000374123" rotation="88.4518 -0 0" nodeId="1451">
-                        <TransformGroup name="joint2" translation="0 -4.16334e-19 0.0202366" rotation="-88.4518 0 0" nodeId="1452">
-                          <TransformGroup name="SemiAttacher" translation="0 0.000229176 -0.000172612" rotation="0 90 0" clipDistance="300" nodeId="1453"/>
+            <TransformGroup name="movingTools" clipDistance="300" nodeId="245">
+              <TransformGroup name="TST_Cargo_KingPin" translation="0 1.367 0" clipDistance="300" nodeId="246">
+                <Shape shapeId="33" name="TST_Cargo_KingPinFrame" translation="0 -1.367 0" clipDistance="300" nodeId="247" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="DLP_TST_KingPin" clipDistance="300" nodeId="248">
+                  <TransformGroup name="UVF001_DLP_TST_KingPin" referenceId="39" clipDistance="300" nodeId="251">
+                    <TransformGroup name="Joints" nodeId="252">
+                      <TransformGroup name="joint1" translation="0 0 -0.000374123" rotation="88.4518 -0 0" nodeId="253">
+                        <TransformGroup name="joint2" translation="0 -4.16334e-19 0.0202366" rotation="-88.4518 0 0" nodeId="254">
+                          <TransformGroup name="SemiAttacher" translation="0 0.000229176 -0.000172612" rotation="0 90 0" clipDistance="300" nodeId="255"/>
                         </TransformGroup>
                       </TransformGroup>
                     </TransformGroup>
-                    <TransformGroup name="visuals" clipDistance="300" nodeId="1454">
-                      <Shape shapeId="34" name="KingPin" clipDistance="300" nodeId="1455" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                    <TransformGroup name="visuals" clipDistance="300" nodeId="256">
+                      <Shape shapeId="34" name="KingPin" clipDistance="300" nodeId="257" materialIds="16" castsShadows="true" receiveShadows="true"/>
                     </TransformGroup>
                   </TransformGroup>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="movingParts" clipDistance="300" nodeId="114"/>
-            <TransformGroup name="componentJoints" clipDistance="300" nodeId="115"/>
+            <TransformGroup name="movingParts" clipDistance="300" nodeId="258"/>
+            <TransformGroup name="componentJoints" clipDistance="300" nodeId="259"/>
           </TransformGroup>
-          <TransformGroup name="TST_Cargo_Refs_on_Chassis" clipDistance="300" nodeId="116">
-            <TransformGroup name="insert_TST_CargoApp_Front" translation="4.76837e-09 1.465 1.6" clipDistance="300" nodeId="117"/>
-            <TransformGroup name="insert_TST_CargoApp_Rear" translation="4.76837e-09 1.465 -11.2" clipDistance="300" nodeId="118"/>
-            <TransformGroup name="App_dimensions" visibility="false" clipDistance="300" nodeId="119">
-              <TransformGroup name="App_dim" clipDistance="300" nodeId="120"/>
-              <TransformGroup name="FrontColli_3axle" clipDistance="300" nodeId="121"/>
+          <TransformGroup name="TST_Cargo_Refs_on_Chassis" clipDistance="300" nodeId="260">
+            <TransformGroup name="insert_TST_CargoApp_Front" translation="4.76837e-09 1.465 1.6" clipDistance="300" nodeId="261"/>
+            <TransformGroup name="insert_TST_CargoApp_Rear" translation="4.76837e-09 1.465 -11.2" clipDistance="300" nodeId="262"/>
+            <TransformGroup name="App_dimensions" visibility="false" clipDistance="300" nodeId="263">
+              <TransformGroup name="App_dim" clipDistance="300" nodeId="264"/>
+              <TransformGroup name="FrontColli_3axle" clipDistance="300" nodeId="265"/>
             </TransformGroup>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="Aufbau" translation="4.76837e-09 1.465 1.6" clipDistance="300" nodeId="122">
-          <TransformGroup name="visuals" clipDistance="300" nodeId="123">
-            <TransformGroup name="PlateauV2_Base" clipDistance="300" nodeId="124">
-              <TransformGroup name="visuals" clipDistance="300" nodeId="125">
-                <Shape shapeId="35" name="PlateauV2_Base_visuals" clipDistance="300" nodeId="126" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="Aufbau" translation="4.76837e-09 1.465 1.6" clipDistance="300" nodeId="266">
+          <TransformGroup name="visuals" clipDistance="300" nodeId="267">
+            <TransformGroup name="PlateauV2_Base" clipDistance="300" nodeId="268">
+              <TransformGroup name="visuals" clipDistance="300" nodeId="269">
+                <Shape shapeId="35" name="PlateauV2_Base_visuals" clipDistance="300" nodeId="270" materialIds="9" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
-              <TransformGroup name="DLP" clipDistance="300" nodeId="127"/>
+              <TransformGroup name="DLP" clipDistance="300" nodeId="271"/>
             </TransformGroup>
-            <TransformGroup name="PlateauV2_Apps" clipDistance="300" nodeId="128">
-              <TransformGroup name="App_Pritsche" clipDistance="300" nodeId="129">
-                <TransformGroup name="visuals_Pritsche" clipDistance="300" nodeId="130"/>
-                <TransformGroup name="collis_Pritsche" clipDistance="300" nodeId="131">
-                  <Shape shapeId="36" name="Colli_Pritsche_FrontWand" translation="0 1.15 0.06" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="132" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="PlateauV2_Apps" clipDistance="300" nodeId="272">
+              <TransformGroup name="App_Pritsche" clipDistance="300" nodeId="273">
+                <TransformGroup name="visuals_Pritsche" clipDistance="300" nodeId="274"/>
+                <TransformGroup name="collis_Pritsche" clipDistance="300" nodeId="275">
+                  <Shape shapeId="36" name="Colli_Pritsche_FrontWand" translation="0 1.15 0.06" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="276" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
                 </TransformGroup>
-                <TransformGroup name="DLP_Pritsche" clipDistance="300" nodeId="133">
-                  <TransformGroup name="DLP_CargoLine_App_Pritsche" clipDistance="300" nodeId="134">
-                    <TransformGroup name="DLP_CargoLine_App_Pritsche" referenceId="43" clipDistance="300" nodeId="1377">
-                      <TransformGroup name="Joints" clipDistance="300" nodeId="1378">
-                        <TransformGroup name="joint1_origin" nodeId="1379">
-                          <TransformGroup name="joint2_rear" translation="0 0 -12.8" nodeId="1380">
-                            <TransformGroup name="joint3_ballenGitter" translation="0 0.025 -0.13" nodeId="1381"/>
-                            <TransformGroup name="joint5Splint_li" translation="0.3 0 0" nodeId="1382"/>
-                            <TransformGroup name="joint6_Splint_re" translation="-0.3 0 2.27374e-15" nodeId="1383"/>
-                            <TransformGroup name="joint4_AuffahrRampen" translation="0 -0.07 3.265" nodeId="1384">
-                              <TransformGroup name="joint7_platte_li" translation="1 8.88178e-18 2.27374e-15" nodeId="1385"/>
-                              <TransformGroup name="joint8_platte_re" translation="-1 8.88178e-18 2.27374e-15" nodeId="1386"/>
+                <TransformGroup name="DLP_Pritsche" clipDistance="300" nodeId="277">
+                  <TransformGroup name="DLP_CargoLine_App_Pritsche" clipDistance="300" nodeId="278">
+                    <TransformGroup name="DLP_CargoLine_App_Pritsche" referenceId="43" clipDistance="300" nodeId="281">
+                      <TransformGroup name="Joints" clipDistance="300" nodeId="282">
+                        <TransformGroup name="joint1_origin" nodeId="283">
+                          <TransformGroup name="joint2_rear" translation="0 0 -12.8" nodeId="284">
+                            <TransformGroup name="joint3_ballenGitter" translation="0 0.025 -0.13" nodeId="285"/>
+                            <TransformGroup name="joint5Splint_li" translation="0.3 0 0" nodeId="286"/>
+                            <TransformGroup name="joint6_Splint_re" translation="-0.3 0 2.27374e-15" nodeId="287"/>
+                            <TransformGroup name="joint4_AuffahrRampen" translation="0 -0.07 3.265" nodeId="288">
+                              <TransformGroup name="joint7_platte_li" translation="1 8.88178e-18 2.27374e-15" nodeId="289"/>
+                              <TransformGroup name="joint8_platte_re" translation="-1 8.88178e-18 2.27374e-15" nodeId="290"/>
                             </TransformGroup>
                           </TransformGroup>
                         </TransformGroup>
                       </TransformGroup>
-                      <Shape shapeId="37" name="App_visuals" clipDistance="300" nodeId="1387" materialIds="1374" castsShadows="true" receiveShadows="true" skinBindNodeIds="1379 1380 1381 1382 1383 1384 1385 1386"/>
+                      <Shape shapeId="37" name="App_visuals" clipDistance="300" nodeId="291" materialIds="5" castsShadows="true" receiveShadows="true" skinBindNodeIds="283 284 285 286 287 288 289 290"/>
                     </TransformGroup>
                   </TransformGroup>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="PlateauV2_Branding" clipDistance="300" nodeId="135">
-              <TransformGroup name="fj_divisions" clipDistance="300" nodeId="136">
-                <Shape shapeId="38" name="fj_trucks" translation="0 -0.06 -12.865" clipDistance="300" nodeId="137" materialIds="5" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="39" name="fj_global_logo" translation="0 -0.06 0.06" clipDistance="300" nodeId="138" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="PlateauV2_Branding" clipDistance="300" nodeId="292">
+              <TransformGroup name="fj_divisions" clipDistance="300" nodeId="293">
+                <Shape shapeId="38" name="fj_trucks" translation="0 -0.06 -12.865" clipDistance="300" nodeId="294" materialIds="13" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="39" name="fj_global_logo" translation="0 -0.06 0.06" clipDistance="300" nodeId="295" materialIds="13" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="PlateauV2_Common" clipDistance="300" nodeId="139">
-              <TransformGroup name="collis_Plateau" clipDistance="300" nodeId="140">
-                <Shape shapeId="40" name="Plateau_Colli_li_TST" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="141" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-                <Shape shapeId="41" name="Plateau_Colli_re_TST" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="142" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="PlateauV2_Common" clipDistance="300" nodeId="296">
+              <TransformGroup name="collis_Plateau" clipDistance="300" nodeId="297">
+                <Shape shapeId="40" name="Plateau_Colli_li_TST" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="298" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <Shape shapeId="41" name="Plateau_Colli_re_TST" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="299" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
               </TransformGroup>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="functions" translation="-4.59243e-18 0.02 0" clipDistance="300" nodeId="143">
-            <TransformGroup name="foldable" clipDistance="300" nodeId="144">
-              <TransformGroup name="foldable_Pritsche" clipDistance="300" nodeId="145">
-                <TransformGroup name="AuffahrRampen" translation="4.59243e-18 -0.09 -12.885" clipDistance="300" nodeId="146">
-                  <Shape shapeId="42" name="Colli_Auffahrrampe" translation="0 0 3.35" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="147" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="functions" translation="-4.59243e-18 0.02 0" clipDistance="300" nodeId="300">
+            <TransformGroup name="foldable" clipDistance="300" nodeId="301">
+              <TransformGroup name="foldable_Pritsche" clipDistance="300" nodeId="302">
+                <TransformGroup name="AuffahrRampen" translation="4.59243e-18 -0.09 -12.885" clipDistance="300" nodeId="303">
+                  <Shape shapeId="42" name="Colli_Auffahrrampe" translation="0 0 3.35" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="304" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
                 </TransformGroup>
-                <TransformGroup name="Ballengitter" translation="4.59243e-18 0.005 -12.93" clipDistance="300" nodeId="148">
-                  <Shape shapeId="43" name="Colli_Ballengitter" translation="0 0.85 -0.05" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="149" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <TransformGroup name="Ballengitter" translation="4.59243e-18 0.005 -12.93" clipDistance="300" nodeId="305">
+                  <Shape shapeId="43" name="Colli_Ballengitter" translation="0 0.85 -0.05" visibility="false" compoundChild="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="306" materialIds="14" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="lights" clipDistance="300" nodeId="150">
-              <TransformGroup name="lights_Pritsche" clipDistance="300" nodeId="151">
-                <TransformGroup name="DLP_WorkLightsRear_Pritsche" translation="0 2.245 0" clipDistance="300" nodeId="152">
-                  <TransformGroup name="Twin_WorklightBack" referenceId="47" clipDistance="300" nodeId="1457">
-                    <TransformGroup name="TWL_left_01" translation="0.45 0 0.05" clipDistance="300" nodeId="1458">
-                      <Light name="TWL_Left" translation="0 0.077 -0.083" rotation="-20 10 0" clipDistance="75" nodeId="1459" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="90" dropOff="2"/>
-                      <TransformGroup name="hellaWorkingLightSquare_01_li" nodeId="1460"/>
+            <TransformGroup name="lights" clipDistance="300" nodeId="307">
+              <TransformGroup name="lights_Pritsche" clipDistance="300" nodeId="308">
+                <TransformGroup name="DLP_WorkLightsRear_Pritsche" translation="0 2.245 0" clipDistance="300" nodeId="309">
+                  <TransformGroup name="Twin_WorklightBack" referenceId="47" clipDistance="300" nodeId="311">
+                    <TransformGroup name="TWL_left_01" translation="0.45 0 0.05" clipDistance="300" nodeId="312">
+                      <Light name="TWL_Left" translation="0 0.077 -0.083" rotation="-20 10 0" clipDistance="75" nodeId="313" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="90" dropOff="2"/>
+                      <TransformGroup name="hellaWorkingLightSquare_01_li" nodeId="314"/>
                     </TransformGroup>
-                    <TransformGroup name="TWL_right_01" translation="-0.45 0 0.05" clipDistance="300" nodeId="1461">
-                      <Light name="TWL_right" translation="0 0.077 -0.083" rotation="-20 -10 0" clipDistance="75" nodeId="1462" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="90" dropOff="2"/>
-                      <TransformGroup name="hellaWorkingLightSquare_01_re" nodeId="1463"/>
+                    <TransformGroup name="TWL_right_01" translation="-0.45 0 0.05" clipDistance="300" nodeId="315">
+                      <Light name="TWL_right" translation="0 0.077 -0.083" rotation="-20 -10 0" clipDistance="75" nodeId="316" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="90" dropOff="2"/>
+                      <TransformGroup name="hellaWorkingLightSquare_01_re" nodeId="317"/>
                     </TransformGroup>
                   </TransformGroup>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="tensionBelts1" translation="4.59243e-18 0 0" clipDistance="300" nodeId="153">
-              <TransformGroup name="jointNode" clipDistance="300" nodeId="154"/>
-              <TransformGroup name="tensionBelts_modulPack1" clipDistance="300" nodeId="155">
-                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="156">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="157"/>
+            <TransformGroup name="tensionBelts1" translation="4.59243e-18 0 0" clipDistance="300" nodeId="318">
+              <TransformGroup name="jointNode" clipDistance="300" nodeId="319"/>
+              <TransformGroup name="tensionBelts_modulPack1" clipDistance="300" nodeId="320">
+                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="321">
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="322"/>
                 </TransformGroup>
-                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="158">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="159"/>
-                </TransformGroup>
-              </TransformGroup>
-              <TransformGroup name="tensionBelts_modulPack2" translation="0 0 -1.6" clipDistance="300" nodeId="160">
-                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="1346">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="1347"/>
-                </TransformGroup>
-                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="1348">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="1349"/>
+                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="323">
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="324"/>
                 </TransformGroup>
               </TransformGroup>
-              <TransformGroup name="tensionBelts_modulPack3" translation="0 0 -3.2" clipDistance="300" nodeId="165">
-                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="1370">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="1371"/>
+              <TransformGroup name="tensionBelts_modulPack2" translation="0 0 -1.6" clipDistance="300" nodeId="325">
+                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="326">
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="327"/>
                 </TransformGroup>
-                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="1372">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="1373"/>
-                </TransformGroup>
-              </TransformGroup>
-              <TransformGroup name="tensionBelts_modulPack4" translation="0 0 -4.8" clipDistance="300" nodeId="170">
-                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="1366">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="1367"/>
-                </TransformGroup>
-                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="1368">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="1369"/>
+                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="328">
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="329"/>
                 </TransformGroup>
               </TransformGroup>
-              <TransformGroup name="tensionBelts_modulPack5" translation="0 0 -6.4" clipDistance="300" nodeId="175">
-                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="1362">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="1363"/>
+              <TransformGroup name="tensionBelts_modulPack3" translation="0 0 -3.2" clipDistance="300" nodeId="330">
+                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="331">
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="332"/>
                 </TransformGroup>
-                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="1364">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="1365"/>
-                </TransformGroup>
-              </TransformGroup>
-              <TransformGroup name="tensionBelts_modulPack6" translation="0 0 -8" clipDistance="300" nodeId="180">
-                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="1358">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="1359"/>
-                </TransformGroup>
-                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="1360">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="1361"/>
+                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="333">
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="334"/>
                 </TransformGroup>
               </TransformGroup>
-              <TransformGroup name="tensionBelts_modulPack7" translation="0 0 -9.6" clipDistance="300" nodeId="185">
-                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="1354">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="1355"/>
+              <TransformGroup name="tensionBelts_modulPack4" translation="0 0 -4.8" clipDistance="300" nodeId="335">
+                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="336">
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="337"/>
                 </TransformGroup>
-                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="1356">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="1357"/>
+                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="338">
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="339"/>
                 </TransformGroup>
               </TransformGroup>
-              <TransformGroup name="tensionBelts_modulPack8" translation="0 0 -11.2" clipDistance="300" nodeId="190">
-                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="1350">
-                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="1351"/>
+              <TransformGroup name="tensionBelts_modulPack5" translation="0 0 -6.4" clipDistance="300" nodeId="340">
+                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="341">
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="342"/>
                 </TransformGroup>
-                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="1352">
-                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="1353"/>
+                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="343">
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="344"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="tensionBelts_modulPack6" translation="0 0 -8" clipDistance="300" nodeId="345">
+                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="346">
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="347"/>
+                </TransformGroup>
+                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="348">
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="349"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="tensionBelts_modulPack7" translation="0 0 -9.6" clipDistance="300" nodeId="350">
+                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="351">
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="352"/>
+                </TransformGroup>
+                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="353">
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="354"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="tensionBelts_modulPack8" translation="0 0 -11.2" clipDistance="300" nodeId="355">
+                <TransformGroup name="startpoint1" translation="1.2 0.035 -0.3" rotation="0 -90 0" clipDistance="300" nodeId="356">
+                  <TransformGroup name="endpoint1" translation="0 0 2.4" clipDistance="300" nodeId="357"/>
+                </TransformGroup>
+                <TransformGroup name="startpoint2" translation="1.2 0.035 -1.3" rotation="0 -90 0" clipDistance="300" nodeId="358">
+                  <TransformGroup name="endpoint2" translation="0 0 2.4" clipDistance="300" nodeId="359"/>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            <TransformGroup name="DynMountTrigger1" translation="4.59236e-18 0 0" clipDistance="300" nodeId="1330"/>
-            <TransformGroup name="movingTools" translation="4.59236e-18 0 0" clipDistance="300" nodeId="1331">
-              <TransformGroup name="movingTools_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="1332"/>
+            <TransformGroup name="DynMountTrigger1" translation="4.59236e-18 0 0" clipDistance="300" nodeId="360"/>
+            <TransformGroup name="aPalletAutoLoader" translation="0 0 -6.4" nodeId="376">
+              <Shape shapeId="44" name="LoadedTrigger" translation="0 1.25 0" scale="2.3 2.5 12.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="378" materialIds="379" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="44" name="PickupTrigger1" translation="3 0 0" scale="3 3 12.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="380" materialIds="379" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="44" name="PickupTrigger2" translation="-3 0 0" scale="3 3 12.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="381" materialIds="379" nonRenderable="true" distanceBlending="false"/>
             </TransformGroup>
-            <TransformGroup name="movingParts" translation="4.59236e-18 0 0" clipDistance="300" nodeId="1333">
-              <TransformGroup name="movingParts_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="1334"/>
+            <TransformGroup name="movingTools" translation="4.59236e-18 0 0" clipDistance="300" nodeId="361">
+              <TransformGroup name="movingTools_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="362"/>
             </TransformGroup>
-            <TransformGroup name="componentJoints" translation="4.59236e-18 0 0" clipDistance="300" nodeId="1335">
-              <TransformGroup name="componentJoints_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="1336"/>
+            <TransformGroup name="movingParts" translation="4.59236e-18 0 0" clipDistance="300" nodeId="363">
+              <TransformGroup name="movingParts_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="364"/>
+            </TransformGroup>
+            <TransformGroup name="componentJoints" translation="4.59236e-18 0 0" clipDistance="300" nodeId="365">
+              <TransformGroup name="componentJoints_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="366"/>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="PlateauV2_Refs" nodeId="1337">
-            <TransformGroup name="PlateauV2_Front" nodeId="1338"/>
-            <TransformGroup name="PlateauV2_Rear" translation="0 0 -12.8" nodeId="1339">
-              <TransformGroup name="insert_AuffahrRampen" translation="0 -0.07 -0.085" nodeId="1340"/>
-              <TransformGroup name="insert_Ballengitter" translation="0 0.025 -0.13" nodeId="1341"/>
-              <TransformGroup name="insert_KofferBackDoor" translation="0 0.02 0" nodeId="1342"/>
+          <TransformGroup name="PlateauV2_Refs" nodeId="367">
+            <TransformGroup name="PlateauV2_Front" nodeId="368"/>
+            <TransformGroup name="PlateauV2_Rear" translation="0 0 -12.8" nodeId="369">
+              <TransformGroup name="insert_AuffahrRampen" translation="0 -0.07 -0.085" nodeId="370"/>
+              <TransformGroup name="insert_Ballengitter" translation="0 0.025 -0.13" nodeId="371"/>
+              <TransformGroup name="insert_KofferBackDoor" translation="0 0.02 0" nodeId="372"/>
             </TransformGroup>
-            <TransformGroup name="Insert_Bordwaende" translation="0 0.02 0" nodeId="1343"/>
+            <TransformGroup name="Insert_Bordwaende" translation="0 0.02 0" nodeId="373"/>
           </TransformGroup>
         </TransformGroup>
       </Shape>
   </Scene>
 
   <UserAttributes>
-    <UserAttribute nodeId="106">
+    <UserAttribute nodeId="187">
       <Attribute name="nts" type="string" value="  "/>
     </UserAttribute>
-    <UserAttribute nodeId="1507">
+    <UserAttribute nodeId="197">
       <Attribute name="MaxHandle" type="integer" value="51"/>
       <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
       <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
@@ -589,7 +596,7 @@
       <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
       <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
     </UserAttribute>
-    <UserAttribute nodeId="1509">
+    <UserAttribute nodeId="199">
       <Attribute name="MaxHandle" type="integer" value="58"/>
       <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
       <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
@@ -599,7 +606,7 @@
       <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
       <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
     </UserAttribute>
-    <UserAttribute nodeId="1511">
+    <UserAttribute nodeId="201">
       <Attribute name="MaxHandle" type="integer" value="53"/>
       <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
       <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
@@ -609,7 +616,7 @@
       <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
       <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
     </UserAttribute>
-    <UserAttribute nodeId="1512">
+    <UserAttribute nodeId="202">
       <Attribute name="MaxHandle" type="integer" value="54"/>
       <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
       <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
@@ -619,7 +626,7 @@
       <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
       <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
     </UserAttribute>
-    <UserAttribute nodeId="1514">
+    <UserAttribute nodeId="204">
       <Attribute name="MaxHandle" type="integer" value="50"/>
       <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
       <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
@@ -629,7 +636,7 @@
       <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
       <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
     </UserAttribute>
-    <UserAttribute nodeId="1515">
+    <UserAttribute nodeId="205">
       <Attribute name="MaxHandle" type="integer" value="59"/>
       <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
       <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
@@ -639,7 +646,7 @@
       <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
       <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
     </UserAttribute>
-    <UserAttribute nodeId="1517">
+    <UserAttribute nodeId="207">
       <Attribute name="MaxHandle" type="integer" value="57"/>
       <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
       <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
@@ -649,7 +656,7 @@
       <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
       <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
     </UserAttribute>
-    <UserAttribute nodeId="1519">
+    <UserAttribute nodeId="209">
       <Attribute name="MaxHandle" type="integer" value="57"/>
       <Attribute name="mrFBXASC032displacementFBXASC032edgeFBXASC032length" type="float" value="2"/>
       <Attribute name="mrFBXASC032displacementFBXASC032maxFBXASC032displace" type="float" value="20"/>
@@ -659,37 +666,37 @@
       <Attribute name="mrFBXASC032displacementFBXASC032useFBXASC032globalFBXASC032settings" type="boolean" value="true"/>
       <Attribute name="mrFBXASC032displacementFBXASC032viewFBXASC032dependent" type="boolean" value="true"/>
     </UserAttribute>
-    <UserAttribute nodeId="107">
+    <UserAttribute nodeId="211">
       <Attribute name="nts" type="string" value="  "/>
     </UserAttribute>
-    <UserAttribute nodeId="1451">
+    <UserAttribute nodeId="253">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1452">
+    <UserAttribute nodeId="254">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1379">
+    <UserAttribute nodeId="283">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1380">
+    <UserAttribute nodeId="284">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1381">
+    <UserAttribute nodeId="285">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1382">
+    <UserAttribute nodeId="286">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1383">
+    <UserAttribute nodeId="287">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1384">
+    <UserAttribute nodeId="288">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1385">
+    <UserAttribute nodeId="289">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
-    <UserAttribute nodeId="1386">
+    <UserAttribute nodeId="290">
       <Attribute name="liw" type="boolean" value="false"/>
     </UserAttribute>
   </UserAttributes>

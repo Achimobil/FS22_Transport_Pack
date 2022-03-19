@@ -59,8 +59,6 @@
     <File fileId="23" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSTachometer_diffuse.png"/>
     <File fileId="26" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSTachometer_emissive.dds"/>
     <File fileId="24" filename="../../textures/Landfahrzeuge/MAN_Chassis/manTGSTachometer_normal.png"/>
-    <File fileId="78" filename="../../textures/_shared_/UAL/marker_diffuse.dds"/>
-    <File fileId="79" filename="../../textures/_shared_/UAL/marker_normal.dds"/>
     <File fileId="44" filename="../../textures/_shared_/coronaWhite_diffuse.png"/>
     <File fileId="17" filename="../../textures/_shared_/default_normal.dds"/>
     <File fileId="76" filename="../../textures/_shared_/fj/fj_branding.dds"/>
@@ -204,10 +202,6 @@
       <CustomParameter name="RDT" value="1 1 50 50"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="marker_mat" materialId="25">
-      <Texture fileId="78"/>
-      <Normalmap fileId="79"/>
-    </Material>
     <Material name="mirror_mat" materialId="26" diffuseColor="0 0 0 1" specularColor="0 1 1" customShaderId="29">
       <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="10" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
       <CustomParameter name="reflectionScale" value="2 0 0 0"/>
@@ -329,6 +323,8 @@
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
+    <Material name="UnnamedMaterial" materialId="847" diffuseColor="1 1 1 1">
+    </Material>
     <Material name="UnnamedMaterial" materialId="49" diffuseColor="1 1 1 1">
     </Material>
   </Materials>
@@ -366,18 +362,10 @@
                 </TransformGroup>
                 <TransformGroup name="functions_common" nodeId="335">
                   <TransformGroup name="mirrors" translation="0 0.0222018 -0.194596" clipDistance="50" nodeId="336">
-                    <Shape shapeId="16" name="mirrorSmallLeftDecal" translation="1.35928 2.55857 2.70578" rotation="-88.6037 24.9207 -1.75355e-15" clipDistance="20" nodeId="337" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1">
-                      <TransformGroup name="mirrorSmallLeftDecalRef" translation="2.28678 4.82432 8.94996e-08" rotation="84.82 -2.963 -29.69" nodeId="1211"/>
-                    </Shape>
-                    <Shape shapeId="17" name="mirrorSmallRightDecal" translation="-1.36024 2.55765 2.69939" rotation="-86.2361 -36.7048 3.96713e-15" clipDistance="20" nodeId="338" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1">
-                      <TransformGroup name="mirrorSmallRightDecalRef" nodeId="1212"/>
-                    </Shape>
-                    <Shape shapeId="18" name="mirrorSmallFrontDecal" translation="-0.98063 2.80607 3.22536" rotation="-124.345 -66.6005 -8.00867e-15" clipDistance="20" nodeId="339" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1">
-                      <TransformGroup name="mirrorSmallFrontDecalRef" nodeId="1213"/>
-                    </Shape>
-                    <Shape shapeId="19" name="mirrorSmallSideDownDecal" translation="-1.17898 2.85333 2.3004" rotation="-137.888 -83.6074 0" clipDistance="300" nodeId="340" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1">
-                      <TransformGroup name="mirrorSmallSideDownDecalRef" nodeId="1214"/>
-                    </Shape>
+                    <Shape shapeId="16" name="mirrorSmallLeftDecal" translation="1.35928 2.55857 2.70578" rotation="-88.6037 24.9207 -1.75355e-15" clipDistance="20" nodeId="337" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                    <Shape shapeId="17" name="mirrorSmallRightDecal" translation="-1.36024 2.55765 2.69939" rotation="-86.2361 -36.7048 3.96713e-15" clipDistance="20" nodeId="338" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                    <Shape shapeId="18" name="mirrorSmallFrontDecal" translation="-0.98063 2.80607 3.22536" rotation="-124.345 -66.6005 -8.00867e-15" clipDistance="20" nodeId="339" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                    <Shape shapeId="19" name="mirrorSmallSideDownDecal" translation="-1.17898 2.85333 2.3004" rotation="-137.888 -83.6074 0" clipDistance="300" nodeId="340" materialIds="26" castsShadows="true" receiveShadows="true" decalLayer="1"/>
                   </TransformGroup>
                   <TransformGroup name="playerRoot" translation="0.632806 1.99378 1.93203" rotation="0 2.8249e-30 0" clipDistance="100" nodeId="341">
                     <TransformGroup name="player_skin" nodeId="342"/>
@@ -424,7 +412,7 @@
                     </TransformGroup>
                   </TransformGroup>
                   <TransformGroup name="cameras" clipDistance="100" nodeId="373">
-                    <Camera name="Bastelcamera" translation="3.52782 8.45745 -9.8554" rotation="151.582 7.19373 -180" nodeId="374" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+                    <Camera name="Bastelcamera" translation="7.1903 7.57018 -8.49098" rotation="156.395 28.5078 180" nodeId="374" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
                     <Camera name="indoorCamera" translation="0.625 2.8 2" rotation="-18.5 180 0" nodeId="375" fov="65" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
                   </TransformGroup>
                   <TransformGroup name="Strobes" visibility="false" clipDistance="300" nodeId="376">
@@ -1010,26 +998,30 @@
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
-            
-            <TransformGroup name="DynMountTrigger1" translation="4.59236e-18 0 0" clipDistance="300" nodeId="1196"/>
-            <TransformGroup name="movingTools" translation="4.59236e-18 0 0" clipDistance="300" nodeId="1197">
-              <TransformGroup name="movingTools_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="1198"/>
+            <TransformGroup name="DynMountTrigger1" translation="4.59236e-18 0 0" clipDistance="300" nodeId="828"/>
+            <TransformGroup name="aPalletAutoLoader" translation="0 0 -2.4" nodeId="843">
+              <Shape shapeId="166" name="LoadedTrigger" translation="0 1.25 0" scale="2.3 2.5 4.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="846" materialIds="847" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="166" name="PickupTrigger1" translation="3 0 0" scale="3 3 4.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="848" materialIds="847" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="166" name="PickupTrigger2" translation="-3 0 0" scale="3 3 4.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="849" materialIds="847" nonRenderable="true" distanceBlending="false"/>
             </TransformGroup>
-            <TransformGroup name="movingParts" translation="4.59236e-18 0 0" clipDistance="300" nodeId="1199">
-              <TransformGroup name="movingParts_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="1200"/>
+            <TransformGroup name="movingTools" translation="4.59236e-18 0 0" clipDistance="300" nodeId="829">
+              <TransformGroup name="movingTools_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="830"/>
             </TransformGroup>
-            <TransformGroup name="componentJoints" translation="4.59236e-18 0 0" clipDistance="300" nodeId="1201">
-              <TransformGroup name="componentJoints_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="1202"/>
+            <TransformGroup name="movingParts" translation="4.59236e-18 0 0" clipDistance="300" nodeId="831">
+              <TransformGroup name="movingParts_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="832"/>
+            </TransformGroup>
+            <TransformGroup name="componentJoints" translation="4.59236e-18 0 0" clipDistance="300" nodeId="833">
+              <TransformGroup name="componentJoints_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="834"/>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="PlateauV2_Refs" nodeId="1203">
-            <TransformGroup name="PlateauV2_Front" nodeId="1204"/>
-            <TransformGroup name="PlateauV2_Rear" translation="0 0 -4.8" nodeId="1205">
-              <TransformGroup name="insert_AuffahrRampen" translation="0 -0.07 -0.085" nodeId="1206"/>
-              <TransformGroup name="insert_Ballengitter" translation="0 0.025 -0.13" nodeId="1207"/>
-              <TransformGroup name="insert_KofferBackDoor" translation="0 0.02 0" nodeId="1208"/>
+          <TransformGroup name="PlateauV2_Refs" nodeId="835">
+            <TransformGroup name="PlateauV2_Front" nodeId="836"/>
+            <TransformGroup name="PlateauV2_Rear" translation="0 0 -4.8" nodeId="837">
+              <TransformGroup name="insert_AuffahrRampen" translation="0 -0.07 -0.085" nodeId="838"/>
+              <TransformGroup name="insert_Ballengitter" translation="0 0.025 -0.13" nodeId="839"/>
+              <TransformGroup name="insert_KofferBackDoor" translation="0 0.02 0" nodeId="840"/>
             </TransformGroup>
-            <TransformGroup name="Insert_Bordwaende" translation="0 0.02 0" nodeId="1209"/>
+            <TransformGroup name="Insert_Bordwaende" translation="0 0.02 0" nodeId="841"/>
           </TransformGroup>
         </TransformGroup>
       </Shape>
@@ -1383,75 +1375,6 @@
     </UserAttribute>
     <UserAttribute nodeId="780">
       <Attribute name="liw" type="boolean" value="false"/>
-    </UserAttribute>
-    <UserAttribute nodeId="829">
-      <Attribute name="markerLength" type="float" value="4"/>
-    </UserAttribute>
-    <UserAttribute nodeId="831">
-      <Attribute name="excludedFillTypes" type="string" value="woodchips woods boards"/>
-      <Attribute name="secondaryPalletSize" type="boolean" value="true"/>
-      <Attribute name="secondarySizeLength" type="string" value="1.50"/>
-      <Attribute name="secondarySizeWidth" type="string" value="2.00"/>
-      <Attribute name="sizeLength" type="string" value="2.00"/>
-      <Attribute name="sizeWidth" type="string" value="2.00"/>
-      <Attribute name="usePalletSize" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="844">
-      <Attribute name="excludedFillTypes" type="string" value="woodchips woods boards"/>
-      <Attribute name="secondaryPalletSize" type="boolean" value="true"/>
-      <Attribute name="secondarySizeLength" type="string" value="1.80"/>
-      <Attribute name="secondarySizeWidth" type="string" value="1.80"/>
-      <Attribute name="sizeLength" type="string" value="1.80"/>
-      <Attribute name="sizeWidth" type="string" value="1.80"/>
-      <Attribute name="usePalletSize" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="857">
-      <Attribute name="baleLength" type="string" value="2.40"/>
-      <Attribute name="baleWidth" type="string" value="1.20"/>
-      <Attribute name="isSquareBale" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="870">
-      <Attribute name="baleHeight" type="string" value="0.85"/>
-      <Attribute name="baleLength" type="string" value="2.39"/>
-      <Attribute name="baleWidth" type="string" value="1.20"/>
-      <Attribute name="isSquareBale" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="883">
-      <Attribute name="diameter" type="string" value="1.10"/>
-      <Attribute name="isRoundBale" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="900">
-      <Attribute name="diameter" type="string" value="1.30"/>
-      <Attribute name="isRoundBale" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="911">
-      <Attribute name="diameter" type="string" value="1.55"/>
-      <Attribute name="isRoundBale" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="922">
-      <Attribute name="diameter" type="string" value="1.80"/>
-      <Attribute name="isRoundBale" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="931">
-      <Attribute name="sizeLength" type="string" value="0.60"/>
-      <Attribute name="sizeWidth" type="string" value="0.80"/>
-      <Attribute name="usePalletSize" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="1172">
-      <Attribute name="baleHeight" type="string" value="2.44"/>
-      <Attribute name="baleLength" type="string" value="4.88"/>
-      <Attribute name="baleWidth" type="string" value="2.44"/>
-      <Attribute name="isSquareBale" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="1174">
-      <Attribute name="diameter" type="string" value="2.38"/>
-      <Attribute name="isRoundBale" type="boolean" value="true"/>
-    </UserAttribute>
-    <UserAttribute nodeId="1178">
-      <Attribute name="includedFillTypes" type="string" value="wood2"/>
-    </UserAttribute>
-    <UserAttribute nodeId="1183">
-      <Attribute name="includedFillTypes" type="string" value="boards"/>
     </UserAttribute>
   </UserAttributes>
 

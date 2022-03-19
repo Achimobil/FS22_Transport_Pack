@@ -350,7 +350,23 @@
         <!-- <colorNode node="0>1|0|0|0|0"/> -->
         <!-- <colorNode node="0>1|0|1|0|2|0|0|1"/> -->
     <!-- </baseColorConfigurations> -->
+    <aPalletAutoLoader>
+        <aPalletAutoLoaderConfigurations>
+            <aPalletAutoLoaderConfiguration maxObjects="32" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="-4 -1.2 0" UnloadLeftOffset="4 -1.2 0">
+                <trigger node="LoadedTrigger"/>
+                <pickupTriggers>
+                    <pickupTrigger node="PickupTrigger1"/>
+                    <pickupTrigger node="PickupTrigger2"/>
+                </pickupTriggers>
+                <loadArea baseNode="aPalletAutoLoader" leftRightCornerOffset="1.225 0 5.6" lenght="11.2" width="2.30" height="2.5"/>
+            </aPalletAutoLoaderConfiguration>
+        </aPalletAutoLoaderConfigurations>
+    </aPalletAutoLoader>
 
     <i3dMappings>
+        <i3dMapping id="aPalletAutoLoader" node="0>1|1|4"/>
+        <i3dMapping id="LoadedTrigger" node="0>1|1|4|0"/>
+        <i3dMapping id="PickupTrigger1" node="0>1|1|4|1"/>
+        <i3dMapping id="PickupTrigger2" node="0>1|1|4|2"/>
     </i3dMappings>
 </vehicle>
