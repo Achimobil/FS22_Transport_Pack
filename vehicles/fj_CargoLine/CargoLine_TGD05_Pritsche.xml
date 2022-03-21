@@ -380,7 +380,7 @@
                     <pickupTrigger node="PickupTrigger1"/>
                     <pickupTrigger node="PickupTrigger2"/>
                 </pickupTriggers>
-                <loadArea baseNode="aPalletAutoLoader" leftRightCornerOffset="1.225 0 4" lenght="8" width="2.30" height="2.5"/>
+                <loadArea baseNode="aPalletAutoLoader" leftRightCornerOffset="1.2 0 4" lenght="8" width="2.40" height="3.0"/>
             </aPalletAutoLoaderConfiguration>
         </aPalletAutoLoaderConfigurations>
     </aPalletAutoLoader>
