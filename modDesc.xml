@@ -1,21 +1,106 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="64">
-    <author>Friesenjung</author>
-
-    <version>0.1.0.0</version>
-
+    <author>Achimobil</author>
+    <version>0.1.1.0</version>
     <title>
-        <en>Friesenjung Transport Pack</en>
-        <de>Friesenjung Transport Packet</de>
+        <en>Autoloader Transport Pack</en>
+        <de>Autoloader Transport Paket</de>
     </title>
-
     <description>
-        <en><![CDATA[Vehicles modified by Friesenjung]]></en>
-        <de><![CDATA[Von Friesenjung modifizierte Fahrzeuge]]></de>
+        <en>
+<![CDATA[The Freisenjung Transport Pack known from the 19 converted to the 22.
+My autoloader for pallets and bales has been integrated here.
+
+The first version here is a pure conversion. This means that everything that the original pack did not have, this one does not have either.
+This includes e.g. indicator lights inside. 
+As these are LS17 models in the base, I did not get a choice of colours or working mirrors for the conversion.
+It is planned to improve this with and with. If you are interested in working with me in the next months, please contact me.
+
+It is not easy to put the autoloading capacities into text. Therefore here are only a few key data per model.
+Model number => Euro pallets | round bales 125 | square bales
+03 => 12 | 12 | 9 
+04 => 20 | 16 | 15
+05 => 24 | 22 | 18
+06 => 28 | 26 | 21
+07 => 32 | 32 | 24
+08 => 40 | 36 | 30
+Of course, the other autoloader items also fit, but that is beyond the scope of the description here.
+Listing 12 tools here doesn't make much sense from my point of view.
+
+Prices
+TRUCK: 135000€ - 210000€
+Trailer: 12000@ - 25000€
+
+Includes the following with flatbeds and autoload:
+3 TRUCKS
+3 trailers with turntable
+3 trailers with drawbar
+3 trailers
+
+Credits
+Honour to whom honour is due. The Friesenjung Transport Pack was converted here.
+Thank you at this point for the permission to use this as a basis.
+The Freisenjung has nothing to do with the conversion itself, if something is wrong, please contact me.
+The models are originally from Alfredix, so a special thanks to him for the models.
+
+The vehicles are based on the LS17 models from Alfredix, because that was already the case in the FJ Mod.
+I don't know yet if I am allowed/able to convert them to his new LS19 models, which still have to be converted to the 22.
+
+Who wants to participate or finds errors can contact me in Discord.
+https://discord.gg/Va7JNnEkcW
+
+This compilation of mine may only be published with the original link.
+Changing and republishing only with permission.
+
+Translated with www.DeepL.com/Translator (free version)
+]]></en>
+        <de>
+<![CDATA[Das aus dem 19er bekannte Freisenjung Transport Pack konvertiert in den 22er.
+Mein Autoloader für Paletten und Ballen wurde hier integriert.
+
+Die erste Version ist hier eine reine Konvertierung. Das heißt alles das, was das ursprüngliche Packet nicht hatte, hat auch dieses hier noch nicht.
+Dazu zählen z.B. Blinkerlampen im inneren. 
+Da es sich um LS17 Modelle in der Basis handelt habe ich bei der Konvertierung keine Farbwahl und keine funktionierenden Spiegel hin bekommen.
+Es ist geplant dies mit und mit noch zu verbessern. Wer interesse hat, mit mir in den nächsten Monaten daran zu Arbeiten kann sich gerne bei mir melden.
+
+Die autoloade Kapazitäten in Text zu fassen ist nicht üebrsichtlich hin zu bekommen. Deshalb hier nur ein paar Eckdaten dazu pro Model.
+Modelnummer => Europaletten | Rundballen 125 | Quaderballen
+03 => 12 | 12 | 9 
+04 => 20 | 16 | 15
+05 => 24 | 22 | 18
+06 => 28 | 26 | 21
+07 => 32 | 32 | 24
+08 => 40 | 36 | 30
+Natürlich passen auch die anderen Autoloader sachen, aber das sprengt hier den Rahmen der Beschreibung.
+Auch 12 Farhzeuge hier auflisten macht nicht viel sinn aus meiner sicht.
+
+Preise
+LKW: 135000€ - 210000€
+Anhänger: 12000@ - 25000€
+
+Enthält folgendes mit Pritschen und Autoload:
+3 LKW
+3 Anhänger mit Drehschemel
+3 Anhänger mit Deichsel
+3 Auflieger
+
+Credits
+Ehre wem Ehre gebührt. Konvertiert wurde hier das Friesenjung Transport Pack.
+Danke an dieser Stelle für die Genehmigung das als Grundlage zu verwenden.
+Mit der Konvertierung selbst hat der Freisenjung nichts zu tun, sollte da was nicht stimmen, dann bitte an mich wenden.
+Die Modelle sind ursprünglich von Alfredix, somit gilt auch ihm hier ein besonderer Danke für die Modelle.
+
+Die Fahrzeuge basieren auf den LS17 Modellen von Alfredix, weil das auf im FJ Mod schon so war.
+Ob ich die auf seine neuen LS19 Modelle, die erst noch in den 22er Konvertiert werden müssen, umstellen darf/kann, weiß ich noch nicht.
+
+Wer mit machen will oder fehler findet kann sich bei mir im Discord melden.
+https://discord.gg/Va7JNnEkcW
+
+Diese zusammenstellung von mir darf nur mit Orignal Link veröffentlicht werden.
+Das Verändern und neu veröffentlichen nur mit Genehmigung.
+]]></de>
     </description>
-
     <iconFilename>store/store_fj_AllVehicle_Pack.dds</iconFilename>
-
     <multiplayer supported="true"/>
     <storeItems>
         <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TGS03_Pritsche.xml"/>
@@ -31,11 +116,9 @@
         <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TST07_Pritsche.xml"/>
         <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TST08_Pritsche.xml"/>
     </storeItems>
-
     <dependencies>
         <dependency>FS22_aPalletAutoLoader</dependency>
     </dependencies>
-
     <vehicleTypes>
         <type name="fjPritscheTruck" parent="woodTruck" filename="$dataS/scripts/vehicles/Vehicle.lua">
             <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
@@ -44,6 +127,5 @@
             <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
         </type>
     </vehicleTypes>
-    
     <l10n filenamePrefix="l10n"/>
 </modDesc>
