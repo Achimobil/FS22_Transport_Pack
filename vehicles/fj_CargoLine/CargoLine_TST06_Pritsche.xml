@@ -311,7 +311,7 @@
     <!-- </baseColorConfigurations> -->
     <aPalletAutoLoader>
         <aPalletAutoLoaderConfigurations>
-            <aPalletAutoLoaderConfiguration maxObjects="24" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="-4 -1.2 0" UnloadLeftOffset="4 -1.2 0">
+            <aPalletAutoLoaderConfiguration maxObjects="28" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="-4 -1.2 0" UnloadLeftOffset="4 -1.2 0">
                 <trigger node="LoadedTrigger"/>
                 <pickupTriggers>
                     <pickupTrigger node="PickupTrigger1"/>
