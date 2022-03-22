@@ -28,7 +28,7 @@ Of course, the other autoloader items also fit, but that is beyond the scope of 
 Listing 12 tools here doesn't make much sense from my point of view.
 
 Prices
-TRUCK: 135000€ - 210000€
+Truck: 135000€ - 210000€
 Trailer: 12000@ - 25000€
 
 Includes the following with flatbeds and autoload:
@@ -100,7 +100,7 @@ Diese zusammenstellung von mir darf nur mit Orignal Link veröffentlicht werden.
 Das Verändern und neu veröffentlichen nur mit Genehmigung.
 ]]></de>
     </description>
-    <iconFilename>store/store_fj_AllVehicle_Pack.dds</iconFilename>
+    <iconFilename>store/modIcon.dds</iconFilename>
     <multiplayer supported="true"/>
     <storeItems>
         <storeItem xmlFilename="vehicles/fj_CargoLine/CargoLine_TGS03_Pritsche.xml"/>
