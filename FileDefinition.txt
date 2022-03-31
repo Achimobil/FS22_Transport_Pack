@@ -1,0 +1,6 @@
+*.cmd
+*.md
+.git/
+.gitignore
+FileDefinition.txt
+store/ModbildVorlage.xcf
