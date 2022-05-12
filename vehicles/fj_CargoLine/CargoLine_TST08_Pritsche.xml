@@ -201,7 +201,7 @@
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|7" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_640x440x500_800.i3d"/>
         <dynamicallyLoadedPart node="0" linkNode="0>0|0|1|1|8" filename="dynaloadparts/Zubehoer/DLP_Staukiste_kpl_640x440x500_800.i3d"/>
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|1|4|0" filename="dynaloadparts/VehicleFunctions/DLP_VF_TrailerAttacherRearWithDH.i3d"/> -->
-        <dynamicallyLoadedPart node="0" linkNode="0>0|1|4|1" filename="dynaloadparts/Semitractors/DLP_SemiTrailer_ConnectorUnit_SemiCargo.i3d"/>
+        <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|1|4|1" filename="dynaloadparts/Semitractors/DLP_SemiTrailer_ConnectorUnit_SemiCargo.i3d"/> -->
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|1|5|0" filename="dynaloadparts/VehicleFunctions/UVF001_DLP_UFS_rear.i3d"/> -->
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|1|6|0|1" filename="dynaloadparts/VehicleFunctions/UVF001_DLP_TST_KingPin.i3d"/> -->
         <!-- <dynamicallyLoadedPart node="0" linkNode="0>0|1|1|0|2" filename="dynaloadparts/TrailerChassis_All/DLP_AllTrailer_Achse.i3d"/> -->
@@ -241,6 +241,14 @@
             </attach>
         </sounds>
     </attacherJoints>
+    
+    <connectionHoses>        
+        <hose inputAttacherJointIndices="1" type="airDoubleRed"     node="airDoubleRed"     length="1.3" diameter="0.015" minCenterPointOffset="0 0 0.4" maxCenterPointOffset="0 0 2" straighteningFactor="2" isTwoPointHose="false" outgoingAdapter="DEFAULT" socket="air_red"/>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow"  node="airDoubleYellow"  length="1.3" diameter="0.015" minCenterPointOffset="0 0 0.4" maxCenterPointOffset="0 0 2" straighteningFactor="2" isTwoPointHose="false" outgoingAdapter="DEFAULT" socket="air_yellow"/>
+        <hose inputAttacherJointIndices="1" type="electric"         node="electric"         length="1.3" diameter="0.015" minCenterPointOffset="0 0 0.4" maxCenterPointOffset="0 0 2" straighteningFactor="2" isTwoPointHose="false" outgoingAdapter="DEFAULT" socket="electric"/>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"      node="hydraulicIn"      length="1.3" diameter="0.015" minCenterPointOffset="0 0 0.4" maxCenterPointOffset="0 0 2" straighteningFactor="2" isTwoPointHose="false" outgoingAdapter="DEFAULT" socket="hydraulicIn"/>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut"     node="hydraulicOut"     length="1.3" diameter="0.015" minCenterPointOffset="0 0 0.4" maxCenterPointOffset="0 0 2" straighteningFactor="2" isTwoPointHose="false" outgoingAdapter="DEFAULT" socket="hydraulicOut"/>
+    </connectionHoses>
 
     <lights>
         <states>
@@ -410,5 +418,10 @@
         <i3dMapping id="PickupTrigger1" node="0>1|1|4|1"/>
         <i3dMapping id="PickupTrigger2" node="0>1|1|4|2"/>
         <i3dMapping id="attacherJoint" node="0>0|1|6|0|1|0|0|0|0|0"/>
+        <i3dMapping id="airDoubleRed" node="0>0|1|4|1|0|1|2|0"/>
+        <i3dMapping id="airDoubleYellow" node="0>0|1|4|1|0|1|2|1"/>
+        <i3dMapping id="electric" node="0>0|1|4|1|0|1|2|2"/>
+        <i3dMapping id="hydraulicIn" node="0>0|1|4|1|0|1|2|3"/>
+        <i3dMapping id="hydraulicOut" node="0>0|1|4|1|0|1|2|4"/>
     </i3dMappings>
 </vehicle>
