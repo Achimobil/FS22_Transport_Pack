@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <vehicle type="transportTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
-    <annotation>Copyright (C) Friesenjung, Alfredix, GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <annotation>Copyright (C) Achimobil, Friesenjung, Alfredix, GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
         <name>CargoLine TGD05 Pritsche</name>
         <functions>
-            <function>
-				This trailer can hold:28 round bales 1.10m, 22 round bales 1.30m, 18 round bales 1.55m, 14 round bales 1.80m, 18 square bales, 20 straw harvest square bales 20 pallets, 1 cotton module, 5 round cotton bales, 4 board pallets and 500 Egg Boxes
-				Dieser Anhänger fasst: 28 Rundballen 1.10m, 22 Rundballen 1.30m, 18 Rundballen 1.55m, 14 Rundballen 1.80m, 18 Quaderballen, 20 Strohbergung Quaderballen, 20 Paletten, 1 Baumwollballen, 5 Runde Baumwollballen, 4 Bretterpaletten und 500 Eierkartons
-			</function>
+            <function>$l10n_function_allTrailer</function>
         </functions>
         <image>store/store_CargoLine_TGD05_Pritsche.dds</image>
         <price>17000</price>

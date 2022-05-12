@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <vehicle type="transportTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
-    <annotation>Copyright (C) Friesenjung, Alfredix, GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <annotation>Copyright (C) Achimobil, Friesenjung, Alfredix, GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
         <name>CargoLine TST08 Pritsche</name>
         <functions>
-            <function>
-				This trailer can hold: 42 round bales 1.10m, 38 round bales 1.30m, 30 round bales 1.55m, 26 round bales 1.80m, 32 square bales, 32 pallets, 34 pellet pallets, 810 egg boxes, 9 round cotton bales, 12 board pallets and 2 cotton modules.
-				Dieser Anhänger fasst: 42 Rundballen 1.10m, 38 Rundballen 1.30m, 30 Rundballen 1.55m, 26 Rundballen 1.80m, 32 Quaderballen, 32 Paletten, 34 Pelletpaletten, 810 Eierkartons, 9 Runde Baumwollballen, 12 Bretterpaletten und 2 Baumwollballen
-			</function>
+            <function>$l10n_function_allTrailer</function>
         </functions>
         <image>store/store_CargoLine_TST08_Pritsche.dds</image>
         <price>25000</price>

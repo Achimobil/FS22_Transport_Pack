@@ -1,46 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <l10n>
 	<texts>
-		<text name="input_workMode" text="AutoLoader: Work mode"/>
-		<text name="input_select" text="AutoLoader: Select Material"/>
-		<text name="input_markerPosition" text="AutoLoader: Marker Position"/>
-		<text name="input_unload" text="AutoLoader: Unload"/>
-		<text name="input_markerUp" text="AutoLoader: Marker: move up"/>
-		<text name="input_markerDown" text="AutoLoader: Marker: move down"/>
-		<text name="input_markerLeft" text="AutoLoader: Marker: move left"/>
-		<text name="input_markerRight" text="AutoLoader: Marker: move right"/>
-		<text name="input_markerOriginal" text="AutoLoader: Marker: original position"/>
-		<text name="input_markerForward" text="AutoLoader: Marker: move forward"/>
-		<text name="input_markerBackward" text="AutoLoader: Marker: move backward"/>
-		<text name="input_markerRotation" text="AutoLoader: Marker: rotate 90°"/>
-		<text name="workModeOn" text="AutoLoader: Work mode: turn on"/>
-		<text name="workModeOff" text="AutoLoader: Work mode: turn off"/>
-		<text name="unload" text="Unload"/>
-		<text name="center" text="Unload to Center"/>
-		<text name="left" text="Unload to Left"/>
-		<text name="right" text="Unload to Right"/>
-		<text name="back" text="Unload to Back"/>
-		<text name="squareBales" text="AutoLoader: Select: Large Square Bales"/>
-		<text name="roundBales" text="AutoLoader: Select: 1.3m Round Bales"/>
-		<text name="squareBalesSH" text="Ladegut wählen: [Square Bales Straw Harvest]"/>
-		<text name="roundBalesSH110" text="AutoLoader: Select: [1.1m Round Bales]"/>
-		<text name="roundBalesSH155" text="AutoLoader: Select: [1.55m Round Bales]"/>
-		<text name="roundBalesSH180" text="AutoLoader: Select: [1.8m Round Bales]"/>
-		<text name="pallets" text="AutoLoader: Select: Pallets"/>
-		<text name="palletsSH" text="AutoLoader: Select: [Pellet Pallets Straw Harvest]"/>
-		<text name="ultima14" text="AutoLoader: Select: 1.4m Round Bales"/>
-		<text name="ultima15" text="AutoLoader: Select: 1.5m Round Bales"/>
-		<text name="smallSquareBales" text="AutoLoader: Select: Small Square Bales"/>
-		<text name="jd18bales" text="AutoLoader: Select: 1.8m Round Bales"/>
-		<text name="boardPallets" text="AutoLoader: Select: Lumber Pallets Hopfach"/>
-		<text name="boardPallets2" text="AutoLoader: Select: Lumber Pallets Multimap"/>
-		<text name="eggBoxes" text="AutoLoader: Select: Egg Boxes"/>
-		<text name="cottonModules" text="AutoLoader: Select: Cotton Modules"/>
-		<text name="missionPallets" text="AutoLoader: Select: Mission Pallets"/>
-		<text name="jdCottonBale" text="AutoLoader: Cotton Round Bales"/>
-		<text name="function_easyAutoLoader" text="Easy AutoLoader enabled. Allows bales and pallets to be loaded automatically"/>
-		<text name="configuration_valueBalloon" text="Balloon"/>
-		<text name="Flatdecks" text="Autoload Equipment"/>
 		<text name="configuration_trailerStreetWheelsSingle" text="Street Wheels (Single)"/>
 		<text name="configuration_trailerStreetWheelsDual" text="Street Wheels (Dual)"/>
 		<text name="configuration_streetWheels" text="Street Wheels"/>
@@ -52,8 +12,9 @@
 		<text name="fj_moveRampOut" text="Move ramp out"/>
 		<text name="fj_moveRampIn" text="Move ramp in"/>
 		<text name="input_fj_moveRamp" text="(FJ) move ramps in and out"/>
-		<text name="category_autoLoadLight" text="AutoLoadLight"/>
 		<text name="category_autoLoad" text="AutoLoad"/>
-		<text name="category_autoLoad_Hopfach" text="AutoLoad for the Hopfach Map"/>
+        
+        <text name="function_allTrailer" text="Trailer with platform. Optionally with or without autoload. Always with ramps that can be extended."/>
+        <text name="function_allTrucks" text="Truck with platform. Optionally with or without autoload. Always with ramps that can be extended."/>
 	</texts>
 </l10n>
