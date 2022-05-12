@@ -9,8 +9,8 @@
 		<text name="configuration_traktorWheelsMarks" text="Tractor wheels marked"/>
 		<text name="configuration_traktorWheelsNoMarks" text="Tractor wheels"/>
 		<text name="configuration_moveDLP" text="move DLP"/>
-		<text name="fj_moveRampOut" text="Move ramp out"/>
-		<text name="fj_moveRampIn" text="Move ramp in"/>
+		<text name="fj_moveRampIn" text="Move ramp out"/>
+		<text name="fj_moveRampOut" text="Move ramp in"/>
 		<text name="input_fj_moveRamp" text="(FJ) move ramps in and out"/>
 		<text name="category_autoLoad" text="AutoLoad"/>
         

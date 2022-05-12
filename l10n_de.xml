@@ -9,8 +9,8 @@
 		<text name="configuration_traktorWheelsMarks" text="Traktorreifen beschriftet"/>
 		<text name="configuration_traktorWheelsNoMarks" text="Traktorreifen"/>
 		<text name="configuration_moveDLP" text="verschiebe DLP Teile"/>
-		<text name="fj_moveRampOut" text="Rampen ausfahren"/>
-		<text name="fj_moveRampIn" text="Rampen einfahren"/>
+		<text name="fj_moveRampIn" text="Rampen ausfahren"/>
+		<text name="fj_moveRampOut" text="Rampen einfahren"/>
 		<text name="input_fj_moveRamp" text="(FJ) Rampen ein- und ausfahren"/>
 		<text name="category_autoLoad" text="AutoLoad"/>
         
