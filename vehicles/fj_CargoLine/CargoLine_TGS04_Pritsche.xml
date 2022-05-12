@@ -31,6 +31,7 @@
         </components>
         <schemaOverlay name="VEHICLE" attacherJointPosition="0 0"/>
 		<sounds filename="$data/vehicles/man/tgx26640/sounds/tgx26640.xml"/>
+        <mapHotspot type="TRUCK" />
     </base>
 
     <configurationSets>
