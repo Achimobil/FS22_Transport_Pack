@@ -254,11 +254,11 @@
     </attacherJoints>
 
     <connectionHoses>
-        <target attacherJointIndices="2" node="electricBack" socket="electric" type="electric"/>
-        <target attacherJointIndices="2" node="hydraulicInBack" socket="hydraulic04" type="hydraulicIn"/>
-        <target attacherJointIndices="2" node="hydraulicOutBack" socket="hydraulic04" type="hydraulicOut"/>
-        <target attacherJointIndices="2" node="airDoubleRedBack" socket="air_red" type="airDoubleRed"/>
-        <target attacherJointIndices="2" node="airDoubleYellowBack" socket="air_yellow" type="airDoubleYellow"/>
+        <target attacherJointIndices="2 3" node="electricBack" socket="electric" type="electric"/>
+        <target attacherJointIndices="2 3" node="hydraulicInBack" socket="hydraulic04" type="hydraulicIn"/>
+        <target attacherJointIndices="2 3" node="hydraulicOutBack" socket="hydraulic04" type="hydraulicOut"/>
+        <target attacherJointIndices="2 3" node="airDoubleRedBack" socket="air_red" type="airDoubleRed"/>
+        <target attacherJointIndices="2 3" node="airDoubleYellowBack" socket="air_yellow" type="airDoubleYellow"/>
     </connectionHoses>
 
     <lights>
