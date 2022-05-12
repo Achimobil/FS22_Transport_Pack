@@ -21,7 +21,7 @@
     <base>
         <typeDesc>Trailer</typeDesc>
         <filename>vehicles/fj_CargoLine/CargoLine_TST06_Pritsche.i3d</filename>
-        <size width="3.5" length="9"/>
+        <size width="2.8" length="9"/>
         <components>
             <component centerOfMass="0 0.25 -5.15" solverIterationCount="10" mass="4000"/>
         </components>
@@ -149,7 +149,7 @@
     <attachable>
         <airConsumer usage="0.3"/>
         <inputAttacherJoints>
-            <inputAttacherJoint node="0>0|1|6|0|1|0|0|0|0|0" jointType="semitrailer"/>
+            <inputAttacherJoint node="attacherJoint" jointType="semitrailer"/>
         </inputAttacherJoints>
         <support animationName="moveSupport"/>
         <brakeForce force="0.65" maxForce="1.3" maxForceMass="2000"/>
@@ -322,10 +322,15 @@
         </aPalletAutoLoaderConfigurations>
     </aPalletAutoLoader>
 
+    <ai>
+        <agentAttachment jointNode="attacherJoint" width="2.7" height="4" length="9" lengthOffset="1.8"/>
+    </ai>
+
     <i3dMappings>
         <i3dMapping id="aPalletAutoLoader" node="0>1|1|4"/>
         <i3dMapping id="LoadedTrigger" node="0>1|1|4|0"/>
         <i3dMapping id="PickupTrigger1" node="0>1|1|4|1"/>
         <i3dMapping id="PickupTrigger2" node="0>1|1|4|2"/>
+        <i3dMapping id="attacherJoint" node="0>0|1|6|0|1|0|0|0|0|0"/>
     </i3dMappings>
 </vehicle>

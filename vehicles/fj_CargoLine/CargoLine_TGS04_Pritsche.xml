@@ -25,7 +25,7 @@
     <base>
         <typeDesc>$l10n_typeDesc_truck</typeDesc>
         <filename>vehicles/fj_CargoLine/CargoLine_TGS04_Pritsche.i3d</filename>
-        <size width="4" length="10"/>
+        <size width="3.2" length="8.9" lengthOffset="-1"/>
         <components>
             <component centerOfMass="0 0.25 -1.25" solverIterationCount="10" mass="9314"/>
         </components>
