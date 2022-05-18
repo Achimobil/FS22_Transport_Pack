@@ -794,7 +794,7 @@
                       <TransformGroup name="wheelDummy" translation="0.149 0 0" clipDistance="300" nodeId="688"/>
                     </TransformGroup>
                     <TransformGroup name="steeringBarRef" translation="-0.056756 -0.0639312 -0.270339" rotation="0 85 0" clipDistance="300" nodeId="689"/>
-                    <Light name="frontLightHighL" translation="0 0 1.4" rotation="-10 175 0" clipDistance="75" nodeId="690" type="spot" color="0.5 1 2" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="70" dropOff="3"/>
+                    <Light name="frontLightHighL" translation="0 0 1.4" rotation="-10 175 0" clipDistance="75" nodeId="690" type="spot" color="0.5 1 2" emitDiffuse="true" emitSpecular="true" range="45" coneAngle="80" dropOff="2"/>
                   </Shape>
                 </TransformGroup>
                 <TransformGroup name="wheelVA1RightRot" translation="-0.844 0 0.005" rotation="-5.5 2.48481e-17 -4.4" clipDistance="300" nodeId="691">
@@ -803,7 +803,7 @@
                       <TransformGroup name="wheelDummy" translation="-0.149 -2.84217e-16 8.21266e-20" clipDistance="300" nodeId="694"/>
                     </TransformGroup>
                     <Shape shapeId="141" name="VA1_Prt_SteeringBar" translation="0.0581956 -0.0672778 -0.272704" rotation="84.5 84.5 90" clipDistance="300" nodeId="695" materialIds="13" castsShadows="true" receiveShadows="true"/>
-                    <Light name="frontLightHighR" translation="0 0 1.4" rotation="-10 185 0" clipDistance="75" nodeId="696" type="spot" color="0.5 1 2" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="70" dropOff="3"/>
+                    <Light name="frontLightHighR" translation="0 0 1.4" rotation="-10 185 0" clipDistance="75" nodeId="696" type="spot" color="0.5 1 2" emitDiffuse="true" emitSpecular="true" range="45" coneAngle="80" dropOff="2"/>
                   </Shape>
                 </TransformGroup>
               </TransformGroup>
