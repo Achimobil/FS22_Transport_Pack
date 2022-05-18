@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="64">
+<modDesc descVersion="65">
     <author>Achimobil</author>
-    <version>0.1.2.0 RC</version>
+    <version>0.1.2.0</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -52,7 +52,17 @@ https://discord.gg/Va7JNnEkcW
 This compilation of mine may only be published with the original link.
 Changing and republishing only with permission.
 
-Translated with www.DeepL.com/Translator (free version)
+Changelog 0.1.2.0
+- New store pictures from Cassy
+- Trucks are now shown as such on the map
+- Widths for AD collision detection corrected
+- Translations cleaned up and store texts corrected
+- Ramp usage now translated
+- Truck trailer connections fixed
+- Trailer connections completely redone
+- Autoload trigger ranges improved
+- Cornering lights and rear work lights strengthened
+- Wear optics decreased
 ]]></en>
         <de>
 <![CDATA[Das aus dem 19er bekannte Friesenjung Transport Pack konvertiert in den 22er.
@@ -98,6 +108,18 @@ https://discord.gg/Va7JNnEkcW
 
 Diese Zusammenstellung von mir darf nur mit Original Link veröffentlicht werden.
 Das Verändern und neu veröffentlichen nur mit Genehmigung.
+
+Changelog 0.1.2.0
+- Neue Shop Bilder von Cassy
+- Trucks werden auf der Karte jetzt auch als solche angezeigt
+- Breiten für AD kollisionserkennung korrigiert
+- Übersetzungen aufgräumt und Shoptexte korrigiert
+- Rampen nutzung jetzt übersetzt
+- Truck Anhängeranschlüsse repariert
+- Anschlüsse der Auflieger komplett neu gemacht
+- Autoload Triggerbereiche verbessert
+- Kurvenlicht und hinteres Arbeitslicht verstärkt
+- Verschleiß Optik vermindert
 ]]></de>
     </description>
     <iconFilename>store/modIcon.dds</iconFilename>
