@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="65">
     <author>Achimobil</author>
-    <version>0.1.2.0</version>
+    <version>0.2.0.0_beta_1</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -109,7 +109,11 @@ https://discord.gg/Va7JNnEkcW
 Diese Zusammenstellung von mir darf nur mit Original Link veröffentlicht werden.
 Das Verändern und neu veröffentlichen nur mit Genehmigung.
 
-Changelog 0.1.2.0
+Changelog 
+0.2.0.0
+- Ausklappen bei Feldarbeit deaktiviert
+
+0.1.2.0
 - Neue Shop Bilder von Cassy
 - Trucks werden auf der Karte jetzt auch als solche angezeigt
 - Breiten für AD kollisionserkennung korrigiert

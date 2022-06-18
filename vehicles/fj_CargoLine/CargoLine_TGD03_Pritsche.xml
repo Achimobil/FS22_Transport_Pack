@@ -269,7 +269,7 @@
     <foldable>
         <foldingConfigurations>
             <foldingConfiguration>
-                <foldingParts posDirectionText="$l10n_fj_moveRampOut" negDirectionText="$l10n_fj_moveRampIn" startMoveDirection="0" turnOnFoldDirection="1">
+                <foldingParts posDirectionText="$l10n_fj_moveRampOut" negDirectionText="$l10n_fj_moveRampIn" startMoveDirection="0" turnOnFoldDirection="1" allowUnfoldingByAI="false">
                     <foldingPart animationName="folding" speedScale="1"/>
                 </foldingParts>
             </foldingConfiguration>
