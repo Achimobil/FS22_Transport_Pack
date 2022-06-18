@@ -18,12 +18,12 @@ It is planned to improve this with and with. If you are interested in working wi
 
 It is not easy to put the autoloading capacities into text. Therefore here are only a few key data per model.
 Model number => Euro pallets | round bales 125 | square bales
-03 => 12 | 12 | 9 
-04 => 20 | 16 | 15
-05 => 24 | 22 | 18
-06 => 28 | 26 | 21
-07 => 32 | 32 | 24
-08 => 40 | 36 | 30
+03 => 16 | 12 | 9 
+04 => 24 | 16 | 15
+05 => 30 | 22 | 18
+06 => 36 | 26 | 21
+07 => 42 | 32 | 24
+08 => 50 | 36 | 30
 Of course, the other autoloader items also fit, but that is beyond the scope of the description here.
 Listing 12 tools here doesn't make much sense from my point of view.
 
@@ -75,12 +75,12 @@ Es ist geplant dies mit und mit noch zu verbessern. Wer Interesse hat, mit mir i
 
 Die Autoloader Kapazitäten in Text zu fassen ist nicht übersichtlich hin zu bekommen. Deshalb hier nur ein paar Eckdaten dazu pro Model.
 Modelnummer => Europaletten | Rundballen 125 | Quaderballen
-03 => 12 | 12 | 9 
-04 => 20 | 16 | 15
-05 => 24 | 22 | 18
-06 => 28 | 26 | 21
-07 => 32 | 32 | 24
-08 => 40 | 36 | 30
+03 => 16 | 12 | 9 
+04 => 24 | 16 | 15
+05 => 30 | 22 | 18
+06 => 36 | 26 | 21
+07 => 42 | 32 | 24
+08 => 50 | 36 | 30
 Natürlich passen auch die anderen Autoloader Sachen, aber das sprengt hier den Rahmen der Beschreibung.
 Auch 12 Fahrzeuge hier auflisten macht nicht viel sinn aus meiner Sicht.
 
@@ -112,6 +112,7 @@ Das Verändern und neu veröffentlichen nur mit Genehmigung.
 Changelog 
 0.2.0.0
 - Ausklappen bei Feldarbeit deaktiviert
+- Lademengen definiert für Autoloader Version 1.8
 
 0.1.2.0
 - Neue Shop Bilder von Cassy

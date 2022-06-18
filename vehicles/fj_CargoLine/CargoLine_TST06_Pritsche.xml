@@ -316,13 +316,19 @@
     <!-- </baseColorConfigurations> -->
     <aPalletAutoLoader>
         <aPalletAutoLoaderConfigurations>
-            <aPalletAutoLoaderConfiguration maxObjects="28" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="-4 -1.2 0" UnloadLeftOffset="4 -1.2 0">
+            <aPalletAutoLoaderConfiguration maxObjects="36" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="-4 -1.2 0" UnloadLeftOffset="4 -1.2 0">
                 <trigger node="LoadedTrigger"/>
                 <pickupTriggers>
                     <pickupTrigger node="PickupTrigger1"/>
                     <pickupTrigger node="PickupTrigger2"/>
                 </pickupTriggers>
                 <loadArea baseNode="aPalletAutoLoader" leftRightCornerOffset="1.2 0 4.8" lenght="9.6" width="2.40" height="3.0"/>
+                <autoLoadObjectSettings>
+                    <autoLoadObjectSetting name="euroPallet" maxObjects="36"/>
+                    <autoLoadObjectSetting name="liquidTank" maxObjects="6"/>
+                    <autoLoadObjectSetting name="euroPalletOversize" maxObjects="32"/>
+                    <autoLoadObjectSetting name="squarebale120" maxObjects="168"/>
+                </autoLoadObjectSettings>
             </aPalletAutoLoaderConfiguration>
         </aPalletAutoLoaderConfigurations>
     </aPalletAutoLoader>
