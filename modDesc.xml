@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="65">
     <author>Achimobil</author>
-    <version>0.2.0.0_beta_1</version>
+    <version>0.2.0.0</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -52,7 +52,12 @@ https://discord.gg/Va7JNnEkcW
 This compilation of mine may only be published with the original link.
 Changing and republishing only with permission.
 
-Changelog 0.1.2.0
+Changelog 
+0.2.0.0
+- Unfolding deactivated during field work
+- Load quantities defined for autoloader version 1.8
+
+0.1.2.0
 - New store pictures from Cassy
 - Trucks are now shown as such on the map
 - Widths for AD collision detection corrected
