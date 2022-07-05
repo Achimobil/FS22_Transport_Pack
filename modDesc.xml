@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="65">
     <author>Achimobil</author>
-    <version>0.2.0.0</version>
+    <version>0.2.1.0</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -52,7 +52,10 @@ https://discord.gg/Va7JNnEkcW
 This compilation of mine may only be published with the original link.
 Changing and republishing only with permission.
 
-Changelog 
+Changelog
+0.2.1.0
+- Drawbar trailer equipped with supports (Thanks to EWW_Bobo)
+ 
 0.2.0.0
 - Unfolding deactivated during field work
 - Load quantities defined for autoloader version 1.8
@@ -114,7 +117,10 @@ https://discord.gg/Va7JNnEkcW
 Diese Zusammenstellung von mir darf nur mit Original Link veröffentlicht werden.
 Das Verändern und neu veröffentlichen nur mit Genehmigung.
 
-Changelog 
+Changelog
+0.2.1.0
+- Deichsel Anhänger mit Stützen ausgestattet (Danke an EWW_Bobo)
+
 0.2.0.0
 - Ausklappen bei Feldarbeit deaktiviert
 - Lademengen definiert für Autoloader Version 1.8
