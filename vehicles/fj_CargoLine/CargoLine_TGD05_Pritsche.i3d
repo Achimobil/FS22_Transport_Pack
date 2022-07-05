@@ -2,7 +2,7 @@
 
 <i3D name="CargoLine_TGD05_Pritsche-V02.0001" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
   </Asset>
 
   <Files>
@@ -125,6 +125,20 @@
       <Glossmap fileId="24"/>
       <CustomParameter name="RDT" value="1 1 20 20"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="Default OBJ" materialId="479" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="DeichselSicherung_mat" materialId="480" diffuseColor="0.054902 0.0431373 0.8 1" emissiveColor="0 0 0 1" specularColor="0.054902 1 0.8" customShaderId="5" customShaderVariation="colorMask">
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
     <Material name="fj_branding_mat" materialId="15" specularColor="1 1 1">
       <Texture fileId="44"/>
@@ -649,6 +663,15 @@
           <TransformGroup name="movingTools" clipDistance="300" nodeId="474"/>
           <TransformGroup name="movingParts" clipDistance="300" nodeId="475"/>
           <TransformGroup name="componentJoints" clipDistance="300" nodeId="476"/>
+        </TransformGroup>
+        <TransformGroup name="SicherungDeichsel" nodeId="488">
+          <Shape shapeId="78" name="AufnahmeStange" translation="0.288272 0.974168 0.418821" rotation="-90 -9.79 0" scale="100 100 100" nodeId="489" materialIds="480" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          <Shape shapeId="79" name="HalterungDeichsel" translation="0.155085 0.974168 1.20882" nodeId="490" materialIds="480" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          <Shape shapeId="80" name="SchraubenAufnahme" translation="0.287853 0.996766 0.42058" nodeId="491" materialIds="480" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          <Shape shapeId="81" name="SchraubenHalterung" translation="0.155223 0.996766 1.20802" nodeId="492" materialIds="480" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          <Shape shapeId="82" name="Stange" translation="0.16078 0.897145 1.20981" rotation="0 -9.79 0" nodeId="493" materialIds="480" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="83" name="col" translation="0 -0.453645 0" visibility="false" compoundChild="true" collisionMask="2109442" nodeId="494" materialIds="479"/>
+          </Shape>
         </TransformGroup>
       </Shape>
   </Scene>
