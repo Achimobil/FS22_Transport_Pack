@@ -826,15 +826,21 @@
     <ai>
         <collisionTrigger node="aiCollisionTrigger" width="3.2" height="4.0"/>
     </ai>
-
-    <!-- <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true"> -->
-        <!-- <colorNode node="0>0|0|0|0|0|0"/> -->
-        <!-- <colorNode node="0>0|0|0|0|0|1"/> -->
-        <!-- <colorNode node="0>0|0|0|0|0|2"/> -->
-        <!-- <colorNode node="0>0|0|0|0|0|3"/> -->
-        <!-- <colorNode node="0>1|0|0|0|0"/> -->
-        <!-- <colorNode node="0>1|0|1|0|2|0|0|1"/> -->
-    <!-- </baseColorConfigurations> -->
+    
+    <baseMaterial>
+        <material name="myBase_mat" baseNode="0>0|0|0|0|0|0">
+            <shaderParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+        </material>
+        <!-- <material name="Panel_Mat1" baseNode="colorpanel1"> -->
+            <!-- <shaderParameter name="colorMat1" value="FLIEGL_ORANGE1"/> -->
+        <!-- </material> -->
+    </baseMaterial>
+    
+    <baseMaterialConfigurations price="1000" useDefaultColors="true">
+        <material name="myBase_mat" shaderParameter="colorMat0" material="0"/>
+        <baseMaterialConfiguration color="0.0352 0.7607 0.8862 1" material="0" name="FunBuggy babyblue Chrom"/>
+    </baseMaterialConfigurations>
+    
     <aPalletAutoLoader>
         <aPalletAutoLoaderConfigurations>
             <aPalletAutoLoaderConfiguration maxObjects="24" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="-4 -1.2 0" UnloadLeftOffset="4 -1.2 0">
