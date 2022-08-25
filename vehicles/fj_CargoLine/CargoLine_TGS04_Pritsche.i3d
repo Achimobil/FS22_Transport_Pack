@@ -1129,9 +1129,9 @@
             </TransformGroup>
             <TransformGroup name="DynMountTrigger1" translation="4.59236e-18 0 0" clipDistance="300" nodeId="869"/>
             <TransformGroup name="aPalletAutoLoader" translation="0 0 -3.2" nodeId="870">
-              <Shape shapeId="169" name="LoadedTrigger" translation="0 1.25 1" scale="2.3 2.5 7.4" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="871" materialIds="52" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="169" name="PickupTrigger1" translation="4.1 0 1" scale="4 3 7.4" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="872" materialIds="52" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="169" name="PickupTrigger2" translation="-4.1 0 1" scale="4 3 7.4" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="873" materialIds="52" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="169" name="LoadedTrigger" translation="0 1.25 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="871" materialIds="52" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="170" name="PickupTrigger1" translation="4.1 0 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="872" materialIds="52" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="171" name="PickupTrigger2" translation="-4.1 0 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="873" materialIds="52" nonRenderable="true" distanceBlending="false"/>
             </TransformGroup>
             <TransformGroup name="movingTools" translation="4.59236e-18 0 0" clipDistance="300" nodeId="874">
               <TransformGroup name="movingTools_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="875"/>

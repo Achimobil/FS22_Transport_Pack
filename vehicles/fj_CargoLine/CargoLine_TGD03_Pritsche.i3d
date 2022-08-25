@@ -468,9 +468,9 @@
             </TransformGroup>
             <TransformGroup name="DynMountTrigger1" translation="4.59236e-18 0 0" clipDistance="300" nodeId="333"/>
             <TransformGroup name="aPalletAutoLoader" translation="0 0 -2.4" nodeId="334">
-              <Shape shapeId="50" name="LoadedTrigger" translation="0 1.25 1" scale="2.3 2.5 5.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="335" materialIds="23" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="50" name="PickupTrigger1" translation="4.1 0 1" scale="4 3 5.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="336" materialIds="23" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="50" name="PickupTrigger2" translation="-4.1 0 1" scale="4 3 5.8" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="337" materialIds="23" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="50" name="LoadedTrigger" translation="0 1.25 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="335" materialIds="23" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="51" name="PickupTrigger1" translation="4.1 0 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="336" materialIds="23" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="52" name="PickupTrigger2" translation="-4.1 0 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="337" materialIds="23" nonRenderable="true" distanceBlending="false"/>
             </TransformGroup>
             <TransformGroup name="movingTools" translation="4.59236e-18 0 0" clipDistance="300" nodeId="338">
               <TransformGroup name="movingTools_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="339"/>
@@ -497,23 +497,23 @@
           <TransformGroup name="insert_TGD_App_Rear" translation="-1.35525e-22 1.458 -4.71" nodeId="353"/>
         </TransformGroup>
       </Shape>
-      <Shape shapeId="51" name="TGD_dolly" translation="0 0.73 -0.66" dynamic="true" compound="true" collisionMask="2105346" density="0.7" clipDistance="300" nodeId="354" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="53" name="TGD_dolly" translation="0 0.73 -0.66" dynamic="true" compound="true" collisionMask="2105346" density="0.7" clipDistance="300" nodeId="354" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true">
         <TransformGroup name="visuals" translation="-2.03288e-22 0.407 0.005" clipDistance="300" nodeId="355">
           <TransformGroup name="Dolly" translation="1.35525e-22 0 0" clipDistance="300" nodeId="356">
-            <Shape shapeId="52" name="TGD_deichsel_front" clipDistance="300" nodeId="357" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="53" name="TGD_deichsel_querfront" clipDistance="300" nodeId="358" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="54" name="TGD_deichsel_querfront1" clipDistance="300" nodeId="359" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="55" name="CableCover1" clipDistance="300" nodeId="360" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="56" name="TGD_axlemount_bottom2" clipDistance="300" nodeId="361" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="57" name="deichsel_gegenlager" clipDistance="300" nodeId="362" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="58" name="drehteller_bottom" clipDistance="300" nodeId="363" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="59" name="drehtellerBot_mount1" clipDistance="300" nodeId="364" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="60" name="drehtellerBot_screw" clipDistance="300" nodeId="365" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="61" name="fender_mount" translation="0 -4.24105e-16 0" clipDistance="300" nodeId="366" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="54" name="TGD_deichsel_front" clipDistance="300" nodeId="357" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="55" name="TGD_deichsel_querfront" clipDistance="300" nodeId="358" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="56" name="TGD_deichsel_querfront1" clipDistance="300" nodeId="359" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="57" name="CableCover1" clipDistance="300" nodeId="360" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="58" name="TGD_axlemount_bottom2" clipDistance="300" nodeId="361" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="59" name="deichsel_gegenlager" clipDistance="300" nodeId="362" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="60" name="drehteller_bottom" clipDistance="300" nodeId="363" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="61" name="drehtellerBot_mount1" clipDistance="300" nodeId="364" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="62" name="drehtellerBot_screw" clipDistance="300" nodeId="365" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="63" name="fender_mount" translation="0 -4.24105e-16 0" clipDistance="300" nodeId="366" materialIds="12" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="TGD_piping_dolly" translation="6.77626e-23 -0.282 0.655" clipDistance="300" nodeId="367">
-            <Shape shapeId="62" name="piping_front1" clipDistance="300" nodeId="368" materialIds="9" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="63" name="piping_front2" translation="5.68434e-16 -5.68434e-16 0" clipDistance="300" nodeId="369" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="64" name="piping_front1" clipDistance="300" nodeId="368" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="65" name="piping_front2" translation="5.68434e-16 -5.68434e-16 0" clipDistance="300" nodeId="369" materialIds="9" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="collisions" clipDistance="300" nodeId="370"/>
         </TransformGroup>
@@ -566,11 +566,11 @@
                       <TransformGroup name="joint_Hydraulic_2" translation="-0.32 -0.0570886 2.00029" nodeId="413"/>
                     </TransformGroup>
                   </TransformGroup>
-                  <Shape shapeId="64" name="hose_Elektric1" visibility="false" clipDistance="300" nodeId="414" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
-                  <Shape shapeId="65" name="hose_Air_red" visibility="false" clipDistance="300" nodeId="415" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
-                  <Shape shapeId="66" name="hose_Air_yellow" visibility="false" clipDistance="300" nodeId="416" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
-                  <Shape shapeId="67" name="hose_Hydraulic_1" visibility="false" clipDistance="300" nodeId="417" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
-                  <Shape shapeId="68" name="hose_Hydraulic_2" visibility="false" clipDistance="300" nodeId="418" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
+                  <Shape shapeId="66" name="hose_Elektric1" visibility="false" clipDistance="300" nodeId="414" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
+                  <Shape shapeId="67" name="hose_Air_red" visibility="false" clipDistance="300" nodeId="415" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
+                  <Shape shapeId="68" name="hose_Air_yellow" visibility="false" clipDistance="300" nodeId="416" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
+                  <Shape shapeId="69" name="hose_Hydraulic_1" visibility="false" clipDistance="300" nodeId="417" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
+                  <Shape shapeId="70" name="hose_Hydraulic_2" visibility="false" clipDistance="300" nodeId="418" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="408 409 410 411 412 413"/>
                 </TransformGroup>
               </TransformGroup>
             </TransformGroup>
@@ -583,17 +583,17 @@
           </TransformGroup>
         </TransformGroup>
       </Shape>
-      <Shape shapeId="69" name="TGD_deichsel" dynamic="true" compound="true" collisionMask="2105346" density="2" clipDistance="300" nodeId="424" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="71" name="TGD_deichsel" dynamic="true" compound="true" collisionMask="2105346" density="2" clipDistance="300" nodeId="424" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true">
         <TransformGroup name="visuals" translation="-6.50521e-21 1.005 0.0525" clipDistance="300" nodeId="425">
           <TransformGroup name="Deichsel" clipDistance="300" nodeId="426">
-            <Shape shapeId="70" name="deichsel_body" clipDistance="300" nodeId="427" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="71" name="querstrebe" translation="0 0 0.5" clipDistance="300" nodeId="428" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="72" name="deichsel_achse1" clipDistance="300" nodeId="429" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="73" name="schmiernippel_Caps" translation="0.385 0 0" rotation="90 40 90" clipDistance="300" nodeId="430" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="73" name="schmiernippel_Caps1" translation="-0.385 0 0" rotation="-90 -25 90" clipDistance="300" nodeId="431" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="74" name="griff_200x050x002" translation="-0.17252 0.005 1.35528" rotation="0 189.5 0" clipDistance="300" nodeId="432" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="74" name="griff_200x050x001" translation="0.172515 0.005 1.35528" rotation="0 -9.5 0" clipDistance="300" nodeId="433" materialIds="12" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="75" name="Oese" translation="0 0 1.59" clipDistance="300" nodeId="434" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="72" name="deichsel_body" clipDistance="300" nodeId="427" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="73" name="querstrebe" translation="0 0 0.5" clipDistance="300" nodeId="428" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="74" name="deichsel_achse1" clipDistance="300" nodeId="429" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="75" name="schmiernippel_Caps" translation="0.385 0 0" rotation="90 40 90" clipDistance="300" nodeId="430" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="75" name="schmiernippel_Caps1" translation="-0.385 0 0" rotation="-90 -25 90" clipDistance="300" nodeId="431" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="76" name="griff_200x050x002" translation="-0.17252 0.005 1.35528" rotation="0 189.5 0" clipDistance="300" nodeId="432" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="76" name="griff_200x050x001" translation="0.172515 0.005 1.35528" rotation="0 -9.5 0" clipDistance="300" nodeId="433" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="77" name="Oese" translation="0 0 1.59" clipDistance="300" nodeId="434" materialIds="12" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="collisions" clipDistance="300" nodeId="435"/>
         </TransformGroup>
@@ -612,10 +612,10 @@
                 <TransformGroup name="hydr" translation="-0.06 0.315555 0.609037" nodeId="448"/>
               </TransformGroup>
               <TransformGroup name="detached" translation="-3.94431e-32 -1.42109e-16 1.42109e-16" clipDistance="300" nodeId="449">
-                <Shape shapeId="76" name="det_hose_elec" clipDistance="300" nodeId="450" materialIds="6" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="77" name="det_hose_airR" clipDistance="300" nodeId="451" materialIds="6" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="78" name="det_hose_airY" clipDistance="300" nodeId="452" materialIds="6" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="79" name="det_hose_hydr" clipDistance="300" nodeId="453" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="78" name="det_hose_elec" clipDistance="300" nodeId="450" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="79" name="det_hose_airR" clipDistance="300" nodeId="451" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="80" name="det_hose_airY" clipDistance="300" nodeId="452" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="81" name="det_hose_hydr" clipDistance="300" nodeId="453" materialIds="6" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
             </TransformGroup>
           </TransformGroup>
@@ -625,12 +625,12 @@
           <TransformGroup name="componentJoints" clipDistance="300" nodeId="457"/>
         </TransformGroup>
         <TransformGroup name="SicherungDeichsel" nodeId="458">
-          <Shape shapeId="80" name="AufnahmeStange" translation="0.288272 0.974168 0.418821" rotation="-90 -9.79 0" scale="100 100 100" nodeId="459" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
-          <Shape shapeId="81" name="HalterungDeichsel" translation="0.155085 0.974168 1.20882" nodeId="460" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
-          <Shape shapeId="82" name="SchraubenAufnahme" translation="0.287853 0.996766 0.42058" nodeId="461" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
-          <Shape shapeId="83" name="SchraubenHalterung" translation="0.155223 0.996766 1.20802" nodeId="462" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
-          <Shape shapeId="84" name="Stange" translation="0.16078 0.897145 1.20981" rotation="0 -9.79 0" nodeId="463" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false">
-            <Shape shapeId="85" name="col" translation="0 -0.453645 0" visibility="false" compoundChild="true" collisionMask="2109442" nodeId="464" materialIds="16"/>
+          <Shape shapeId="82" name="AufnahmeStange" translation="0.288272 0.974168 0.418821" rotation="-90 -9.79 0" scale="100 100 100" nodeId="459" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          <Shape shapeId="83" name="HalterungDeichsel" translation="0.155085 0.974168 1.20882" nodeId="460" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          <Shape shapeId="84" name="SchraubenAufnahme" translation="0.287853 0.996766 0.42058" nodeId="461" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          <Shape shapeId="85" name="SchraubenHalterung" translation="0.155223 0.996766 1.20802" nodeId="462" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+          <Shape shapeId="86" name="Stange" translation="0.16078 0.897145 1.20981" rotation="0 -9.79 0" nodeId="463" materialIds="17" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="87" name="col" translation="0 -0.453645 0" visibility="false" compoundChild="true" collisionMask="2109442" nodeId="464" materialIds="16"/>
           </Shape>
         </TransformGroup>
       </Shape>

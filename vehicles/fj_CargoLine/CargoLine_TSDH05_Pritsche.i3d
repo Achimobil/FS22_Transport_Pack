@@ -2,7 +2,7 @@
 
 <i3D name="CargoLine_TSDH05_Pritsche-V02.0002" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
   </Asset>
 
   <Files>
@@ -586,9 +586,9 @@
             </TransformGroup>
             <TransformGroup name="DynMountTrigger1" translation="4.59236e-18 0 0" clipDistance="300" nodeId="381"/>
             <TransformGroup name="aPalletAutoLoader" translation="0 0 -4" nodeId="382">
-              <Shape shapeId="51" name="LoadedTrigger" translation="0 1.25 1" scale="2.3 2.5 9" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="383" materialIds="20" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="51" name="PickupTrigger1" translation="4.1 0 1" scale="4 3 9" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="384" materialIds="20" nonRenderable="true" distanceBlending="false"/>
-              <Shape shapeId="51" name="PickupTrigger2" translation="-4.1 0 1" scale="4 3 9" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="385" materialIds="20" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="51" name="LoadedTrigger" translation="0 1.25 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="383" materialIds="20" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="52" name="PickupTrigger1" translation="4.1 0 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="384" materialIds="20" nonRenderable="true" distanceBlending="false"/>
+              <Shape shapeId="53" name="PickupTrigger2" translation="-4.1 0 1" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="385" materialIds="20" nonRenderable="true" distanceBlending="false"/>
             </TransformGroup>
             <TransformGroup name="movingTools" translation="4.59236e-18 0 0" clipDistance="300" nodeId="386">
               <TransformGroup name="movingTools_Pritsche" translation="-4.59236e-18 0 0" clipDistance="300" nodeId="387"/>
