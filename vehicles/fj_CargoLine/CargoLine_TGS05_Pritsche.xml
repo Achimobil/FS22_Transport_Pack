@@ -269,25 +269,27 @@
         </states>
         <realLights>
             <low>
-                <light node="0>0|0|0|0|1|9|0|0|0" lightTypes="0" excludedLightTypes="3"/>
-                <light node="0>0|0|0|0|1|9|0|0|1" lightTypes="3"/>
+                <light node="frontLightLow"         lightTypes="0" excludedLightTypes="2 3" />
+                <light node="workLightFrontLow"     lightTypes="2" />
+                <light node="highBeamLow"           lightTypes="3" />
                 <light node="0>0|0|6|1|0|1|0|0|0|1" lightTypes="0 3"/>
                 <light node="0>0|0|6|1|0|1|0|0|1|1" lightTypes="0 3"/>
                 <light node="0>1|1|1|0|0|0|0|0" lightTypes="0 3"/>
                 <light node="0>1|1|1|0|0|0|1|0" lightTypes="0 3"/>
             </low>
             <high>
+                <light node="frontLightHigh"        lightTypes="0" excludedLightTypes="2 3" />
+                <light node="workLightFrontHigh1"   lightTypes="2"/>
+                <light node="highBeamHigh"          lightTypes="3"/>
                 <light node="0>0|2|0|0|0|0|2" lightTypes="0 3"/>
                 <light node="0>0|2|0|0|1|0|2" lightTypes="0 3"/>
-                <light node="0>0|0|0|0|1|9|0|0|2" lightTypes="3" excludedLightTypes="2"/>
-                <light node="0>0|0|0|0|1|9|0|2|0" lightTypes="2"/>
                 <light node="0>1|1|1|0|0|0|0|0" lightTypes="1"/>
                 <light node="0>1|1|1|0|0|0|1|0" lightTypes="1"/>
                 <light node="0>0|0|6|1|0|1|0|0|0|1" lightTypes="0 3"/>
                 <light node="0>0|0|6|1|0|1|0|0|1|1" lightTypes="0 3"/>
-                <turnLightLeft node="0>0|0|0|0|1|9|0|1|0"/>
+                <turnLightLeft node="turnLightLeftFront" />
                 <turnLightLeft node="0>0|0|6|1|0|1|0|0|0|4"/>
-                <turnLightRight node="0>0|0|0|0|1|9|0|1|1"/>
+                <turnLightRight node="turnLightRightFront" />
                 <turnLightRight node="0>0|0|6|1|0|1|0|0|1|4"/>
                 <brakeLight node="0>0|0|6|1|0|1|0|0|0|2"/>
                 <brakeLight node="0>0|0|6|1|0|1|0|0|1|2"/>
@@ -296,31 +298,25 @@
             </high>
         </realLights>
         <defaultLights>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|0" lightTypes="0 3"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|0" lightTypes="0 3"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|3" lightTypes="0"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|3" lightTypes="0"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|5" lightTypes="0"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|5" lightTypes="0"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|2" lightTypes="3"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|2" lightTypes="3"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|4" lightTypes="2"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|4" lightTypes="2"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|0|8" lightTypes="2"/>
-            <defaultLight shaderNode="0>0|0|0|0|1|9|1|1|8" lightTypes="2"/>
+            <defaultLight shaderNode="frontlightStatic"      lightTypes="0" intensity="20" />
+            <defaultLight shaderNode="frontlightGlassStatic" lightTypes="0" intensity="0.01" />
+            <defaultLight shaderNode="frontlightStatic01"    lightTypes="0"/>
+            <defaultLight shaderNode="frontlightStatic02"    lightTypes="0"/>
+            <defaultLight shaderNode="worklight02Static"     lightTypes="2"/>
+            <defaultLight shaderNode="highbeamStatic"        lightTypes="3"/>
         </defaultLights>
         <turnLights>
-            <turnLightLeft shaderNode="0>0|0|0|0|1|9|1|0|1"/>
-            <turnLightLeft shaderNode="0>0|0|0|0|1|9|1|0|6"/>
-            <turnLightLeft shaderNode="0>0|0|0|0|1|9|1|0|7"/>
-            <turnLightRight shaderNode="0>0|0|0|0|1|9|1|1|1"/>
-            <turnLightRight shaderNode="0>0|0|0|0|1|9|1|1|6"/>
-            <turnLightRight shaderNode="0>0|0|0|0|1|9|1|1|7"/>
+            <turnLightLeft shaderNode="turnlightLeftStatic" />
+            <turnLightLeft shaderNode="turnlightLeft2Static" />
+            <turnLightRight shaderNode="turnlightRightStatic" />
+            <turnLightRight shaderNode="turnlightRight2Static" />
         </turnLights>
+        
         <beaconLights>
-            <beaconLight node="0>0|0|0|0|2|0|0" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
-            <beaconLight node="0>0|0|0|0|2|0|1" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+            <beaconLight node="beaconLightLeft" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml" />
+            <beaconLight node="beaconLightRight" filename="$data/shared/assets/beaconLights/lizard/beaconLight02.xml" />
         </beaconLights>
+        
         <sharedLight linkNode="0>0|0|6|1|0|1|0|0|1|0" filename="$data/shared/assets/lights/lizard/rearLight55_right.xml"/>
         <sharedLight linkNode="0>0|0|6|1|0|1|0|0|0|0" filename="$data/shared/assets/lights/lizard/rearLight55_left.xml"/>
         <sharedLight linkNode="0>1|1|1|0|0|0|0|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml">
@@ -329,6 +325,25 @@
         <sharedLight linkNode="0>1|1|1|0|0|0|1|1" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_back.xml">
             <rotationNode name="rotationNode1" rotation="180 0 180"/>
         </sharedLight>
+        
+        <sharedLight linkNode="frontLightCone_01_01" filename="$data/shared/assets/lights/lizard/frontLight02.xml" />
+        <sharedLight linkNode="frontLightCone_01_02" filename="$data/shared/assets/lights/lizard/frontLight02.xml" />
+
+        <sharedLight linkNode="workingLightOval_02_01" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight04.xml" >
+            <rotationNode name="rotationNode1" rotation="10 0 0" />
+        </sharedLight>
+        <sharedLight linkNode="workingLightOval_02_02" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight04.xml" >
+            <rotationNode name="rotationNode1" rotation="10 0 0" />
+        </sharedLight>
+        <sharedLight linkNode="workingLightOval_02_03" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight04.xml" >
+            <rotationNode name="rotationNode1" rotation="30 0 0" />
+        </sharedLight>
+        <sharedLight linkNode="workingLightOval_02_04" lightTypes="2" filename="$data/shared/assets/lights/lizard/workingLight04.xml" >
+            <rotationNode name="rotationNode1" rotation="30 0 0" />
+        </sharedLight>
+        <sharedLight linkNode="yellowRound_02" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml" />
+        <sharedLight linkNode="yellowRound_03" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml" />
+        
         <sounds>
             <toggleLights linkNode="0>" template="SWITCH_01"/>
             <turnLight linkNode="0>" template="SWITCH_TURNLIGHT"/>
@@ -882,15 +897,20 @@
     <ai>
         <collisionTrigger node="aiCollisionTrigger" width="3.2" height="4.0"/>
     </ai>
-
-    <!-- <baseColorConfigurations price="1600" defaultColorIndex="8" useDefaultColors="true"> -->
-        <!-- <colorNode node="0>0|0|0|0|0|0"/> -->
-        <!-- <colorNode node="0>0|0|0|0|0|1"/> -->
-        <!-- <colorNode node="0>0|0|0|0|0|2"/> -->
-        <!-- <colorNode node="0>0|0|0|0|0|3"/> -->
-        <!-- <colorNode node="0>1|0|0|0|0"/> -->
-        <!-- <colorNode node="0>1|0|1|0|2|0|0|1"/> -->
-    <!-- </baseColorConfigurations> -->
+    
+    <baseMaterial>
+        <material name="myBase_mat" baseNode="0>0|0|0|0|0|0|0">
+            <shaderParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+        </material>
+        <material name="myBase_mat" baseNode="0>0|0|0|0|0|0|1">
+            <shaderParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+        </material>
+    </baseMaterial>
+    
+    <baseMaterialConfigurations price="1000" useDefaultColors="true" defaultColorIndex="1">
+        <material name="myBase_mat" shaderParameter="colorMat0" material="0"/>
+    </baseMaterialConfigurations>
+    
     <aPalletAutoLoader>
         <aPalletAutoLoaderConfigurations>
             <aPalletAutoLoaderConfiguration maxObjects="30" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadRightOffset="-4 -1.2 0" UnloadLeftOffset="4 -1.2 0">
@@ -921,5 +941,39 @@
         <i3dMapping id="LoadedTrigger" node="0>1|1|4|0"/>
         <i3dMapping id="PickupTrigger1" node="0>1|1|4|1"/>
         <i3dMapping id="PickupTrigger2" node="0>1|1|4|2"/>
+        
+        
+        <i3dMapping id="frontLightCone_01_01" node="0>0|0|0|0|1|9|0|0" />
+        <i3dMapping id="frontLightCone_01_02" node="0>0|0|0|0|1|9|0|1" />
+        <i3dMapping id="beaconLightLeft" node="0>0|0|0|0|1|9|0|2" />
+        <i3dMapping id="beaconLightRight" node="0>0|0|0|0|1|9|0|3" />
+        <i3dMapping id="workingLightOval_02_01" node="0>0|0|0|0|1|9|0|4" />
+        <i3dMapping id="workingLightOval_02_02" node="0>0|0|0|0|1|9|0|5" />
+        <i3dMapping id="workingLightOval_02_03" node="0>0|0|0|0|1|9|0|6" />
+        <i3dMapping id="workingLightOval_02_04" node="0>0|0|0|0|1|9|0|7" />
+        <i3dMapping id="yellowRound_02" node="0>0|0|0|0|1|9|0|8" />
+        <i3dMapping id="yellowRound_03" node="0>0|0|0|0|1|9|0|9" />
+        
+        <i3dMapping id="turnlightRight2Static" node="0>0|0|0|0|1|9|1|0"/>
+        <i3dMapping id="turnlightLeft2Static" node="0>0|0|0|0|1|9|1|1"/>
+        <i3dMapping id="worklight02Static" node="0>0|0|0|0|1|9|1|2" />
+        <i3dMapping id="frontlightStatic01" node="0>0|0|0|0|1|9|1|3" />
+        <i3dMapping id="frontlightStatic02" node="0>0|0|0|0|1|9|1|4" />
+        <i3dMapping id="frontlightStatic" node="0>0|0|0|0|1|9|1|6" />
+        <i3dMapping id="highbeamStatic" node="0>0|0|0|0|1|9|1|7" />
+        <i3dMapping id="frontlightGlassStatic" node="0>0|0|0|0|1|9|1|8" />
+        <i3dMapping id="turnlightLeftStatic" node="0>0|0|0|0|1|9|1|9" />
+        <i3dMapping id="turnlightRightStatic" node="0>0|0|0|0|1|9|1|10" />
+        
+        <i3dMapping id="frontLightLow" node="0>0|0|0|0|1|9|2|0" />
+        <i3dMapping id="highBeamLow" node="0>0|0|0|0|1|9|2|1" />
+        <i3dMapping id="frontLightHigh" node="0>0|0|0|0|1|9|2|2" />
+        <i3dMapping id="highBeamHigh" node="0>0|0|0|0|1|9|2|3" />
+        
+        <i3dMapping id="workLightFrontLow" node="0>0|0|0|0|1|9|3|0" />
+        <i3dMapping id="workLightFrontHigh1" node="0>0|0|0|0|1|9|3|1" />
+        
+        <i3dMapping id="turnLightLeftFront" node="0>0|0|0|0|1|9|4|0" />
+        <i3dMapping id="turnLightRightFront" node="0>0|0|0|0|1|9|4|1" />
     </i3dMappings>
 </vehicle>

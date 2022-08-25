@@ -849,14 +849,10 @@
         <material name="myBase_mat" baseNode="0>0|0|0|0|0|0|1">
             <shaderParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
         </material>
-        <!-- <material name="Panel_Mat1" baseNode="colorpanel1"> -->
-            <!-- <shaderParameter name="colorMat1" value="FLIEGL_ORANGE1"/> -->
-        <!-- </material> -->
     </baseMaterial>
     
-    <baseMaterialConfigurations price="1000" useDefaultColors="true">
+    <baseMaterialConfigurations price="1000" useDefaultColors="true" defaultColorIndex="1">
         <material name="myBase_mat" shaderParameter="colorMat0" material="0"/>
-        <baseMaterialConfiguration color="0.0352 0.7607 0.8862 1" material="0" name="FunBuggy babyblue Chrom"/>
     </baseMaterialConfigurations>
     
     <aPalletAutoLoader>
