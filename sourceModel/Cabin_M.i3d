@@ -2,18 +2,18 @@
 
 <i3D name="Cabin_M" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    <Export program="i3dConverter" version="1.0"/>
   </Asset>
 
   <Files>
-    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
-    <File fileId="2" filename="$data/vehicles/man/tgs18500/tgs18500_normal.dds"/>
-    <File fileId="3" filename="$data/vehicles/man/tgs18500/tgs18500_vmask.dds"/>
+    <File fileId="4" filename="E:/Program Files (x86)/Farming Simulator 2022/data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="E:/Program Files (x86)/Farming Simulator 2022/data/vehicles/man/tgs18500/tgs18500_normal.dds"/>
+    <File fileId="3" filename="E:/Program Files (x86)/Farming Simulator 2022/data/vehicles/man/tgs18500/tgs18500_vmask.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="myBase_mat" materialId="4" diffuseColor="0.0941177 0.0666667 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+    <Material name="myBase_mat" materialId="1" diffuseColor="0.0941177 0.0705882 0.8 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -38,7 +38,10 @@
   </Dynamics>
 
   <Scene>
-      <Shape shapeId="1" name="Cabin_M_giants" rotation="90 -0 0" nodeId="7" materialIds="4"/>
+      <TransformGroup name="NewCabinN" translation="-0.038211 1.22709 3.14789" rotation="-6.83019e-06 -0 0" nodeId="5">
+        <Shape shapeId="1" name="Cabin_M_giants" translation="0.038211 -1.22709 -3.14789" rotation="90 -0 0" nodeId="6" materialIds="1"/>
+        <Shape shapeId="2" name="unterteil" translation="0.038211 -1.22709 -3.14789" rotation="90 -0 0" nodeId="7" materialIds="1"/>
+      </TransformGroup>
   </Scene>
 
 </i3D>

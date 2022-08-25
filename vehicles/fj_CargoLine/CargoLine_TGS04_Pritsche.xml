@@ -843,7 +843,10 @@
     </ai>
     
     <baseMaterial>
-        <material name="myBase_mat" baseNode="0>0|0|0|0|0|0">
+        <material name="myBase_mat" baseNode="0>0|0|0|0|0|0|0">
+            <shaderParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+        </material>
+        <material name="myBase_mat" baseNode="0>0|0|0|0|0|0|1">
             <shaderParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
         </material>
         <!-- <material name="Panel_Mat1" baseNode="colorpanel1"> -->
