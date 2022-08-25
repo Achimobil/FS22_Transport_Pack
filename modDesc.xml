@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="65">
     <author>Achimobil</author>
-    <version>0.2.1.0</version>
+    <version>0.3.0.0</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -53,6 +53,9 @@ This compilation of mine may only be published with the original link.
 Changing and republishing only with permission.
 
 Changelog
+0.3.0.0
+- Replaced old Chasis of TGS with new Giants Chasis inkl. color choice
+ 
 0.2.1.0
 - Drawbar trailer equipped with supports (Thanks to EWW_Bobo)
  
@@ -118,6 +121,9 @@ Diese Zusammenstellung von mir darf nur mit Original Link veröffentlicht werden
 Das Verändern und neu veröffentlichen nur mit Genehmigung.
 
 Changelog
+0.3.0.0
+- Altes Außenchasis des TGS durch das neue von Giants ersetzt inkl. Farbwahl.
+
 0.2.1.0
 - Deichsel Anhänger mit Stützen ausgestattet (Danke an EWW_Bobo)
 
