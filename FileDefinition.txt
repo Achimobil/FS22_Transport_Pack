@@ -4,3 +4,4 @@
 .gitignore
 FileDefinition.txt
 store/ModbildVorlage.xcf
+sourceModel

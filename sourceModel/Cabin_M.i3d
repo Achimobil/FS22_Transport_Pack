@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Cabin_M" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="i3dConverter" version="1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="E:/Program Files (x86)/Farming Simulator 2022/data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="E:/Program Files (x86)/Farming Simulator 2022/data/vehicles/man/tgs18500/tgs18500_normal.dds"/>
+    <File fileId="3" filename="E:/Program Files (x86)/Farming Simulator 2022/data/vehicles/man/tgs18500/tgs18500_vmask.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="myBase_mat" materialId="1" diffuseColor="0.0941177 0.0705882 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.9075 0.0316 0.0316 0"/>
+      <CustomParameter name="colorMat1" value="0.4456 0.4456 0.4456 0"/>
+      <CustomParameter name="colorMat2" value="0.1036 0.2674 0.7969 1"/>
+      <CustomParameter name="colorMat3" value="0.0464 0.0464 0.0464 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Cabin_M.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="NewCabinN" translation="-0.038211 1.22709 3.14789" rotation="-6.83019e-06 -0 0" nodeId="5">
+        <Shape shapeId="1" name="Cabin_M_giants" translation="0.038211 -1.22709 -3.14789" rotation="90 -0 0" nodeId="6" materialIds="1"/>
+        <Shape shapeId="2" name="unterteil" translation="0.038211 -1.22709 -3.14789" rotation="90 -0 0" nodeId="7" materialIds="1"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
