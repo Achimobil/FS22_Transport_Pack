@@ -5,3 +5,4 @@
 FileDefinition.txt
 store/ModbildVorlage.xcf
 sourceModel
+Images
