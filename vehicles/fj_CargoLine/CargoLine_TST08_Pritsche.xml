@@ -20,7 +20,7 @@
         <filename>vehicles/fj_CargoLine/CargoLine_TST08_Pritsche.i3d</filename>
         <size width="2.8" length="13"/>
         <components>
-            <component centerOfMass="0 0.25 -6.70" solverIterationCount="10" mass="5000"/>
+            <component centerOfMass="0 0.25 -1.70" solverIterationCount="10" mass="5000"/>
         </components>
         <schemaOverlay name="IMPLEMENT" attacherJointPosition="0 0"/>
     </base>

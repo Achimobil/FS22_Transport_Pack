@@ -24,7 +24,7 @@
         <filename>vehicles/fj_CargoLine/CargoLine_TGS05_Pritsche.i3d</filename>
         <size width="3.2" length="10.5" lengthOffset="-1"/>
         <components>
-            <component centerOfMass="0 0.25 -1.25" solverIterationCount="10" mass="9314"/>
+            <component centerOfMass="0 0.25 1.0" solverIterationCount="10" mass="9314"/>
         </components>
         <schemaOverlay name="VEHICLE" attacherJointPosition="0 0"/>
 		<sounds filename="$data/vehicles/man/tgx26640/sounds/tgx26640.xml"/>
