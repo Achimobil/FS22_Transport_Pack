@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<i3D name="Cabin_M" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+<i3D name="Cabin_M.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
   </Asset>
 
   <Files>
     <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="9" filename="$data/shared/default_normal.png"/>
+    <File fileId="8" filename="$data/shared/window_diffuse.png"/>
+    <File fileId="10" filename="$data/shared/window_vmask.png"/>
     <File fileId="2" filename="$data/vehicles/man/tgs18500/tgs18500_normal.dds"/>
     <File fileId="3" filename="$data/vehicles/man/tgs18500/tgs18500_vmask.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="myBase_mat" materialId="4" diffuseColor="0.0941177 0.0666667 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+    <Material name="myBase_mat" materialId="5" diffuseColor="0.0941177 0.0666667 0.8 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
-      <CustomParameter name="RDT" value="0 0 0 0"/>
-      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
       <CustomParameter name="colorMat0" value="0.9075 0.0316 0.0316 0"/>
       <CustomParameter name="colorMat1" value="0.4456 0.4456 0.4456 0"/>
       <CustomParameter name="colorMat2" value="0.1036 0.2674 0.7969 1"/>
       <CustomParameter name="colorMat3" value="0.0464 0.0464 0.0464 1"/>
-      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
-      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
-      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
-      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="window_mat" materialId="6" alphaBlending="true" customShaderId="4" shadingRate="2x4">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="RDT" value="0 1 0 0"/>
     </Material>
   </Materials>
 
@@ -38,9 +41,15 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="NewCabinN" translation="-0.038211 1.22709 3.14789" rotation="-6.83019e-06 -0 0" nodeId="8">
-        <Shape shapeId="1" name="Cabin_M_giants" translation="0.038211 -1.22709 -3.14789" rotation="90 -0 0" nodeId="9" materialIds="4"/>
-        <Shape shapeId="2" name="unterteil" translation="0.038211 -1.22709 -3.14789" rotation="90 -0 0" nodeId="10" materialIds="4"/>
+      <TransformGroup name="NewCabinN" translation="-0.038211 1.22709 3.14789" rotation="-6.83019e-06 -0 0" nodeId="14">
+        <Shape shapeId="1" name="Cabin_M_giants" translation="0.038211 -1.22709 -3.14789" rotation="90 -0 0" nodeId="15" materialIds="5"/>
+        <Shape shapeId="2" name="unterteil" translation="0.038211 -1.22709 -3.14789" rotation="90 -0 0" nodeId="16" materialIds="5"/>
+        <TransformGroup name="visuals" translation="0.038211 -1.22709 -3.14789" rotation="6.83019e-06 -0 0" nodeId="17">
+          <Shape shapeId="3" name="windows" translation="-0.202877 2.7835 1.17212" clipDistance="200" nodeId="18" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="windows2" translation="0 2.63219 2.82896" clipDistance="200" nodeId="19" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="windows3" translation="-1.07525 2.62392 2.03108" clipDistance="200" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="windows1" translation="1.07525 2.62392 2.03108" clipDistance="200" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
       </TransformGroup>
   </Scene>
 
