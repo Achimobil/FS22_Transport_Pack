@@ -20,7 +20,7 @@
         <filename>vehicles/fj_CargoLine/CargoLine_TGD04_Pritsche.i3d</filename>
         <size width="2.8" length="8" lengthOffset="0.75"/>
         <components>
-            <component centerOfMass="0 0.25 -4.0" solverIterationCount="10" mass="2500"/>
+            <component centerOfMass="0 0.25 0.5" solverIterationCount="10" mass="2500"/>
             <component centerOfMass="0 -0.25 0" solverIterationCount="4" mass="500"/>
             <component solverIterationCount="4" mass="100"/>
             <joint component1="1" component2="2" node="0>0|1|8|0" rotLimit="0 120 0" transLimit="0 0 0"/>

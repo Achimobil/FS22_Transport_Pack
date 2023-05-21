@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="74">
     <author>Achimobil</author>
-    <version>0.3.0.0</version>
+    <contributor>Mannie313</contributor>
+    <version>0.4.0.0_beta_1</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -52,6 +53,9 @@ This compilation of mine may only be published with the original link.
 Changing and republishing only with permission.
 
 Changelog
+0.4.0.0
+- changes from Mannie313 for driving backwards with Autodrive only for the trailers
+
 0.3.0.0
 - Replaced old Chasis of TGS with new Giants Chasis inkl. color choice
 - Fixed Triggers in movement
@@ -120,6 +124,9 @@ Diese Zusammenstellung von mir darf nur mit Original Link veröffentlicht werden
 Das Verändern und neu veröffentlichen nur mit Genehmigung.
 
 Changelog
+0.4.0.0
+- Anpassungen von Mannie313 um mit Autodrive rückwärts zu fahren nur bei den Anhängern
+
 0.3.0.0
 - Altes Außenchasis des TGS durch das neue von Giants ersetzt inkl. Farbwahl.
 - Trigger fixiert in Bewegung
