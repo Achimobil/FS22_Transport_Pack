@@ -2,7 +2,7 @@
 <modDesc descVersion="74">
     <author>Achimobil</author>
     <contributor>Mannie313</contributor>
-    <version>0.4.0.0_beta_1</version>
+    <version>0.4.0.0_beta_2</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -56,6 +56,7 @@ Changelog
 0.4.0.0
 - changes from Mannie313 for driving backwards with Autodrive only for the trailers
 - replace window dirt
+- removed dirt and wear from interior
 
 0.3.0.0
 - Replaced old Chasis of TGS with new Giants Chasis inkl. color choice
@@ -128,6 +129,7 @@ Changelog
 0.4.0.0
 - Anpassungen von Mannie313 um mit Autodrive rückwärts zu fahren nur bei den Anhängern
 - Fenster dirt erneuert
+- Schmutz und Abnutzung aus dem Innenraum entfernt
 
 0.3.0.0
 - Altes Außenchasis des TGS durch das neue von Giants ersetzt inkl. Farbwahl.
