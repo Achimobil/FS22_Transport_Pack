@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="75">
+<modDesc descVersion="79">
     <author>Achimobil</author>
     <contributor>Mannie313</contributor>
-    <version>0.4.0.0</version>
+    <version>0.4.0.1</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -126,6 +126,8 @@ Diese Zusammenstellung von mir darf nur mit Original Link veröffentlicht werden
 Das Verändern und neu veröffentlichen nur mit Genehmigung.
 
 Changelog
+0.4.0.1 - Alle begrenzungen für Ladegut entfernt. Nur noch die größe bestimmt die Menge bei einer maximalen Ladehöhe von 3m und Breite von 2,4m. Länge ist individuell aber voll ausgenutzt.
+
 0.4.0.0
 - Anpassungen von Mannie313 um mit Autodrive rückwärts zu fahren nur bei den Anhängern
 - Fenster dirt erneuert
