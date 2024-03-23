@@ -2,7 +2,7 @@
 <modDesc descVersion="79">
     <author>Achimobil</author>
     <contributor>Mannie313</contributor>
-    <version>0.4.0.1</version>
+    <version>0.4.0.2</version>
     <title>
         <en>Autoloader Transport Pack</en>
         <de>Autoloader Transport Paket</de>
@@ -53,6 +53,10 @@ This compilation of mine may only be published with the original link.
 Changing and republishing only with permission.
 
 Changelog
+
+0.4.0.1 - Alle begrenzungen für Ladegut entfernt. Nur noch die größe bestimmt die Menge bei einer maximalen Ladehöhe von 3m und Breite von 2,4m. Länge ist individuell aber voll ausgenutzt.
+0.4.0.2 - CargoLine_TGS03_Pritsche Ladefläche Trigger exact an Ladefläche angepasst. Hinteren Trigger zugefügt.
+
 0.4.0.0
 - changes from Mannie313 for driving backwards with Autodrive only for the trailers
 - replace window dirt

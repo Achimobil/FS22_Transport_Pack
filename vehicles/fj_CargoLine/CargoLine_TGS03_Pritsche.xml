@@ -829,6 +829,7 @@
                 <pickupTriggers>
                     <pickupTrigger node="PickupTrigger1"/>
                     <pickupTrigger node="PickupTrigger2"/>
+                    <pickupTrigger node="PickupTrigger3"/>
                 </pickupTriggers>
                 <loadArea baseNode="aPalletAutoLoader" leftRightCornerOffset="1.2 0 2.4" lenght="4.8" width="2.40" height="3.0"/>
             </aPalletAutoLoaderConfiguration>
@@ -846,6 +847,7 @@
         <i3dMapping id="LoadedTrigger" node="0>1|1|4|0"/>
         <i3dMapping id="PickupTrigger1" node="0>1|1|4|1"/>
         <i3dMapping id="PickupTrigger2" node="0>1|1|4|2"/>
+        <i3dMapping id="PickupTrigger3" node="0>1|1|4|3"/>
         
         
         <i3dMapping id="frontLightCone_01_01" node="0>0|0|0|0|1|9|0|0" />
